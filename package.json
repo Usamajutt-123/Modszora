@@ -1,0 +1,27 @@
+{
+  "name": "modverse",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MODVerse - Enterprise MOD APK platform with an autonomous AI ingestion agent.",
+  "type": "module",
+  "engines": { "node": ">=20.0.0" },
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build:shared": "npm run build -w @modverse/shared",
+    "build:web": "npm run build:shared && npm run build -w @modverse/web",
+    "build:agent": "npm run build:shared && npm run build -w @modverse/agent",
+    "build": "npm run build:shared && npm run build -w @modverse/web && npm run build -w @modverse/agent",
+    "dev": "npm run build:shared && concurrently -n web,agent -c cyan,magenta \"npm:dev:web\" \"npm:dev:agent\"",
+    "dev:web": "npm run dev -w @modverse/web",
+    "dev:agent": "npm run dev -w @modverse/agent",
+    "start:web": "npm run start -w @modverse/web",
+    "start:agent": "npm run start -w @modverse/agent",
+    "typecheck": "npm run build:shared && npm run typecheck -w @modverse/web && npm run typecheck -w @modverse/agent",
+    "lint": "npm run lint -w @modverse/web",
+    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules apps/web/.next apps/agent/dist packages/shared/dist"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  }
+}

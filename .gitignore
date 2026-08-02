@@ -1,0 +1,16 @@
+node_modules
+.next
+dist
+out
+coverage
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.vercel
+.turbo
+apps/agent/.artifacts
+apps/agent/storage
+playwright-report
+test-results

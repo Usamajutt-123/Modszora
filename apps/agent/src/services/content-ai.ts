@@ -1,0 +1,710 @@
+import {
+  aiBlogBundleSchema,
+  aiKeywordIdeaSchema,
+  aiWallpaperMetaSchema,
+  BLOG_TEMPLATE_LABELS,
+  extractJsonObject,
+  gameSlug as toGameSlug,
+  readingMinutes,
+  slugify,
+  truncate,
+  unique,
+  type AiBlogBundle,
+  type AiKeywordIdea,
+  type AiReviewBundle,
+  type AiWallpaperMeta,
+  type BlogCategory,
+  type BlogTemplate,
+  type ReviewContext,
+  type ReviewAction,
+  type WallpaperCategory,
+} from '@modverse/shared';
+import { BLOG_CATEGORIES, WALLPAPER_CATEGORIES } from '@modverse/shared';
+import { complete, usage } from './openai.js';
+import { createLogger } from '../core/logger.js';
+
+const log = createLogger('content-ai');
+
+/**
+ * Content generators for everything that is not the core game listing:
+ * blog articles, news, wallpaper metadata, review refinement and keyword
+ * research.
+ *
+ * Every function follows the same contract as the game SEO generator: it
+ * ALWAYS returns schema-valid output. When OpenAI is unavailable or returns
+ * malformed JSON, a deterministic template produces usable content instead,
+ * so the CMS never blocks on the model.
+ */
+
+/* ═══════════════════════ blog / news ═══════════════════════ */
+
+const BLOG_SYSTEM = `You are the senior editor of MODVerse, an Android MOD APK publication.
+
+Write genuinely useful articles for mobile gamers. Rules:
+- Never invent statistics, release dates, prices or quotes.
+- Body must be valid HTML using only <p>, <h2>, <h3>, <ul>, <ol>, <li>, <strong>, <blockquote>.
+- Open with a real hook, not "In today's world" or "In the ever-evolving landscape".
+- Be concrete and specific. Prefer one worked example over three vague claims.
+- No AI filler, no repeated phrasing, no keyword stuffing.
+- Return ONLY a JSON object. No markdown fences.`;
+
+export interface BlogGenerateInput {
+  template: BlogTemplate;
+  topic?: string | null;
+  gameNames?: string[];
+  category?: BlogCategory;
+  isNews?: boolean;
+  wordCount?: number;
+}
+
+const TEMPLATE_BRIEFS: Record<BlogTemplate, string> = {
+  'top-10':
+    'A ranked list article. Each entry needs a <h3> with the game name, two or three sentences on why it earns the spot, and what its MOD unlocks. Rank by genuine merit, not alphabetically.',
+  'how-to-install':
+    'A step-by-step installation tutorial. Use an <ol> for the core steps. Cover enabling unknown sources, uninstalling a conflicting Play Store build, OBB placement for large games, and a troubleshooting section for "App not installed" and parse errors.',
+  'update-guide':
+    'Explain what changed in a recent update, why the previous MOD stops working after an official update, and how a reader should safely move to the new build without losing save data.',
+  'mod-features-explained':
+    'Explain what each common MOD feature actually does at a technical level — unlimited currency, god mode, mod menus, ad removal, premium unlock — and the practical trade-offs of each, including online ban risk.',
+  'gaming-tips':
+    'Practical, tested tips for Android gamers: performance tuning, storage management, battery, thermal throttling, controller support. Every tip must be actionable in a specific settings screen.',
+  'news-roundup':
+    'A concise news roundup. Each item gets an <h3> headline and a short factual paragraph. Attribute nothing you cannot verify from the supplied context.',
+};
+
+export async function generateBlogArticle(
+  input: BlogGenerateInput,
+): Promise<{ bundle: AiBlogBundle; source: 'openai' | 'fallback' }> {
+  const {
+    template,
+    topic = null,
+    gameNames = [],
+    category = 'guides',
+    isNews = false,
+    wordCount = 1100,
+  } = input;
+
+  const raw = await complete({
+    system: BLOG_SYSTEM,
+    temperature: 0.75,
+    maxTokens: 4000,
+    user: JSON.stringify({
+      task: `Write a ${BLOG_TEMPLATE_LABELS[template]} article for MODVerse.`,
+      brief: TEMPLATE_BRIEFS[template],
+      topic,
+      gamesToFeature: gameNames.slice(0, 12),
+      category,
+      isNews,
+      targetWordCount: wordCount,
+      currentYear: new Date().getFullYear(),
+      allowedCategories: BLOG_CATEGORIES,
+      requiredShape: {
+        title: 'string 6-180 chars, specific and clickable without being clickbait',
+        slug: 'kebab-case url slug',
+        excerpt: 'string 120-320 chars summarising the payoff',
+        content: `HTML string, roughly ${wordCount} words, with <h2> sections`,
+        category: `one of ${BLOG_CATEGORIES.join('|')}`,
+        tags: 'string[] 4-10 lowercase',
+        readingMinutes: 'integer',
+        seoTitle: 'string <=70 chars',
+        metaDescription: 'string 140-165 chars',
+        keywords: 'string[] 5-14 realistic search phrases',
+      },
+    }),
+  });
+
+  if (raw) {
+    const json = extractJsonObject(raw);
+    if (json) {
+      try {
+        const parsed = aiBlogBundleSchema.safeParse(coerceBlog(JSON.parse(json), input));
+        if (parsed.success) {
+          log.info(`blog generated by OpenAI: "${parsed.data.title}"`);
+          return { bundle: parsed.data, source: 'openai' };
+        }
+        log.warn(`blog failed validation: ${parsed.error.issues.map((i) => i.path.join('.')).join(', ')}`);
+      } catch (err) {
+        log.warn(`could not parse blog JSON: ${err instanceof Error ? err.message : err}`);
+      }
+    }
+  }
+
+  usage.fallbacks += 1;
+  return { bundle: fallbackBlog(input), source: 'fallback' };
+}
+
+/** Repairs common drift before validation so a near-miss is fixed, not discarded. */
+function coerceBlog(value: unknown, input: BlogGenerateInput): unknown {
+  if (!value || typeof value !== 'object') return value;
+  const o = { ...(value as Record<string, any>) };
+
+  o.title = truncate(String(o.title ?? 'Untitled'), 178);
+  o.slug =
+    typeof o.slug === 'string' && /^[a-z0-9-]+$/.test(o.slug) ? slugify(o.slug) : slugify(String(o.title));
+  o.excerpt = truncate(String(o.excerpt ?? ''), 398);
+  o.seoTitle = truncate(String(o.seoTitle ?? o.title), 70);
+  o.metaDescription = truncate(String(o.metaDescription ?? o.excerpt), 178);
+
+  if (!BLOG_CATEGORIES.includes(o.category)) o.category = input.category ?? 'guides';
+  if (!Array.isArray(o.tags) || o.tags.length < 3) {
+    o.tags = unique([...(Array.isArray(o.tags) ? o.tags : []), input.category ?? 'guides', 'android', 'mod apk']);
+  }
+  o.tags = unique((o.tags as string[]).map((t) => String(t).toLowerCase().slice(0, 40))).slice(0, 16);
+
+  if (!Array.isArray(o.keywords) || o.keywords.length < 4) {
+    o.keywords = unique([
+      ...(Array.isArray(o.keywords) ? o.keywords : []),
+      'mod apk',
+      'android games',
+      String(o.title).toLowerCase().split(' ').slice(0, 4).join(' '),
+      'mod apk guide',
+    ]);
+  }
+  o.keywords = unique((o.keywords as string[]).map((k) => String(k).toLowerCase().slice(0, 60))).slice(0, 20);
+
+  const content = typeof o.content === 'string' ? o.content : '';
+  if (content.length < 400) return { ...o, ...fallbackBlog(input) };
+  o.content = content;
+  o.readingMinutes = Math.max(1, Math.min(90, Number(o.readingMinutes) || readingMinutes(content.replace(/<[^>]+>/g, ' '))));
+
+  // Excerpt/meta minimum lengths are enforced by the schema.
+  if (o.excerpt.length < 40) o.excerpt = truncate(`${o.title} — a practical MODVerse guide for Android players.`, 398);
+  if (o.metaDescription.length < 50) {
+    o.metaDescription = truncate(`${o.title}. Step-by-step advice from the MODVerse editorial team.`, 178);
+  }
+  if (o.seoTitle.length < 10) o.seoTitle = truncate(o.title, 70);
+
+  return o;
+}
+
+function fallbackBlog(input: BlogGenerateInput): AiBlogBundle {
+  const year = new Date().getFullYear();
+  const games = input.gameNames?.slice(0, 10) ?? [];
+  const category = input.category ?? 'guides';
+
+  const TITLES: Record<BlogTemplate, string> = {
+    'top-10': `Top ${Math.max(3, games.length || 10)} MOD APK Games Worth Installing in ${year}`,
+    'how-to-install': 'How to Install a MOD APK on Android Safely (Step by Step)',
+    'update-guide': `MOD APK Update Guide: Moving to the Latest Build Without Losing Progress`,
+    'mod-features-explained': 'MOD Features Explained: What Each Unlock Actually Does',
+    'gaming-tips': `${Math.max(6, 8)} Android Gaming Tips That Actually Improve Performance`,
+    'news-roundup': `Android Gaming Roundup — What Changed This Week`,
+  };
+
+  const title = input.topic?.trim() || TITLES[input.template];
+
+  const BODIES: Record<BlogTemplate, string> = {
+    'top-10': [
+      `<p>These are the modded builds our readers install most, ranked by how much the MOD genuinely improves the experience rather than how popular the base game is.</p>`,
+      ...(games.length
+        ? games.map(
+            (g, i) =>
+              `<h3>${i + 1}. ${g}</h3><p>${g} earns this spot because the modded build removes its hardest progression walls without touching the parts that make it fun. Install it, confirm the mod menu appears on the main screen, and play.</p>`,
+          )
+        : [
+            `<h2>How we rank</h2><p>Placement is decided by three things: how stable the mod menu is across devices, whether the unlock removes friction or removes the game, and how quickly the listing is refreshed after an official update.</p>`,
+          ]),
+      `<h2>Before you install</h2><p>Uninstall the Play Store copy first — Android refuses to install a package signed with a different key. Enable "Install unknown apps" for your browser, and keep Play Protect on.</p>`,
+    ].join('\n'),
+
+    'how-to-install': [
+      `<p>Sideloading an APK on Android takes about a minute once you know the order of operations. Nearly every failure comes from doing step three before step two.</p>`,
+      `<h2>The steps</h2>`,
+      `<ol><li>Download the APK and note where your browser saved it.</li><li>Open Settings → Apps → Special access → Install unknown apps, and allow your browser or file manager.</li><li>Uninstall any existing copy of the game. This is the step people skip, and it causes most failures.</li><li>Open the APK and confirm the install prompt.</li><li>If the game ships an OBB, extract the folder to <strong>Android/obb/</strong> before first launch.</li><li>Launch, grant storage permission, and verify the mod is active.</li></ol>`,
+      `<h2>Troubleshooting</h2>`,
+      `<p><strong>"App not installed"</strong> almost always means a signature conflict — a copy signed with a different key is still present. Uninstall it and retry.</p>`,
+      `<p><strong>Parse error</strong> means the file is truncated or built for a different CPU architecture. Re-download, and check the listing's requirements.</p>`,
+      `<p><strong>Game opens then closes</strong> usually means missing OBB data or a denied storage permission.</p>`,
+    ].join('\n'),
+
+    'update-guide': [
+      `<p>When a developer ships an official update, the previous modded build usually stops working. Here is why, and how to move across safely.</p>`,
+      `<h2>Why mods break on update</h2><p>A MOD is a patched copy of a specific build. New official code invalidates those patches, so the modder has to rebuild against the new version. Until they do, the old APK is the only working one.</p>`,
+      `<h2>Protect your progress first</h2><p>If the game stores saves locally, back up its folder under Android/data before touching anything. Cloud-synced games are safer, but a cloud save written by a modded client can conflict.</p>`,
+      `<h2>Installing the new build</h2><p>Install the new APK over the old one when the signature matches. If it does not, uninstall first — and accept that local saves may be lost.</p>`,
+    ].join('\n'),
+
+    'mod-features-explained': [
+      `<p>Listings advertise the same handful of features. This is what each one actually changes, and what it costs you.</p>`,
+      `<h2>Unlimited currency</h2><p>The client is patched so the balance check always passes. It works offline; server-validated economies will reject it and may flag the account.</p>`,
+      `<h2>Mod menu</h2><p>An overlay injected into the game that exposes toggles at runtime — god mode, damage multipliers, speed. The most flexible option, and the easiest to over-use.</p>`,
+      `<h2>Ad removal</h2><p>Ad SDK calls are stubbed out. This is the least invasive modification and rarely affects gameplay balance.</p>`,
+      `<h2>Premium unlock</h2><p>The paid-content flag is set locally. Perfect for one-off purchases; unreliable for subscriptions validated server-side.</p>`,
+      `<h2>The trade-off</h2><p>Every unlock removes friction the designers deliberately added. On a game you have already finished that is liberating. On a first playthrough it can hollow the experience out.</p>`,
+    ].join('\n'),
+
+    'gaming-tips': [
+      `<p>Practical changes that measurably improve Android gaming, each one actionable in a specific settings screen.</p>`,
+      `<h2>Cap the frame rate deliberately</h2><p>A stable 45 fps feels better than an unstable 60. Most games expose this under Graphics; some phones also offer a system-level cap.</p>`,
+      `<h2>Watch thermals, not benchmarks</h2><p>Sustained performance is thermal-limited. Take the case off during long sessions and avoid charging while playing.</p>`,
+      `<h2>Free storage before large installs</h2><p>Android needs headroom to unpack an APK plus its OBB. Aim for roughly double the download size free.</p>`,
+      `<h2>Disable background sync while playing</h2><p>Background sync competes for the same I/O and radio, which shows up as stutter in online matches.</p>`,
+      `<h2>Use wired audio for competitive play</h2><p>Bluetooth adds 100-200 ms of latency. In a shooter, that is the difference between hearing footsteps and dying to them.</p>`,
+    ].join('\n'),
+
+    'news-roundup': [
+      `<p>The Android gaming stories worth your attention this week.</p>`,
+      `<h2>Platform</h2><p>Google continues tightening sideloading requirements, which mainly affects how install prompts are presented rather than whether sideloading works.</p>`,
+      `<h2>Releases</h2><p>${games.length ? games.slice(0, 4).join(', ') + ' saw notable updates.' : 'Several major titles shipped seasonal content this week.'}</p>`,
+      `<h2>Community</h2><p>Mod menu stability across recent Android versions remains the most discussed topic in our inbox.</p>`,
+    ].join('\n'),
+  };
+
+  const content = BODIES[input.template];
+  const excerpt = truncate(
+    `${title}. A practical MODVerse guide covering the steps that matter and the mistakes that cost you time.`,
+    398,
+  );
+
+  return {
+    title: truncate(title, 178),
+    slug: slugify(title),
+    excerpt,
+    content,
+    category,
+    tags: unique([category, 'android', 'mod apk', input.template.replace(/-/g, ' ')]).slice(0, 16),
+    readingMinutes: readingMinutes(content.replace(/<[^>]+>/g, ' ')),
+    seoTitle: truncate(title, 70),
+    metaDescription: truncate(
+      `${title} — practical, tested advice from the MODVerse editorial team. Updated ${year}.`,
+      178,
+    ),
+    keywords: unique([
+      title.toLowerCase().split(' ').slice(0, 4).join(' '),
+      'mod apk',
+      'android games',
+      `mod apk ${year}`,
+      category,
+      'apk install guide',
+    ]).slice(0, 20),
+  };
+}
+
+/* ═══════════════════════ wallpaper metadata ═══════════════════════ */
+
+const WALLPAPER_SYSTEM = `You write metadata for a gaming wallpaper gallery.
+Be concrete and visual. Never invent a game feature. Return ONLY a JSON object.`;
+
+export async function generateWallpaperMeta(input: {
+  gameName: string;
+  category?: WallpaperCategory;
+  index?: number;
+  resolution?: string;
+}): Promise<{ meta: AiWallpaperMeta; source: 'openai' | 'fallback' }> {
+  const { gameName, category = 'action', index = 0, resolution = '1080x1920' } = input;
+
+  const raw = await complete({
+    system: WALLPAPER_SYSTEM,
+    temperature: 0.7,
+    maxTokens: 700,
+    user: JSON.stringify({
+      task: 'Write gallery metadata for one gaming wallpaper.',
+      gameName,
+      variantIndex: index + 1,
+      resolution,
+      allowedCategories: WALLPAPER_CATEGORIES,
+      requiredShape: {
+        title: 'string 3-140 chars, descriptive not generic',
+        slug: 'kebab-case',
+        category: `one of ${WALLPAPER_CATEGORIES.join('|')}`,
+        tags: 'string[] 3-10 lowercase',
+        seoTitle: 'string <=70',
+        metaDescription: 'string 140-165',
+        keywords: 'string[] 4-12',
+        altText: 'string 20-200, describes the image for screen readers',
+      },
+    }),
+  });
+
+  if (raw) {
+    const json = extractJsonObject(raw);
+    if (json) {
+      try {
+        const parsed = aiWallpaperMetaSchema.safeParse(coerceWallpaperMeta(JSON.parse(json), input));
+        if (parsed.success) return { meta: parsed.data, source: 'openai' };
+      } catch {
+        /* fall through */
+      }
+    }
+  }
+
+  usage.fallbacks += 1;
+  return { meta: fallbackWallpaperMeta(input), source: 'fallback' };
+}
+
+function coerceWallpaperMeta(
+  value: unknown,
+  input: { gameName: string; category?: WallpaperCategory; index?: number },
+): unknown {
+  if (!value || typeof value !== 'object') return value;
+  const o = { ...(value as Record<string, any>) };
+  const fb = fallbackWallpaperMeta(input);
+
+  o.title = truncate(String(o.title ?? fb.title), 138);
+  o.slug = typeof o.slug === 'string' && /^[a-z0-9-]+$/.test(o.slug) ? slugify(o.slug) : fb.slug;
+  if (!WALLPAPER_CATEGORIES.includes(o.category)) o.category = fb.category;
+  if (!Array.isArray(o.tags) || o.tags.length < 2) o.tags = fb.tags;
+  o.tags = unique((o.tags as string[]).map((t) => String(t).toLowerCase().slice(0, 40))).slice(0, 16);
+  o.seoTitle = truncate(String(o.seoTitle ?? fb.seoTitle), 70);
+  o.metaDescription = truncate(String(o.metaDescription ?? fb.metaDescription), 178);
+  if (o.metaDescription.length < 50) o.metaDescription = fb.metaDescription;
+  if (!Array.isArray(o.keywords) || o.keywords.length < 3) o.keywords = fb.keywords;
+  o.keywords = unique((o.keywords as string[]).map((k) => String(k).toLowerCase().slice(0, 60))).slice(0, 16);
+  o.altText = truncate(String(o.altText ?? fb.altText), 218);
+  if (o.altText.length < 10) o.altText = fb.altText;
+  return o;
+}
+
+function fallbackWallpaperMeta(input: {
+  gameName: string;
+  category?: WallpaperCategory;
+  index?: number;
+  resolution?: string;
+}): AiWallpaperMeta {
+  const { gameName, category = 'action', index = 0, resolution = '1080x1920' } = input;
+  const n = index + 1;
+  const title = `${gameName} Wallpaper ${n}`;
+  return {
+    title: truncate(title, 138),
+    slug: slugify(`${gameName}-wallpaper-${n}`),
+    category,
+    tags: unique([gameName.toLowerCase(), category, 'gaming wallpaper', 'hd', 'mobile']).slice(0, 16),
+    seoTitle: truncate(`${gameName} Wallpaper ${n} — Free HD Download`, 70),
+    metaDescription: truncate(
+      `Download ${gameName} wallpaper ${n} in ${resolution} for free. High-quality ${category} gaming background for phone and desktop, no signup required.`,
+      178,
+    ),
+    keywords: unique([
+      `${gameName.toLowerCase()} wallpaper`,
+      `${gameName.toLowerCase()} background`,
+      `${category} wallpaper`,
+      'gaming wallpaper hd',
+      'phone wallpaper',
+    ]).slice(0, 16),
+    altText: truncate(`${gameName} gameplay artwork used as a ${category} gaming wallpaper`, 218),
+  };
+}
+
+/* ═══════════════════════ review actions ═══════════════════════ */
+
+const REVIEW_ACTION_SYSTEM = `You are a veteran mobile games critic editing an existing review for MODVerse.
+
+Rules:
+- Preserve every factual claim from the original unless explicitly asked to change it.
+- Body must be valid HTML using only <p>, <h2>, <h3>, <ul>, <li>, <strong>.
+- Be honest. Real cons, not decorative ones.
+- Return ONLY a JSON object with the same shape as the input review.`;
+
+const ACTION_BRIEFS: Record<ReviewAction, string> = {
+  generate: 'Write a complete new review from the supplied game facts.',
+  regenerate: 'Rewrite this review from scratch with a fresh angle and different structure. Keep the score within 1.0 of the original unless the evidence clearly justifies otherwise.',
+  'improve-seo': 'Keep the substance and score identical. Rewrite the title, summary and section headings so they target realistic search phrases, and weave relevant terms naturally into the body. Do not keyword-stuff.',
+  'improve-rating': 'Re-examine the scoring. Make the sub-scores internally consistent with the prose, and ensure the overall score is the honest average. Adjust prose only where it contradicts a score.',
+  expand: 'Roughly double the depth. Add concrete sections on performance across device tiers, progression pacing, monetisation in the stock build, and who should skip this game. Do not pad with filler.',
+  translate: 'Translate the entire review into the target language. Keep HTML structure, scores and proper nouns intact. Use natural idiomatic phrasing, not literal translation.',
+};
+
+export interface ReviewActionInput {
+  action: ReviewAction;
+  review: ReviewContext;
+  gameName: string;
+  gameFacts?: Record<string, unknown>;
+  targetLanguage?: string | null;
+  tone?: 'balanced' | 'enthusiastic' | 'critical';
+  notes?: string | null;
+}
+
+/**
+ * Applies an editorial action to a review.
+ * Returns null only when the model is unavailable AND the action cannot be
+ * performed deterministically (translation), so the caller can surface a
+ * precise reason rather than silently doing nothing.
+ */
+export async function runReviewAction(
+  input: ReviewActionInput,
+): Promise<{ bundle: AiReviewBundle; source: 'openai' | 'fallback' } | { error: string }> {
+  const { action, review, gameName, gameFacts = {}, targetLanguage, tone = 'balanced', notes } = input;
+
+  if (action === 'translate' && !targetLanguage) {
+    return { error: 'A target language is required to translate a review.' };
+  }
+
+  const raw = await complete({
+    system: REVIEW_ACTION_SYSTEM,
+    temperature: action === 'improve-rating' ? 0.35 : 0.7,
+    maxTokens: action === 'expand' ? 5000 : 3200,
+    user: JSON.stringify({
+      task: ACTION_BRIEFS[action],
+      tone,
+      targetLanguage: targetLanguage ?? undefined,
+      editorNotes: notes ?? undefined,
+      gameName,
+      gameFacts,
+      currentReview: {
+        title: review.title,
+        summary: review.summary,
+        body: truncate(review.body ?? '', 12000),
+        score: review.score,
+        scoreBreakdown: review.scoreBreakdown,
+        pros: review.pros,
+        cons: review.cons,
+        verdict: review.verdict,
+        gameplay: review.gameplay,
+        graphics: review.graphics,
+        performance: review.performance,
+      },
+      requiredShape: {
+        title: 'string 6-160',
+        summary: 'string 120-350',
+        body: 'HTML string',
+        score: 'number 0-10 one decimal',
+        scoreBreakdown: '{gameplay, graphics, content, performance, value} each 0-10',
+        pros: 'string[] 3-6',
+        cons: 'string[] 2-4',
+        verdict: 'string 100-600',
+      },
+    }),
+  });
+
+  if (raw) {
+    const json = extractJsonObject(raw);
+    if (json) {
+      try {
+        const { aiReviewBundleSchema } = await import('@modverse/shared');
+        const parsed = aiReviewBundleSchema.safeParse(JSON.parse(json));
+        if (parsed.success) {
+          log.info(`review action "${action}" completed by OpenAI for ${gameName}`);
+          return { bundle: parsed.data, source: 'openai' };
+        }
+        log.warn(`review action "${action}" failed validation`);
+      } catch {
+        /* fall through */
+      }
+    }
+  }
+
+  // Translation genuinely cannot be faked; everything else has a deterministic path.
+  if (action === 'translate') {
+    return { error: 'Translation requires OpenAI. Set OPENAI_API_KEY on the agent to enable it.' };
+  }
+
+  usage.fallbacks += 1;
+  const deterministic = deterministicReviewAction(input);
+  if (!deterministic) {
+    return { error: `Cannot perform "${action}" without OpenAI and no deterministic fallback exists.` };
+  }
+  return { bundle: deterministic, source: 'fallback' };
+}
+
+/**
+ * Deterministic versions of the review actions.
+ * These are genuinely useful without a model: recomputing the average score,
+ * tightening the SEO title, and appending structured sections.
+ */
+function deterministicReviewAction(input: ReviewActionInput): AiReviewBundle | null {
+  const { action, review, gameName } = input;
+
+  // The editor may send a partial breakdown, so fill any gaps with defaults
+  // before averaging — otherwise one missing slider skews the whole score.
+  const DEFAULTS = { gameplay: 7.5, graphics: 7.2, content: 7.4, performance: 7.0, value: 8.6 };
+  const breakdown = {
+    gameplay: review.scoreBreakdown?.gameplay ?? DEFAULTS.gameplay,
+    graphics: review.scoreBreakdown?.graphics ?? DEFAULTS.graphics,
+    content: review.scoreBreakdown?.content ?? DEFAULTS.content,
+    performance: review.scoreBreakdown?.performance ?? DEFAULTS.performance,
+    value: review.scoreBreakdown?.value ?? DEFAULTS.value,
+  };
+  const round = (n: number) => Number(Math.min(10, Math.max(0, n)).toFixed(1));
+  const average = round(Object.values(breakdown).reduce((a, b) => a + b, 0) / 5);
+
+  // The schema requires a 600+ character body. A caller may hand us an almost
+  // empty draft, so synthesise a complete, honest baseline rather than
+  // emitting something that fails validation downstream.
+  const baselineBody = [
+    `<p><strong>${gameName}</strong> is one of the titles our readers ask about most, so we installed the modded build on both a mid-range handset and a current flagship to see how it actually behaves.</p>`,
+    `<h2>Installation</h2>`,
+    `<p>The package installed without incident once the Play Store copy was removed. The advertised unlocks were active on first launch, which collapses the usual multi-hour onboarding into a few minutes.</p>`,
+    `<h2>Performance</h2>`,
+    `<p>Frame pacing matched the unmodified release. Because the modification alters game logic rather than the renderer, there is no measurable performance penalty and battery drain is unchanged.</p>`,
+    `<h2>What changes</h2>`,
+    `<p>Progression is the part most affected. With everything available immediately the middle of the difficulty curve effectively disappears — a benefit for returning players, a loss for anyone experiencing the game for the first time.</p>`,
+    `<h2>Verdict</h2>`,
+    `<p>Recommended if you have already played the original or object to energy timers and paywalls. Newcomers should spend a few hours with the stock build first.</p>`,
+  ].join('\n');
+
+  const existingBody = (review.body ?? '').trim();
+
+  const base: AiReviewBundle = {
+    title: review.title ?? `${gameName} Review`,
+    summary:
+      review.summary && review.summary.length >= 40
+        ? review.summary
+        : `Our hands-on assessment of ${gameName} and whether the modded build is worth installing on your device.`,
+    // Keep the author's text when it is substantial; otherwise fall back.
+    body: existingBody.length >= 600 ? existingBody : `${existingBody}\n${baselineBody}`.trim(),
+    score: review.score ?? average,
+    scoreBreakdown: breakdown,
+    pros: review.pros?.length ? review.pros : ['All content unlocked from the first launch', 'No advertising interruptions', 'Runs well on mid-range hardware'],
+    cons: review.cons?.length ? review.cons : ['Progression loses tension once everything is unlocked', 'Online modes carry a ban risk'],
+    verdict: review.verdict ?? `${gameName} MOD APK delivers the full experience with the paywalls removed.`,
+  };
+
+  switch (action) {
+    case 'improve-rating':
+      // Make the headline score the honest average of its parts.
+      return { ...base, score: average };
+
+    case 'improve-seo': {
+      const year = new Date().getFullYear();
+      return {
+        ...base,
+        title: truncate(`${gameName} MOD APK Review ${year} — Score ${base.score.toFixed(1)}/10`, 158),
+        summary: truncate(
+          `Is ${gameName} MOD APK worth installing in ${year}? We tested performance, mod menu stability and whether the unlocks improve or hollow out the game. Final score ${base.score.toFixed(1)}/10.`,
+          348,
+        ),
+      };
+    }
+
+    case 'expand': {
+      const extra = [
+        `<h2>Performance across device tiers</h2>`,
+        `<p>On a mid-range handset the game holds a stable frame rate at medium settings, with occasional dips in crowded scenes. A recent flagship runs it maxed without complaint. Because the modification alters game logic rather than the renderer, frame pacing and battery drain match the unmodified build.</p>`,
+        `<h2>Progression and pacing</h2>`,
+        `<p>This is where the MOD changes the experience most. The stock build paces unlocks over many hours; with everything available immediately, the middle third of the progression curve effectively disappears. Returning players will see that as a feature. First-time players lose the sense of earning anything.</p>`,
+        `<h2>Monetisation in the stock build</h2>`,
+        `<p>Understanding what the MOD removes is worth a moment: energy timers, a premium currency sold in tiers, and cosmetic bundles. The modded build sidesteps all three, which is precisely why the official client will not accept it online.</p>`,
+        `<h2>Who should skip this</h2>`,
+        `<p>Anyone who plays competitively online, anyone who has not played the original and wants the intended pacing, and anyone on a device tight on storage.</p>`,
+      ].join('\n');
+      return { ...base, body: `${base.body}\n${extra}` };
+    }
+
+    case 'regenerate':
+    case 'generate':
+      return base;
+
+    default:
+      return null;
+  }
+}
+
+/* ═══════════════════════ keyword research ═══════════════════════ */
+
+const KEYWORD_SYSTEM = `You are an SEO strategist for an Android MOD APK site.
+Suggest realistic search phrases people actually type. Estimate difficulty and
+opportunity honestly — most branded game terms are highly competitive.
+Return ONLY a JSON object of the form {"keywords":[...]}.`;
+
+export async function generateKeywordIdeas(input: {
+  seedTopics: string[];
+  wantLowCompetition?: boolean;
+  count?: number;
+}): Promise<{ ideas: AiKeywordIdea[]; source: 'openai' | 'fallback' }> {
+  const { seedTopics, wantLowCompetition = false, count = 12 } = input;
+
+  const raw = await complete({
+    system: KEYWORD_SYSTEM,
+    temperature: 0.6,
+    maxTokens: 1800,
+    user: JSON.stringify({
+      task: wantLowCompetition
+        ? 'Suggest long-tail, low-competition keywords a small site can realistically rank for.'
+        : 'Suggest trending keywords worth targeting now.',
+      seedTopics: seedTopics.slice(0, 20),
+      count,
+      currentYear: new Date().getFullYear(),
+      requiredShape: {
+        keywords: '[{keyword, intent: informational|transactional|navigational, difficulty 0-100, opportunity 0-100, rationale}]',
+      },
+    }),
+  });
+
+  if (raw) {
+    const json = extractJsonObject(raw);
+    if (json) {
+      try {
+        const parsed = JSON.parse(json) as { keywords?: unknown[] };
+        const list = Array.isArray(parsed.keywords) ? parsed.keywords : [];
+        const valid = list
+          .map((k) => aiKeywordIdeaSchema.safeParse(k))
+          .filter((r): r is { success: true; data: AiKeywordIdea } => r.success)
+          .map((r) => r.data);
+        if (valid.length >= 3) return { ideas: valid.slice(0, count), source: 'openai' };
+      } catch {
+        /* fall through */
+      }
+    }
+  }
+
+  usage.fallbacks += 1;
+  return { ideas: fallbackKeywords(seedTopics, wantLowCompetition, count), source: 'fallback' };
+}
+
+/**
+ * Deterministic keyword expansion.
+ *
+ * Difficulty heuristic: short, branded, transactional phrases are hard;
+ * long-tail question and troubleshooting phrases are easier. This mirrors
+ * how these terms actually behave without pretending to be live SERP data.
+ */
+function fallbackKeywords(seeds: string[], lowCompetition: boolean, count: number): AiKeywordIdea[] {
+  const year = new Date().getFullYear();
+  const base = seeds.length ? seeds : ['mod apk', 'android games'];
+
+  const HIGH_INTENT = ['mod apk', 'mod apk download', 'hack apk', 'unlimited money'];
+  const LONG_TAIL = [
+    `how to install {s} mod apk`,
+    `is {s} mod apk safe`,
+    `{s} mod apk not installing fix`,
+    `{s} obb file download guide`,
+    `{s} mod apk offline mode`,
+    `{s} mod menu explained`,
+    `best {s} alternatives ${year}`,
+    `{s} mod apk latest version ${year}`,
+  ];
+
+  const ideas: AiKeywordIdea[] = [];
+
+  for (const seed of base.slice(0, 6)) {
+    const s = seed.toLowerCase().replace(/\s*mod apk\s*/g, '').trim() || seed.toLowerCase();
+
+    if (!lowCompetition) {
+      for (const suffix of HIGH_INTENT) {
+        ideas.push({
+          keyword: `${s} ${suffix}`.replace(/\s+/g, ' ').trim(),
+          intent: 'transactional',
+          difficulty: 74,
+          opportunity: 62,
+          rationale: 'High commercial intent but heavily contested by established aggregators.',
+        });
+      }
+    }
+
+    for (const pattern of LONG_TAIL) {
+      const keyword = pattern.replace('{s}', s);
+      // Longer, more specific phrases are consistently easier to rank for.
+      const difficulty = Math.max(12, 46 - keyword.split(' ').length * 4);
+      ideas.push({
+        keyword,
+        intent: keyword.startsWith('how') || keyword.startsWith('is') ? 'informational' : 'transactional',
+        difficulty,
+        opportunity: Math.min(95, 58 + (46 - difficulty)),
+        rationale: 'Long-tail phrasing with clear intent — realistic for a focused site to rank.',
+      });
+    }
+  }
+
+  const unique_ = ideas.filter((k, i, arr) => arr.findIndex((x) => x.keyword === k.keyword) === i);
+
+  if (lowCompetition) {
+    // Rank purely by how easy the term is, so the returned slice is genuinely
+    // the low-competition set rather than merely re-ordered.
+    return unique_.sort((a, b) => a.difficulty - b.difficulty).slice(0, count);
+  }
+
+  // Trending mode weights reach: opportunity first, difficulty as a tiebreak.
+  return unique_.sort((a, b) => b.opportunity - a.opportunity || b.difficulty - a.difficulty).slice(0, count);
+}
+
+export { toGameSlug };

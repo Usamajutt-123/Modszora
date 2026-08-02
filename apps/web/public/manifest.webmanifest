@@ -1,0 +1,54 @@
+{
+  "name": "MODVerse — Premium MOD APK Games",
+  "short_name": "MODVerse",
+  "description": "Download premium MOD APK games with unlimited money, unlocked features and mod menus.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070912",
+  "theme_color": "#070912",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Trending",
+      "url": "/collection/trending"
+    },
+    {
+      "name": "Latest Games",
+      "url": "/collection/latest"
+    },
+    {
+      "name": "Search",
+      "url": "/search"
+    }
+  ]
+}
