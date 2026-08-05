@@ -85,7 +85,7 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
   ]);
 
   const base = siteUrl();
-  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const pageUrl = `${base}/game/${game.slug}`;
 
   const crumbs: Crumb[] = [

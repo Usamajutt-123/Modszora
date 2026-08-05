@@ -4,8 +4,8 @@ import { Prose } from '@/components/ui';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Privacy Policy — MODVerse',
-  description: 'How MODVerse collects, uses and protects your data. We run no user accounts and collect the minimum necessary.',
+  title: 'Privacy Policy — MODSzora',
+  description: 'How MODSzora collects, uses and protects your data. We run no user accounts and collect the minimum necessary.',
   path: '/privacy',
 });
 
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
     <PageShell title="Privacy Policy" intro={`Last updated ${updated}.`} crumbs={[{ name: 'Privacy Policy', path: '/privacy' }]}>
       <Prose html={`
 <h2>Summary</h2>
-<p>MODVerse has no public user registration. We do not ask you to create an account, and we do not sell personal data. The sections below describe exactly what is collected and why.</p>
+<p>MODSzora has no public user registration. We do not ask you to create an account, and we do not sell personal data. The sections below describe exactly what is collected and why.</p>
 
 <h2>What we collect</h2>
 <ul>

@@ -12,7 +12,7 @@ import { z } from 'zod';
 
 const serverSchema = z.object({
   NEXT_PUBLIC_SITE_URL: z.string().url().default('http://localhost:3000'),
-  NEXT_PUBLIC_SITE_NAME: z.string().default('MODVerse'),
+  NEXT_PUBLIC_SITE_NAME: z.string().default('MODSzora'),
   NEXT_PUBLIC_SUPABASE_URL: z.string().url().optional(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(20).optional(),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(20).optional(),

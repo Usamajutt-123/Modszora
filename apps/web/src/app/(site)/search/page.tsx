@@ -19,10 +19,10 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const sp = await searchParams;
   const q = firstOf(sp.q);
   return buildMetadata({
-    title: q ? `Search results for “${q}” — MODVerse` : 'Advanced MOD APK Search',
+    title: q ? `Search results for “${q}” — MODSzora` : 'Advanced MOD APK Search',
     description: q
       ? `MOD APK games matching “${q}”. Filter by category, developer, Android version and rating.`
-      : 'Search the full MODVerse library with advanced filters: category, developer, Android version, genre, tags and rating.',
+      : 'Search the full MODSzora library with advanced filters: category, developer, Android version, genre, tags and rating.',
     path: '/search',
     // Search result pages should not be indexed — they create infinite crawl paths.
     noindex: true,

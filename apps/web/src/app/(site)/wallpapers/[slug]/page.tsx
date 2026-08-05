@@ -40,7 +40,7 @@ export default async function WallpaperPage({ params }: { params: Promise<{ slug
 
   const more = await listWallpapers({ category: wp.category, pageSize: 8 });
   const base = siteUrl();
-  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
 
   const crumbs: Crumb[] = [
     { name: 'Wallpapers', path: '/wallpapers' },
@@ -59,7 +59,7 @@ export default async function WallpaperPage({ params }: { params: Promise<{ slug
     encodingFormat: `image/${wp.image.format}`,
     license: `${base}/terms`,
     acquireLicensePage: `${base}/wallpapers/${wp.slug}`,
-    creditText: 'MODVerse',
+    creditText: 'MODSzora',
   };
 
   return (

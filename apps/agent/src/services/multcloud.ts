@@ -298,5 +298,5 @@ export async function multcloudHealth(): Promise<{ configured: boolean; reachabl
 export function buildApkFileName(gameName: string, version: string): string {
   const base = slugify(gameName, { maxLength: 60 });
   const ver = version.replace(/[^\w.]/g, '') || '1.0';
-  return `${base}-v${ver}-MODVerse.apk`;
+  return `${base}-v${ver}-MODSzora.apk`;
 }

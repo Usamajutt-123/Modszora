@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 /**
- * MODVerse design system.
+ * MODSzora design system.
  * Colours are driven by CSS custom properties so dark/light/auto theming
  * happens without duplicating a single utility class.
  */

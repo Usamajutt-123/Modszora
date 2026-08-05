@@ -54,7 +54,7 @@ export default async function WallpaperCategoryPage({
   ]);
 
   const label = slug.replace('-', ' ');
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [
     { name: 'Wallpapers', path: '/wallpapers' },
     { name: label, path: `/wallpapers/category/${slug}` },

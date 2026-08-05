@@ -27,7 +27,7 @@ export function SeoPanel({
   seo,
   onChange,
   path,
-  siteUrl = 'https://modverse.app',
+  siteUrl = 'https://modszora.app',
   onAutoFill,
   autoFillBusy,
 }: {

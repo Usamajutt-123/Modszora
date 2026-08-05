@@ -4,17 +4,17 @@ import { PageShell } from '@/components/layout/PageShell';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Contact MODVerse — Support & Requests',
-  description: 'Get in touch with MODVerse for game requests, broken links, bug reports, DMCA notices and partnership enquiries.',
+  title: 'Contact MODSzora — Support & Requests',
+  description: 'Get in touch with MODSzora for game requests, broken links, bug reports, DMCA notices and partnership enquiries.',
   path: '/contact',
-  keywords: ['contact modverse', 'mod apk support', 'request a game', 'report broken link'],
+  keywords: ['contact modszora', 'mod apk support', 'request a game', 'report broken link'],
 });
 
 const CHANNELS = [
-  { icon: Gamepad2, title: 'Game requests', body: 'Send the Play Store link and we will queue it for the ingestion agent.', to: 'requests@modverse.app' },
-  { icon: Bug, title: 'Broken download or bug', body: 'Include the game name, your Android version and what happened.', to: 'support@modverse.app' },
-  { icon: Scale, title: 'DMCA / takedown', body: 'Rights holders should follow the formal process on our DMCA page.', to: 'legal@modverse.app' },
-  { icon: Mail, title: 'Everything else', body: 'Partnerships, press and general enquiries.', to: 'hello@modverse.app' },
+  { icon: Gamepad2, title: 'Game requests', body: 'Send the Play Store link and we will queue it for the ingestion agent.', to: 'requests@modszora.app' },
+  { icon: Bug, title: 'Broken download or bug', body: 'Include the game name, your Android version and what happened.', to: 'support@modszora.app' },
+  { icon: Scale, title: 'DMCA / takedown', body: 'Rights holders should follow the formal process on our DMCA page.', to: 'legal@modszora.app' },
+  { icon: Mail, title: 'Everything else', body: 'Partnerships, press and general enquiries.', to: 'hello@modszora.app' },
 ];
 
 export default function ContactPage() {

@@ -1,5 +1,5 @@
 -- ═══════════════════════════════════════════════════════════════════
--- MODVerse — Row Level Security
+-- MODSzora — Row Level Security
 --
 -- Model: NO public user registration. The anon key may only READ
 -- published content. Every write goes through the service-role key

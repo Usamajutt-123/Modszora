@@ -58,7 +58,7 @@ export default async function ReviewPage({ params }: { params: Promise<{ slug: s
   ]);
 
   const base = siteUrl();
-  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [
     { name: 'Reviews', path: '/reviews' },
     { name: review.title, path: `/reviews/${review.slug}` },

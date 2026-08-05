@@ -28,7 +28,7 @@ import { env, siteUrl } from '@/lib/env';
 export const revalidate = 600; // ISR: refresh homepage every 10 minutes
 
 export const metadata: Metadata = buildMetadata({
-  title: 'MODVerse — Premium MOD APK Games for Android',
+  title: 'MODSzora — Premium MOD APK Games for Android',
   description:
     'Download premium MOD APK games with unlimited money, unlocked features and mod menus. Every APK is virus-scanned, signature-checked and version-tracked daily.',
   path: '/',
@@ -50,9 +50,9 @@ const HOMEPAGE_FAQS = [
       'A MOD APK is a modified version of an Android app package. Developers of the mod alter the original game to unlock premium content, remove advertising, or add a mod menu with gameplay toggles such as unlimited currency or god mode. The core game remains the same — only the restrictions change.',
   },
   {
-    question: 'Are MODVerse downloads safe?',
+    question: 'Are MODSzora downloads safe?',
     answer:
-      'Every APK published on MODVerse passes an automated pipeline: the file hash is recorded, the package signature is inspected, and the binary is scanned by multiple antivirus engines before the listing goes live. You can see the scan status and SHA-256 hash on each game page.',
+      'Every APK published on MODSzora passes an automated pipeline: the file hash is recorded, the package signature is inspected, and the binary is scanned by multiple antivirus engines before the listing goes live. You can see the scan status and SHA-256 hash on each game page.',
   },
   {
     question: 'Do I need to root my device?',
@@ -120,7 +120,7 @@ export default async function HomePage() {
   const totalDownloads = [...trending, ...popular].reduce((sum, g) => sum + g.downloads, 0);
   const updatedToday = recentlyUpdated.length || 8;
 
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const listLd = itemListJsonLd(
     ctx,
     trending.slice(0, 10).map((g) => ({ name: g.name, path: `/game/${g.slug}`, image: g.icon?.url })),
@@ -190,7 +190,7 @@ export default async function HomePage() {
           <div className="container">
             <SectionHeader
               title="Editor's Choice"
-              subtitle="Hand-picked by the MODVerse team"
+              subtitle="Hand-picked by the MODSzora team"
               href="/collection/editors-choice"
               icon={<Trophy className="h-5 w-5" />}
             />

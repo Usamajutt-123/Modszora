@@ -45,7 +45,7 @@ const schema = z.object({
   AGENT_REQUEST_DELAY_MS: z.coerce.number().int().min(250).max(120_000).default(2500),
   AGENT_MAX_RETRIES: z.coerce.number().int().min(1).max(10).default(3),
   AGENT_NAV_TIMEOUT_MS: z.coerce.number().int().min(5_000).max(180_000).default(45_000),
-  AGENT_USER_AGENT: z.string().default('MODVerseBot/1.0 (+https://modverse.app/bot)'),
+  AGENT_USER_AGENT: z.string().default('MODSzora/1.0 (+https://modszora.app/bot)'),
   AGENT_SOURCES_ENABLED: z.string().default(AGENT_SOURCES.join(',')),
 
   // Cron
@@ -61,7 +61,7 @@ const schema = z.object({
   MULTCLOUD_API_KEY: z.string().optional(),
   MULTCLOUD_API_BASE: z.string().url().default('https://api.multcloud.com/v1'),
   MULTCLOUD_MEGA_CLOUD_ID: z.string().optional(),
-  MULTCLOUD_TARGET_PATH: z.string().default('/MODVerse/APK'),
+  MULTCLOUD_TARGET_PATH: z.string().default('/MODSzora/APK'),
   MULTCLOUD_POLL_INTERVAL_MS: z.coerce.number().int().min(2000).default(10_000),
   MULTCLOUD_MAX_POLL_MS: z.coerce.number().int().min(60_000).default(1_800_000),
 

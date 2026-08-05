@@ -42,7 +42,7 @@ export const demoGames = [
     "downloads": 1813094,
     "views": 2355136,
     "shortDescription": "Dash through subways dodging trains in this record-breaking endless runner. MOD unlocks unlimited coins and unlimited keys.",
-    "description": "<p><strong>Subway Surfers MOD APK</strong> is the fully unlocked build of SYBO Games's arcade hit, rebuilt for players who want the complete experience without the grind. Dash through subways dodging trains in this record-breaking endless runner.</p>\n<h2>About Subway Surfers</h2>\n<p>Dash through subways dodging trains in this record-breaking endless runner. Since launch it has grown into one of the most-played endless runner titles on Android, and version 3.41.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, unlimited keys, all characters unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Subway Surfers MOD APK</strong> is the fully unlocked build of SYBO Games's arcade hit, rebuilt for players who want the complete experience without the grind. Dash through subways dodging trains in this record-breaking endless runner.</p>\n<h2>About Subway Surfers</h2>\n<p>Dash through subways dodging trains in this record-breaking endless runner. Since launch it has grown into one of the most-played endless runner titles on Android, and version 3.41.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, unlimited keys, all characters unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Coins",
       "Unlimited Keys",
@@ -51,7 +51,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v3.41.0\n• Reworked progression curve\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Subway Surfers-v3.41.0-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Subway Surfers-v3.41.0-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -132,7 +132,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/subway-surfers-mod-apk.apk",
+        "url": "https://mirror.modszora.app/subway-surfers-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 159383552,
         "isPrimary": false
@@ -155,7 +155,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Subway Surfers MOD APK safe to install?",
-        "answer": "Yes. Every Subway Surfers APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Subway Surfers APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Subway Surfers MOD APK?",
@@ -167,7 +167,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Subway Surfers MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 3.41.0 as of March 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 3.41.0 as of March 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -246,7 +246,7 @@ export const demoGames = [
     "downloads": 1062416,
     "views": 1345868,
     "shortDescription": "Build, mine and survive in the infinite blocky sandbox that defined a genre. MOD unlocks premium skins unlocked and unlimited resources.",
-    "description": "<p><strong>Minecraft MOD APK</strong> is the fully unlocked build of Mojang Studios's adventure hit, rebuilt for players who want the complete experience without the grind. Build, mine and survive in the infinite blocky sandbox that defined a genre.</p>\n<h2>About Minecraft</h2>\n<p>Build, mine and survive in the infinite blocky sandbox that defined a genre. Since launch it has grown into one of the most-played sandbox titles on Android, and version 1.21.44 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: premium skins unlocked, unlimited resources, god mode and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Minecraft MOD APK</strong> is the fully unlocked build of Mojang Studios's adventure hit, rebuilt for players who want the complete experience without the grind. Build, mine and survive in the infinite blocky sandbox that defined a genre.</p>\n<h2>About Minecraft</h2>\n<p>Build, mine and survive in the infinite blocky sandbox that defined a genre. Since launch it has grown into one of the most-played sandbox titles on Android, and version 1.21.44 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: premium skins unlocked, unlimited resources, god mode and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Premium Skins Unlocked",
       "Unlimited Resources",
@@ -255,7 +255,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.21.44\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Minecraft-v1.21.44-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Minecraft-v1.21.44-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -336,7 +336,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/minecraft-mod-apk.apk",
+        "url": "https://mirror.modszora.app/minecraft-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 781189120,
         "isPrimary": false
@@ -359,7 +359,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Minecraft MOD APK safe to install?",
-        "answer": "Yes. Every Minecraft APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Minecraft APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Minecraft MOD APK?",
@@ -371,7 +371,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Minecraft MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.21.44 as of April 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.21.44 as of April 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -450,7 +450,7 @@ export const demoGames = [
     "downloads": 3885254,
     "views": 4669412,
     "shortDescription": "Inherit a run-down farm and rebuild it into a thriving countryside empire. MOD unlocks unlimited money and max energy.",
-    "description": "<p><strong>Stardew Valley MOD APK</strong> is the fully unlocked build of ConcernedApe's simulation hit, rebuilt for players who want the complete experience without the grind. Inherit a run-down farm and rebuild it into a thriving countryside empire.</p>\n<h2>About Stardew Valley</h2>\n<p>Inherit a run-down farm and rebuild it into a thriving countryside empire. Since launch it has grown into one of the most-played farming titles on Android, and version 1.6.14 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited money, max energy, all seeds unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Stardew Valley MOD APK</strong> is the fully unlocked build of ConcernedApe's simulation hit, rebuilt for players who want the complete experience without the grind. Inherit a run-down farm and rebuild it into a thriving countryside empire.</p>\n<h2>About Stardew Valley</h2>\n<p>Inherit a run-down farm and rebuild it into a thriving countryside empire. Since launch it has grown into one of the most-played farming titles on Android, and version 1.6.14 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited money, max energy, all seeds unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Money",
       "Max Energy",
@@ -459,7 +459,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.6.14\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Stardew Valley-v1.6.14-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Stardew Valley-v1.6.14-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -540,7 +540,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/stardew-valley-mod-apk.apk",
+        "url": "https://mirror.modszora.app/stardew-valley-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 403701760,
         "isPrimary": false
@@ -563,7 +563,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Stardew Valley MOD APK safe to install?",
-        "answer": "Yes. Every Stardew Valley APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Stardew Valley APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Stardew Valley MOD APK?",
@@ -575,7 +575,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Stardew Valley MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.6.14 as of June 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.6.14 as of June 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -653,7 +653,7 @@ export const demoGames = [
     "downloads": 1740896,
     "views": 2438795,
     "shortDescription": "Drive 200+ licensed hypercars through cinematic arcade racing spectacle. MOD unlocks unlimited tokens and all cars unlocked.",
-    "description": "<p><strong>Asphalt 9 Legends MOD APK</strong> is the fully unlocked build of Gameloft's racing hit, rebuilt for players who want the complete experience without the grind. Drive 200+ licensed hypercars through cinematic arcade racing spectacle.</p>\n<h2>About Asphalt 9 Legends</h2>\n<p>Drive 200+ licensed hypercars through cinematic arcade racing spectacle. Since launch it has grown into one of the most-played arcade racing titles on Android, and version 4.9.1a refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited tokens, all cars unlocked, nitro never ends and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Asphalt 9 Legends MOD APK</strong> is the fully unlocked build of Gameloft's racing hit, rebuilt for players who want the complete experience without the grind. Drive 200+ licensed hypercars through cinematic arcade racing spectacle.</p>\n<h2>About Asphalt 9 Legends</h2>\n<p>Drive 200+ licensed hypercars through cinematic arcade racing spectacle. Since launch it has grown into one of the most-played arcade racing titles on Android, and version 4.9.1a refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited tokens, all cars unlocked, nitro never ends and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Tokens",
       "All Cars Unlocked",
@@ -662,7 +662,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v4.9.1a\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Asphalt 9 Legends-v4.9.1a-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Asphalt 9 Legends-v4.9.1a-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -743,7 +743,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/asphalt-9-legends-mod-apk.apk",
+        "url": "https://mirror.modszora.app/asphalt-9-legends-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 2569011200,
         "isPrimary": false
@@ -766,7 +766,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Asphalt 9 Legends MOD APK safe to install?",
-        "answer": "Yes. Every Asphalt 9 Legends APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Asphalt 9 Legends APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Asphalt 9 Legends MOD APK?",
@@ -778,7 +778,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Asphalt 9 Legends MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 4.9.1a as of June 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 4.9.1a as of June 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -856,7 +856,7 @@ export const demoGames = [
     "downloads": 4052044,
     "views": 4851216,
     "shortDescription": "Find the impostor aboard your spaceship before the crew is picked off. MOD unlocks all skins unlocked and all pets unlocked.",
-    "description": "<p><strong>Among Us MOD APK</strong> is the fully unlocked build of InnerSloth LLC's casual hit, rebuilt for players who want the complete experience without the grind. Find the impostor aboard your spaceship before the crew is picked off.</p>\n<h2>About Among Us</h2>\n<p>Find the impostor aboard your spaceship before the crew is picked off. Since launch it has grown into one of the most-played social deduction titles on Android, and version 2024.11.26 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: all skins unlocked, all pets unlocked, always impostor and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Among Us MOD APK</strong> is the fully unlocked build of InnerSloth LLC's casual hit, rebuilt for players who want the complete experience without the grind. Find the impostor aboard your spaceship before the crew is picked off.</p>\n<h2>About Among Us</h2>\n<p>Find the impostor aboard your spaceship before the crew is picked off. Since launch it has grown into one of the most-played social deduction titles on Android, and version 2024.11.26 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: all skins unlocked, all pets unlocked, always impostor and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "All Skins Unlocked",
       "All Pets Unlocked",
@@ -865,7 +865,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v2024.11.26\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Among Us-v2024.11.26-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Among Us-v2024.11.26-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -946,7 +946,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/among-us-mod-apk.apk",
+        "url": "https://mirror.modszora.app/among-us-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 249561088,
         "isPrimary": false
@@ -969,7 +969,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Among Us MOD APK safe to install?",
-        "answer": "Yes. Every Among Us APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Among Us APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Among Us MOD APK?",
@@ -981,7 +981,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Among Us MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 2024.11.26 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 2024.11.26 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -1059,7 +1059,7 @@ export const demoGames = [
     "downloads": 553019,
     "views": 741526,
     "shortDescription": "Build your village, train troops and raid rivals in the classic strategy war. MOD unlocks unlimited gems and unlimited gold.",
-    "description": "<p><strong>Clash of Clans MOD APK</strong> is the fully unlocked build of Supercell's strategy hit, rebuilt for players who want the complete experience without the grind. Build your village, train troops and raid rivals in the classic strategy war.</p>\n<h2>About Clash of Clans</h2>\n<p>Build your village, train troops and raid rivals in the classic strategy war. Since launch it has grown into one of the most-played base building titles on Android, and version 16.386.16 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gems, unlimited gold, unlimited elixir and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Clash of Clans MOD APK</strong> is the fully unlocked build of Supercell's strategy hit, rebuilt for players who want the complete experience without the grind. Build your village, train troops and raid rivals in the classic strategy war.</p>\n<h2>About Clash of Clans</h2>\n<p>Build your village, train troops and raid rivals in the classic strategy war. Since launch it has grown into one of the most-played base building titles on Android, and version 16.386.16 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gems, unlimited gold, unlimited elixir and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Gems",
       "Unlimited Gold",
@@ -1068,7 +1068,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v16.386.16\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Clash of Clans-v16.386.16-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Clash of Clans-v16.386.16-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -1149,7 +1149,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/clash-of-clans-mod-apk.apk",
+        "url": "https://mirror.modszora.app/clash-of-clans-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 403701760,
         "isPrimary": false
@@ -1172,7 +1172,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Clash of Clans MOD APK safe to install?",
-        "answer": "Yes. Every Clash of Clans APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Clash of Clans APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Clash of Clans MOD APK?",
@@ -1184,7 +1184,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Clash of Clans MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 16.386.16 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 16.386.16 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -1262,7 +1262,7 @@ export const demoGames = [
     "downloads": 2450414,
     "views": 3190081,
     "shortDescription": "Guide a silent princess through impossible Escher-inspired architecture. MOD unlocks full game unlocked and all chapters.",
-    "description": "<p><strong>Monument Valley 3 MOD APK</strong> is the fully unlocked build of ustwo games's puzzle hit, rebuilt for players who want the complete experience without the grind. Guide a silent princess through impossible Escher-inspired architecture.</p>\n<h2>About Monument Valley 3</h2>\n<p>Guide a silent princess through impossible Escher-inspired architecture. Since launch it has grown into one of the most-played puzzle titles on Android, and version 1.2.9 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: full game unlocked, all chapters, no ads and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Monument Valley 3 MOD APK</strong> is the fully unlocked build of ustwo games's puzzle hit, rebuilt for players who want the complete experience without the grind. Guide a silent princess through impossible Escher-inspired architecture.</p>\n<h2>About Monument Valley 3</h2>\n<p>Guide a silent princess through impossible Escher-inspired architecture. Since launch it has grown into one of the most-played puzzle titles on Android, and version 1.2.9 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: full game unlocked, all chapters, no ads and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Full Game Unlocked",
       "All Chapters",
@@ -1271,7 +1271,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.2.9\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Monument Valley 3-v1.2.9-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Monument Valley 3-v1.2.9-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -1352,7 +1352,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/monument-valley-3-mod-apk.apk",
+        "url": "https://mirror.modszora.app/monument-valley-3-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 650117120,
         "isPrimary": false
@@ -1375,7 +1375,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Monument Valley 3 MOD APK safe to install?",
-        "answer": "Yes. Every Monument Valley 3 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Monument Valley 3 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Monument Valley 3 MOD APK?",
@@ -1387,7 +1387,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Monument Valley 3 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.2.9 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.2.9 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -1465,7 +1465,7 @@ export const demoGames = [
     "downloads": 4017903,
     "views": 4285380,
     "shortDescription": "A brutal roguevania where every death teaches and every run feels fresh. MOD unlocks all weapons unlocked and unlimited cells.",
-    "description": "<p><strong>Dead Cells MOD APK</strong> is the fully unlocked build of Playdigious's action hit, rebuilt for players who want the complete experience without the grind. A brutal roguevania where every death teaches and every run feels fresh.</p>\n<h2>About Dead Cells</h2>\n<p>A brutal roguevania where every death teaches and every run feels fresh. Since launch it has grown into one of the most-played roguelike titles on Android, and version 3.5.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: all weapons unlocked, unlimited cells, god mode and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Dead Cells MOD APK</strong> is the fully unlocked build of Playdigious's action hit, rebuilt for players who want the complete experience without the grind. A brutal roguevania where every death teaches and every run feels fresh.</p>\n<h2>About Dead Cells</h2>\n<p>A brutal roguevania where every death teaches and every run feels fresh. Since launch it has grown into one of the most-played roguelike titles on Android, and version 3.5.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: all weapons unlocked, unlimited cells, god mode and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "All Weapons Unlocked",
       "Unlimited Cells",
@@ -1474,7 +1474,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v3.5.2\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Dead Cells-v3.5.2-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Dead Cells-v3.5.2-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -1555,7 +1555,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/dead-cells-mod-apk.apk",
+        "url": "https://mirror.modszora.app/dead-cells-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 1237319680,
         "isPrimary": false
@@ -1578,7 +1578,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Dead Cells MOD APK safe to install?",
-        "answer": "Yes. Every Dead Cells APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Dead Cells APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Dead Cells MOD APK?",
@@ -1590,7 +1590,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Dead Cells MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 3.5.2 as of May 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 3.5.2 as of May 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -1667,7 +1667,7 @@ export const demoGames = [
     "downloads": 4592001,
     "views": 5178392,
     "shortDescription": "Drop into a 100-player battle royale and be the last squad standing. MOD unlocks aimbot menu and no recoil.",
-    "description": "<p><strong>PUBG Mobile MOD APK</strong> is the fully unlocked build of Level Infinite's shooter hit, rebuilt for players who want the complete experience without the grind. Drop into a 100-player battle royale and be the last squad standing.</p>\n<h2>About PUBG Mobile</h2>\n<p>Drop into a 100-player battle royale and be the last squad standing. Since launch it has grown into one of the most-played battle royale titles on Android, and version 3.6.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: aimbot menu, no recoil, wallhack and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>PUBG Mobile MOD APK</strong> is the fully unlocked build of Level Infinite's shooter hit, rebuilt for players who want the complete experience without the grind. Drop into a 100-player battle royale and be the last squad standing.</p>\n<h2>About PUBG Mobile</h2>\n<p>Drop into a 100-player battle royale and be the last squad standing. Since launch it has grown into one of the most-played battle royale titles on Android, and version 3.6.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: aimbot menu, no recoil, wallhack and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Aimbot Menu",
       "No Recoil",
@@ -1676,7 +1676,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v3.6.0\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for PUBG Mobile-v3.6.0-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for PUBG Mobile-v3.6.0-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -1757,7 +1757,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/pubg-mobile-mod-apk.apk",
+        "url": "https://mirror.modszora.app/pubg-mobile-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 1981808640,
         "isPrimary": false
@@ -1780,7 +1780,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is PUBG Mobile MOD APK safe to install?",
-        "answer": "Yes. Every PUBG Mobile APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every PUBG Mobile APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run PUBG Mobile MOD APK?",
@@ -1792,7 +1792,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update PUBG Mobile MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 3.6.0 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 3.6.0 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -1869,7 +1869,7 @@ export const demoGames = [
     "downloads": 1102813,
     "views": 1581122,
     "shortDescription": "Explore the vast anime fantasy world of Teyvat with elemental combat. MOD unlocks unlimited primogems and all characters.",
-    "description": "<p><strong>Genshin Impact MOD APK</strong> is the fully unlocked build of HoYoverse's rpg hit, rebuilt for players who want the complete experience without the grind. Explore the vast anime fantasy world of Teyvat with elemental combat.</p>\n<h2>About Genshin Impact</h2>\n<p>Explore the vast anime fantasy world of Teyvat with elemental combat. Since launch it has grown into one of the most-played open world titles on Android, and version 5.3.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited primogems, all characters, damage multiplier and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Genshin Impact MOD APK</strong> is the fully unlocked build of HoYoverse's rpg hit, rebuilt for players who want the complete experience without the grind. Explore the vast anime fantasy world of Teyvat with elemental combat.</p>\n<h2>About Genshin Impact</h2>\n<p>Explore the vast anime fantasy world of Teyvat with elemental combat. Since launch it has grown into one of the most-played open world titles on Android, and version 5.3.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited primogems, all characters, damage multiplier and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Primogems",
       "All Characters",
@@ -1878,7 +1878,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v5.3.0\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Genshin Impact-v5.3.0-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Genshin Impact-v5.3.0-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -1959,7 +1959,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/genshin-impact-mod-apk.apk",
+        "url": "https://mirror.modszora.app/genshin-impact-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 4404019200,
         "isPrimary": false
@@ -1982,7 +1982,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Genshin Impact MOD APK safe to install?",
-        "answer": "Yes. Every Genshin Impact APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Genshin Impact APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Genshin Impact MOD APK?",
@@ -1994,7 +1994,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Genshin Impact MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 5.3.0 as of December 2025."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 5.3.0 as of December 2025."
       },
       {
         "question": "Why did the installation fail?",
@@ -2070,7 +2070,7 @@ export const demoGames = [
     "downloads": 4508200,
     "views": 5384117,
     "shortDescription": "Build your ultimate football squad and compete in live events. MOD unlocks unlimited coins and all players unlocked.",
-    "description": "<p><strong>FIFA Soccer MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's sports hit, rebuilt for players who want the complete experience without the grind. Build your ultimate football squad and compete in live events.</p>\n<h2>About FIFA Soccer</h2>\n<p>Build your ultimate football squad and compete in live events. Since launch it has grown into one of the most-played football titles on Android, and version 23.0.05 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all players unlocked, max stats and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>FIFA Soccer MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's sports hit, rebuilt for players who want the complete experience without the grind. Build your ultimate football squad and compete in live events.</p>\n<h2>About FIFA Soccer</h2>\n<p>Build your ultimate football squad and compete in live events. Since launch it has grown into one of the most-played football titles on Android, and version 23.0.05 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all players unlocked, max stats and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Coins",
       "All Players Unlocked",
@@ -2079,7 +2079,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v23.0.05\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for FIFA Soccer-v23.0.05-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for FIFA Soccer-v23.0.05-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -2160,7 +2160,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/fifa-soccer-mod-apk.apk",
+        "url": "https://mirror.modszora.app/fifa-soccer-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 1488977920,
         "isPrimary": false
@@ -2183,7 +2183,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is FIFA Soccer MOD APK safe to install?",
-        "answer": "Yes. Every FIFA Soccer APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every FIFA Soccer APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run FIFA Soccer MOD APK?",
@@ -2195,7 +2195,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update FIFA Soccer MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 23.0.05 as of June 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 23.0.05 as of June 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -2272,7 +2272,7 @@ export const demoGames = [
     "downloads": 3164945,
     "views": 3840283,
     "shortDescription": "Physics-based uphill racing with wildly upgradeable vehicles. MOD unlocks unlimited coins and all vehicles.",
-    "description": "<p><strong>Hill Climb Racing 2 MOD APK</strong> is the fully unlocked build of Fingersoft's racing hit, rebuilt for players who want the complete experience without the grind. Physics-based uphill racing with wildly upgradeable vehicles.</p>\n<h2>About Hill Climb Racing 2</h2>\n<p>Physics-based uphill racing with wildly upgradeable vehicles. Since launch it has grown into one of the most-played physics titles on Android, and version 1.61.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all vehicles, max upgrades and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Hill Climb Racing 2 MOD APK</strong> is the fully unlocked build of Fingersoft's racing hit, rebuilt for players who want the complete experience without the grind. Physics-based uphill racing with wildly upgradeable vehicles.</p>\n<h2>About Hill Climb Racing 2</h2>\n<p>Physics-based uphill racing with wildly upgradeable vehicles. Since launch it has grown into one of the most-played physics titles on Android, and version 1.61.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all vehicles, max upgrades and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Coins",
       "All Vehicles",
@@ -2281,7 +2281,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.61.1\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Hill Climb Racing 2-v1.61.1-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Hill Climb Racing 2-v1.61.1-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -2362,7 +2362,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/hill-climb-racing-2-mod-apk.apk",
+        "url": "https://mirror.modszora.app/hill-climb-racing-2-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 176160768,
         "isPrimary": false
@@ -2385,7 +2385,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Hill Climb Racing 2 MOD APK safe to install?",
-        "answer": "Yes. Every Hill Climb Racing 2 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Hill Climb Racing 2 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Hill Climb Racing 2 MOD APK?",
@@ -2397,7 +2397,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Hill Climb Racing 2 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.61.1 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.61.1 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -2474,7 +2474,7 @@ export const demoGames = [
     "downloads": 1554050,
     "views": 2446192,
     "shortDescription": "Defend your lawn across time periods with an arsenal of plants. MOD unlocks unlimited coins and unlimited gems.",
-    "description": "<p><strong>Plants vs Zombies 2 MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's strategy hit, rebuilt for players who want the complete experience without the grind. Defend your lawn across time periods with an arsenal of plants.</p>\n<h2>About Plants vs Zombies 2</h2>\n<p>Defend your lawn across time periods with an arsenal of plants. Since launch it has grown into one of the most-played tower defense titles on Android, and version 11.6.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, unlimited gems, all plants unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Plants vs Zombies 2 MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's strategy hit, rebuilt for players who want the complete experience without the grind. Defend your lawn across time periods with an arsenal of plants.</p>\n<h2>About Plants vs Zombies 2</h2>\n<p>Defend your lawn across time periods with an arsenal of plants. Since launch it has grown into one of the most-played tower defense titles on Android, and version 11.6.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, unlimited gems, all plants unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Coins",
       "Unlimited Gems",
@@ -2483,7 +2483,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v11.6.1\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Plants vs Zombies 2-v11.6.1-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Plants vs Zombies 2-v11.6.1-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -2564,7 +2564,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/plants-vs-zombies-2-mod-apk.apk",
+        "url": "https://mirror.modszora.app/plants-vs-zombies-2-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 964689920,
         "isPrimary": false
@@ -2587,7 +2587,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Plants vs Zombies 2 MOD APK safe to install?",
-        "answer": "Yes. Every Plants vs Zombies 2 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Plants vs Zombies 2 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Plants vs Zombies 2 MOD APK?",
@@ -2599,7 +2599,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Plants vs Zombies 2 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 11.6.1 as of February 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 11.6.1 as of February 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -2677,7 +2677,7 @@ export const demoGames = [
     "downloads": 3355419,
     "views": 3464244,
     "shortDescription": "A serene endless sandboarding journey across dunes and temples. MOD unlocks unlimited coins and all characters.",
-    "description": "<p><strong>Alto’s Odyssey MOD APK</strong> is the fully unlocked build of Noodlecake's arcade hit, rebuilt for players who want the complete experience without the grind. A serene endless sandboarding journey across dunes and temples.</p>\n<h2>About Alto’s Odyssey</h2>\n<p>A serene endless sandboarding journey across dunes and temples. Since launch it has grown into one of the most-played endless titles on Android, and version 1.0.30 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all characters, no ads and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Alto’s Odyssey MOD APK</strong> is the fully unlocked build of Noodlecake's arcade hit, rebuilt for players who want the complete experience without the grind. A serene endless sandboarding journey across dunes and temples.</p>\n<h2>About Alto’s Odyssey</h2>\n<p>A serene endless sandboarding journey across dunes and temples. Since launch it has grown into one of the most-played endless titles on Android, and version 1.0.30 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all characters, no ads and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Coins",
       "All Characters",
@@ -2686,7 +2686,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.0.30\n• Reworked progression curve\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Alto’s Odyssey-v1.0.30-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Alto’s Odyssey-v1.0.30-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -2767,7 +2767,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/altos-odyssey-mod-apk.apk",
+        "url": "https://mirror.modszora.app/altos-odyssey-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 193986560,
         "isPrimary": false
@@ -2790,7 +2790,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Alto’s Odyssey MOD APK safe to install?",
-        "answer": "Yes. Every Alto’s Odyssey APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Alto’s Odyssey APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Alto’s Odyssey MOD APK?",
@@ -2802,7 +2802,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Alto’s Odyssey MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.0.30 as of February 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.0.30 as of February 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -2879,7 +2879,7 @@ export const demoGames = [
     "downloads": 2960718,
     "views": 3175258,
     "shortDescription": "Cinematic 3D fighting with deep martial arts combos and hero collecting. MOD unlocks unlimited gems and all heroes unlocked.",
-    "description": "<p><strong>Shadow Fight 4 MOD APK</strong> is the fully unlocked build of NEKKI's action hit, rebuilt for players who want the complete experience without the grind. Cinematic 3D fighting with deep martial arts combos and hero collecting.</p>\n<h2>About Shadow Fight 4</h2>\n<p>Cinematic 3D fighting with deep martial arts combos and hero collecting. Since launch it has grown into one of the most-played fighting titles on Android, and version 1.9.12 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gems, all heroes unlocked, max level and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Shadow Fight 4 MOD APK</strong> is the fully unlocked build of NEKKI's action hit, rebuilt for players who want the complete experience without the grind. Cinematic 3D fighting with deep martial arts combos and hero collecting.</p>\n<h2>About Shadow Fight 4</h2>\n<p>Cinematic 3D fighting with deep martial arts combos and hero collecting. Since launch it has grown into one of the most-played fighting titles on Android, and version 1.9.12 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gems, all heroes unlocked, max level and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Gems",
       "All Heroes Unlocked",
@@ -2888,7 +2888,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.9.12\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Shadow Fight 4-v1.9.12-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Shadow Fight 4-v1.9.12-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -2969,7 +2969,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/shadow-fight-4-mod-apk.apk",
+        "url": "https://mirror.modszora.app/shadow-fight-4-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 817889280,
         "isPrimary": false
@@ -2992,7 +2992,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Shadow Fight 4 MOD APK safe to install?",
-        "answer": "Yes. Every Shadow Fight 4 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Shadow Fight 4 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Shadow Fight 4 MOD APK?",
@@ -3004,7 +3004,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Shadow Fight 4 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.9.12 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.9.12 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -3080,7 +3080,7 @@ export const demoGames = [
     "downloads": 3134194,
     "views": 3430854,
     "shortDescription": "Create Sims, design homes and script the lives you always wanted. MOD unlocks unlimited simoleons and unlimited cash.",
-    "description": "<p><strong>The Sims Mobile MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's simulation hit, rebuilt for players who want the complete experience without the grind. Create Sims, design homes and script the lives you always wanted.</p>\n<h2>About The Sims Mobile</h2>\n<p>Create Sims, design homes and script the lives you always wanted. Since launch it has grown into one of the most-played life sim titles on Android, and version 45.0.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited simoleons, unlimited cash, all items unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>The Sims Mobile MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's simulation hit, rebuilt for players who want the complete experience without the grind. Create Sims, design homes and script the lives you always wanted.</p>\n<h2>About The Sims Mobile</h2>\n<p>Create Sims, design homes and script the lives you always wanted. Since launch it has grown into one of the most-played life sim titles on Android, and version 45.0.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited simoleons, unlimited cash, all items unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Simoleons",
       "Unlimited Cash",
@@ -3089,7 +3089,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v45.0.1\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for The Sims Mobile-v45.0.1-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for The Sims Mobile-v45.0.1-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -3170,7 +3170,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/the-sims-mobile-mod-apk.apk",
+        "url": "https://mirror.modszora.app/the-sims-mobile-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 671088640,
         "isPrimary": false
@@ -3193,7 +3193,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is The Sims Mobile MOD APK safe to install?",
-        "answer": "Yes. Every The Sims Mobile APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every The Sims Mobile APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run The Sims Mobile MOD APK?",
@@ -3205,7 +3205,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update The Sims Mobile MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 45.0.1 as of May 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 45.0.1 as of May 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -3282,7 +3282,7 @@ export const demoGames = [
     "downloads": 1769069,
     "views": 2106251,
     "shortDescription": "Fast 3v3 brawls and battle royale with a huge roster of characters. MOD unlocks unlimited gems and all brawlers.",
-    "description": "<p><strong>Brawl Stars MOD APK</strong> is the fully unlocked build of Supercell's shooter hit, rebuilt for players who want the complete experience without the grind. Fast 3v3 brawls and battle royale with a huge roster of characters.</p>\n<h2>About Brawl Stars</h2>\n<p>Fast 3v3 brawls and battle royale with a huge roster of characters. Since launch it has grown into one of the most-played moba titles on Android, and version 59.197 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gems, all brawlers, max power level and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Brawl Stars MOD APK</strong> is the fully unlocked build of Supercell's shooter hit, rebuilt for players who want the complete experience without the grind. Fast 3v3 brawls and battle royale with a huge roster of characters.</p>\n<h2>About Brawl Stars</h2>\n<p>Fast 3v3 brawls and battle royale with a huge roster of characters. Since launch it has grown into one of the most-played moba titles on Android, and version 59.197 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gems, all brawlers, max power level and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Gems",
       "All Brawlers",
@@ -3291,7 +3291,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v59.197\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Brawl Stars-v59.197-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Brawl Stars-v59.197-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -3372,7 +3372,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/brawl-stars-mod-apk.apk",
+        "url": "https://mirror.modszora.app/brawl-stars-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 440401920,
         "isPrimary": false
@@ -3395,7 +3395,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Brawl Stars MOD APK safe to install?",
-        "answer": "Yes. Every Brawl Stars APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Brawl Stars APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Brawl Stars MOD APK?",
@@ -3407,7 +3407,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Brawl Stars MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 59.197 as of December 2025."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 59.197 as of December 2025."
       },
       {
         "question": "Why did the installation fail?",
@@ -3484,7 +3484,7 @@ export const demoGames = [
     "downloads": 3752031,
     "views": 3969953,
     "shortDescription": "Dig, fight and build across a procedurally generated 2D world. MOD unlocks full version unlocked and unlimited items.",
-    "description": "<p><strong>Terraria MOD APK</strong> is the fully unlocked build of 505 Games's adventure hit, rebuilt for players who want the complete experience without the grind. Dig, fight and build across a procedurally generated 2D world.</p>\n<h2>About Terraria</h2>\n<p>Dig, fight and build across a procedurally generated 2D world. Since launch it has grown into one of the most-played sandbox titles on Android, and version 1.4.4.9.6 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: full version unlocked, unlimited items, god mode and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Terraria MOD APK</strong> is the fully unlocked build of 505 Games's adventure hit, rebuilt for players who want the complete experience without the grind. Dig, fight and build across a procedurally generated 2D world.</p>\n<h2>About Terraria</h2>\n<p>Dig, fight and build across a procedurally generated 2D world. Since launch it has grown into one of the most-played sandbox titles on Android, and version 1.4.4.9.6 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: full version unlocked, unlimited items, god mode and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Full Version Unlocked",
       "Unlimited Items",
@@ -3493,7 +3493,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.4.4.9.6\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Terraria-v1.4.4.9.6-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Terraria-v1.4.4.9.6-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -3574,7 +3574,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/terraria-mod-apk.apk",
+        "url": "https://mirror.modszora.app/terraria-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 204472320,
         "isPrimary": false
@@ -3597,7 +3597,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Terraria MOD APK safe to install?",
-        "answer": "Yes. Every Terraria APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Terraria APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Terraria MOD APK?",
@@ -3609,7 +3609,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Terraria MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.4.4.9.6 as of February 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.4.4.9.6 as of February 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -3685,7 +3685,7 @@ export const demoGames = [
     "downloads": 4256223,
     "views": 5152975,
     "shortDescription": "Console-grade racing simulation with real tracks and licensed cars. MOD unlocks unlimited money and unlimited gold.",
-    "description": "<p><strong>Real Racing 3 MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's racing hit, rebuilt for players who want the complete experience without the grind. Console-grade racing simulation with real tracks and licensed cars.</p>\n<h2>About Real Racing 3</h2>\n<p>Console-grade racing simulation with real tracks and licensed cars. Since launch it has grown into one of the most-played simulation titles on Android, and version 12.6.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited money, unlimited gold, all cars unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Real Racing 3 MOD APK</strong> is the fully unlocked build of ELECTRONIC ARTS's racing hit, rebuilt for players who want the complete experience without the grind. Console-grade racing simulation with real tracks and licensed cars.</p>\n<h2>About Real Racing 3</h2>\n<p>Console-grade racing simulation with real tracks and licensed cars. Since launch it has grown into one of the most-played simulation titles on Android, and version 12.6.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited money, unlimited gold, all cars unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Money",
       "Unlimited Gold",
@@ -3694,7 +3694,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v12.6.1\n• Seasonal event content added\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Real Racing 3-v12.6.1-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Real Racing 3-v12.6.1-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -3775,7 +3775,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/real-racing-3-mod-apk.apk",
+        "url": "https://mirror.modszora.app/real-racing-3-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 3040870400,
         "isPrimary": false
@@ -3798,7 +3798,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Real Racing 3 MOD APK safe to install?",
-        "answer": "Yes. Every Real Racing 3 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Real Racing 3 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Real Racing 3 MOD APK?",
@@ -3810,7 +3810,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Real Racing 3 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 12.6.1 as of February 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 12.6.1 as of February 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -3887,7 +3887,7 @@ export const demoGames = [
     "downloads": 3957738,
     "views": 4010369,
     "shortDescription": "The match-three phenomenon with thousands of sugary levels. MOD unlocks unlimited lives and unlimited moves.",
-    "description": "<p><strong>Candy Crush Saga MOD APK</strong> is the fully unlocked build of King's puzzle hit, rebuilt for players who want the complete experience without the grind. The match-three phenomenon with thousands of sugary levels.</p>\n<h2>About Candy Crush Saga</h2>\n<p>The match-three phenomenon with thousands of sugary levels. Since launch it has grown into one of the most-played match 3 titles on Android, and version 1.283.0.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited lives, unlimited moves, all levels unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Candy Crush Saga MOD APK</strong> is the fully unlocked build of King's puzzle hit, rebuilt for players who want the complete experience without the grind. The match-three phenomenon with thousands of sugary levels.</p>\n<h2>About Candy Crush Saga</h2>\n<p>The match-three phenomenon with thousands of sugary levels. Since launch it has grown into one of the most-played match 3 titles on Android, and version 1.283.0.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited lives, unlimited moves, all levels unlocked and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Lives",
       "Unlimited Moves",
@@ -3896,7 +3896,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.283.0.2\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Candy Crush Saga-v1.283.0.2-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Candy Crush Saga-v1.283.0.2-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -3977,7 +3977,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/candy-crush-saga-mod-apk.apk",
+        "url": "https://mirror.modszora.app/candy-crush-saga-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 99614720,
         "isPrimary": false
@@ -4000,7 +4000,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Candy Crush Saga MOD APK safe to install?",
-        "answer": "Yes. Every Candy Crush Saga APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Candy Crush Saga APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Candy Crush Saga MOD APK?",
@@ -4012,7 +4012,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Candy Crush Saga MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.283.0.2 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.283.0.2 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -4090,7 +4090,7 @@ export const demoGames = [
     "downloads": 4038292,
     "views": 4834901,
     "shortDescription": "Deep, endlessly replayable tower defense with monkeys and bloons. MOD unlocks unlimited monkey money and all towers unlocked.",
-    "description": "<p><strong>Bloons TD 6 MOD APK</strong> is the fully unlocked build of Ninja Kiwi's strategy hit, rebuilt for players who want the complete experience without the grind. Deep, endlessly replayable tower defense with monkeys and bloons.</p>\n<h2>About Bloons TD 6</h2>\n<p>Deep, endlessly replayable tower defense with monkeys and bloons. Since launch it has grown into one of the most-played tower defense titles on Android, and version 44.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited monkey money, all towers unlocked, free upgrades and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Bloons TD 6 MOD APK</strong> is the fully unlocked build of Ninja Kiwi's strategy hit, rebuilt for players who want the complete experience without the grind. Deep, endlessly replayable tower defense with monkeys and bloons.</p>\n<h2>About Bloons TD 6</h2>\n<p>Deep, endlessly replayable tower defense with monkeys and bloons. Since launch it has grown into one of the most-played tower defense titles on Android, and version 44.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited monkey money, all towers unlocked, free upgrades and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Monkey Money",
       "All Towers Unlocked",
@@ -4099,7 +4099,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v44.2\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Bloons TD 6-v44.2-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Bloons TD 6-v44.2-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -4180,7 +4180,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/bloons-td-6-mod-apk.apk",
+        "url": "https://mirror.modszora.app/bloons-td-6-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 176160768,
         "isPrimary": false
@@ -4203,7 +4203,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Bloons TD 6 MOD APK safe to install?",
-        "answer": "Yes. Every Bloons TD 6 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Bloons TD 6 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Bloons TD 6 MOD APK?",
@@ -4215,7 +4215,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Bloons TD 6 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 44.2 as of February 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 44.2 as of February 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -4292,7 +4292,7 @@ export const demoGames = [
     "downloads": 234574,
     "views": 686886,
     "shortDescription": "Competitive tactical FPS with skins, ranks and esports ambitions. MOD unlocks aim assist and unlimited gold.",
-    "description": "<p><strong>Standoff 2 MOD APK</strong> is the fully unlocked build of AXLEBOLT LTD's shooter hit, rebuilt for players who want the complete experience without the grind. Competitive tactical FPS with skins, ranks and esports ambitions.</p>\n<h2>About Standoff 2</h2>\n<p>Competitive tactical FPS with skins, ranks and esports ambitions. Since launch it has grown into one of the most-played fps titles on Android, and version 0.31.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: aim assist, unlimited gold, all skins and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Standoff 2 MOD APK</strong> is the fully unlocked build of AXLEBOLT LTD's shooter hit, rebuilt for players who want the complete experience without the grind. Competitive tactical FPS with skins, ranks and esports ambitions.</p>\n<h2>About Standoff 2</h2>\n<p>Competitive tactical FPS with skins, ranks and esports ambitions. Since launch it has grown into one of the most-played fps titles on Android, and version 0.31.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: aim assist, unlimited gold, all skins and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Aim Assist",
       "Unlimited Gold",
@@ -4301,7 +4301,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v0.31.2\n• Seasonal event content added\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Standoff 2-v0.31.2-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Standoff 2-v0.31.2-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -4382,7 +4382,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/standoff-2-mod-apk.apk",
+        "url": "https://mirror.modszora.app/standoff-2-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 1730150400,
         "isPrimary": false
@@ -4405,7 +4405,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Standoff 2 MOD APK safe to install?",
-        "answer": "Yes. Every Standoff 2 APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Standoff 2 APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Standoff 2 MOD APK?",
@@ -4417,7 +4417,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Standoff 2 MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 0.31.2 as of May 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 0.31.2 as of May 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -4494,7 +4494,7 @@ export const demoGames = [
     "downloads": 269909,
     "views": 872916,
     "shortDescription": "A full console racing sim, faithfully ported to mobile. MOD unlocks full game unlocked and all dlc.",
-    "description": "<p><strong>GRID Autosport MOD APK</strong> is the fully unlocked build of Feral Interactive's racing hit, rebuilt for players who want the complete experience without the grind. A full console racing sim, faithfully ported to mobile.</p>\n<h2>About GRID Autosport</h2>\n<p>A full console racing sim, faithfully ported to mobile. Since launch it has grown into one of the most-played simulation titles on Android, and version 1.10.1RC5 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: full game unlocked, all dlc, unlimited credits and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>GRID Autosport MOD APK</strong> is the fully unlocked build of Feral Interactive's racing hit, rebuilt for players who want the complete experience without the grind. A full console racing sim, faithfully ported to mobile.</p>\n<h2>About GRID Autosport</h2>\n<p>A full console racing sim, faithfully ported to mobile. Since launch it has grown into one of the most-played simulation titles on Android, and version 1.10.1RC5 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: full game unlocked, all dlc, unlimited credits and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Full Game Unlocked",
       "All DLC",
@@ -4503,7 +4503,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.10.1RC5\n• Seasonal event content added\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for GRID Autosport-v1.10.1RC5-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for GRID Autosport-v1.10.1RC5-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -4584,7 +4584,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/grid-autosport-mod-apk.apk",
+        "url": "https://mirror.modszora.app/grid-autosport-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 5138022400,
         "isPrimary": false
@@ -4607,7 +4607,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is GRID Autosport MOD APK safe to install?",
-        "answer": "Yes. Every GRID Autosport APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every GRID Autosport APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run GRID Autosport MOD APK?",
@@ -4619,7 +4619,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update GRID Autosport MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.10.1RC5 as of May 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.10.1RC5 as of May 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -4696,7 +4696,7 @@ export const demoGames = [
     "downloads": 4716868,
     "views": 5079450,
     "shortDescription": "Retro dungeon crawling with permadeath and pixel-perfect combat. MOD unlocks unlimited gold and all classes unlocked.",
-    "description": "<p><strong>Eight-Bit Dungeon MOD APK</strong> is the fully unlocked build of Pixel Forge's rpg hit, rebuilt for players who want the complete experience without the grind. Retro dungeon crawling with permadeath and pixel-perfect combat.</p>\n<h2>About Eight-Bit Dungeon</h2>\n<p>Retro dungeon crawling with permadeath and pixel-perfect combat. Since launch it has grown into one of the most-played retro titles on Android, and version 2.4.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gold, all classes unlocked, max stats and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Eight-Bit Dungeon MOD APK</strong> is the fully unlocked build of Pixel Forge's rpg hit, rebuilt for players who want the complete experience without the grind. Retro dungeon crawling with permadeath and pixel-perfect combat.</p>\n<h2>About Eight-Bit Dungeon</h2>\n<p>Retro dungeon crawling with permadeath and pixel-perfect combat. Since launch it has grown into one of the most-played retro titles on Android, and version 2.4.0 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited gold, all classes unlocked, max stats and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Gold",
       "All Classes Unlocked",
@@ -4705,7 +4705,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v2.4.0\n• Fresh maps and challenges\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Eight-Bit Dungeon-v2.4.0-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Eight-Bit Dungeon-v2.4.0-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -4786,7 +4786,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/eight-bit-dungeon-mod-apk.apk",
+        "url": "https://mirror.modszora.app/eight-bit-dungeon-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 92274688,
         "isPrimary": false
@@ -4809,7 +4809,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Eight-Bit Dungeon MOD APK safe to install?",
-        "answer": "Yes. Every Eight-Bit Dungeon APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Eight-Bit Dungeon APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Eight-Bit Dungeon MOD APK?",
@@ -4821,7 +4821,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Eight-Bit Dungeon MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 2.4.0 as of April 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 2.4.0 as of April 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -4898,7 +4898,7 @@ export const demoGames = [
     "downloads": 1545885,
     "views": 1894014,
     "shortDescription": "Synthwave drift racing through rain-soaked neon cityscapes. MOD unlocks unlimited nitro and all cars unlocked.",
-    "description": "<p><strong>Neon Drift Arena MOD APK</strong> is the fully unlocked build of Volt Studio's racing hit, rebuilt for players who want the complete experience without the grind. Synthwave drift racing through rain-soaked neon cityscapes.</p>\n<h2>About Neon Drift Arena</h2>\n<p>Synthwave drift racing through rain-soaked neon cityscapes. Since launch it has grown into one of the most-played drifting titles on Android, and version 1.8.3 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited nitro, all cars unlocked, unlimited cash and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Neon Drift Arena MOD APK</strong> is the fully unlocked build of Volt Studio's racing hit, rebuilt for players who want the complete experience without the grind. Synthwave drift racing through rain-soaked neon cityscapes.</p>\n<h2>About Neon Drift Arena</h2>\n<p>Synthwave drift racing through rain-soaked neon cityscapes. Since launch it has grown into one of the most-played drifting titles on Android, and version 1.8.3 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited nitro, all cars unlocked, unlimited cash and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Nitro",
       "All Cars Unlocked",
@@ -4907,7 +4907,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v1.8.3\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Neon Drift Arena-v1.8.3-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Neon Drift Arena-v1.8.3-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -4988,7 +4988,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/neon-drift-arena-mod-apk.apk",
+        "url": "https://mirror.modszora.app/neon-drift-arena-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 566231040,
         "isPrimary": false
@@ -5011,7 +5011,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Neon Drift Arena MOD APK safe to install?",
-        "answer": "Yes. Every Neon Drift Arena APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Neon Drift Arena APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Neon Drift Arena MOD APK?",
@@ -5023,7 +5023,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Neon Drift Arena MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 1.8.3 as of January 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 1.8.3 as of January 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -5100,7 +5100,7 @@ export const demoGames = [
     "downloads": 1787357,
     "views": 2393257,
     "shortDescription": "Escape an abandoned hospital while something hunts you in the dark. MOD unlocks unlimited batteries and god mode.",
-    "description": "<p><strong>Horror Hospital Escape MOD APK</strong> is the fully unlocked build of DarkLoop Games's horror hit, rebuilt for players who want the complete experience without the grind. Escape an abandoned hospital while something hunts you in the dark.</p>\n<h2>About Horror Hospital Escape</h2>\n<p>Escape an abandoned hospital while something hunts you in the dark. Since launch it has grown into one of the most-played survival horror titles on Android, and version 3.2.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited batteries, god mode, all chapters and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Horror Hospital Escape MOD APK</strong> is the fully unlocked build of DarkLoop Games's horror hit, rebuilt for players who want the complete experience without the grind. Escape an abandoned hospital while something hunts you in the dark.</p>\n<h2>About Horror Hospital Escape</h2>\n<p>Escape an abandoned hospital while something hunts you in the dark. Since launch it has grown into one of the most-played survival horror titles on Android, and version 3.2.1 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited batteries, god mode, all chapters and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Batteries",
       "God Mode",
@@ -5109,7 +5109,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v3.2.1\n• Seasonal event content added\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Horror Hospital Escape-v3.2.1-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Horror Hospital Escape-v3.2.1-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -5190,7 +5190,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/horror-hospital-escape-mod-apk.apk",
+        "url": "https://mirror.modszora.app/horror-hospital-escape-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 754974720,
         "isPrimary": false
@@ -5213,7 +5213,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Horror Hospital Escape MOD APK safe to install?",
-        "answer": "Yes. Every Horror Hospital Escape APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Horror Hospital Escape APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Horror Hospital Escape MOD APK?",
@@ -5225,7 +5225,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Horror Hospital Escape MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 3.2.1 as of June 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 3.2.1 as of June 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -5302,7 +5302,7 @@ export const demoGames = [
     "downloads": 2025773,
     "views": 2410801,
     "shortDescription": "Turn-based airborne tactics across floating island battlefields. MOD unlocks unlimited resources and all units unlocked.",
-    "description": "<p><strong>Sky Fortress Tactics MOD APK</strong> is the fully unlocked build of Ironvale's strategy hit, rebuilt for players who want the complete experience without the grind. Turn-based airborne tactics across floating island battlefields.</p>\n<h2>About Sky Fortress Tactics</h2>\n<p>Turn-based airborne tactics across floating island battlefields. Since launch it has grown into one of the most-played turn based titles on Android, and version 2.0.7 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited resources, all units unlocked, skip cooldowns and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Sky Fortress Tactics MOD APK</strong> is the fully unlocked build of Ironvale's strategy hit, rebuilt for players who want the complete experience without the grind. Turn-based airborne tactics across floating island battlefields.</p>\n<h2>About Sky Fortress Tactics</h2>\n<p>Turn-based airborne tactics across floating island battlefields. Since launch it has grown into one of the most-played turn based titles on Android, and version 2.0.7 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited resources, all units unlocked, skip cooldowns and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Resources",
       "All Units Unlocked",
@@ -5311,7 +5311,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v2.0.7\n• New characters and cosmetics\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Sky Fortress Tactics-v2.0.7-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Sky Fortress Tactics-v2.0.7-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -5392,7 +5392,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/sky-fortress-tactics-mod-apk.apk",
+        "url": "https://mirror.modszora.app/sky-fortress-tactics-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 429916160,
         "isPrimary": false
@@ -5415,7 +5415,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Sky Fortress Tactics MOD APK safe to install?",
-        "answer": "Yes. Every Sky Fortress Tactics APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Sky Fortress Tactics APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Sky Fortress Tactics MOD APK?",
@@ -5427,7 +5427,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Sky Fortress Tactics MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 2.0.7 as of June 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 2.0.7 as of June 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -5505,7 +5505,7 @@ export const demoGames = [
     "downloads": 4297766,
     "views": 4463560,
     "shortDescription": "Fast two-over cricket matches with real-time online multiplayer. MOD unlocks unlimited coins and all teams unlocked.",
-    "description": "<p><strong>Cricket League Pro MOD APK</strong> is the fully unlocked build of Stump Media's sports hit, rebuilt for players who want the complete experience without the grind. Fast two-over cricket matches with real-time online multiplayer.</p>\n<h2>About Cricket League Pro</h2>\n<p>Fast two-over cricket matches with real-time online multiplayer. Since launch it has grown into one of the most-played cricket titles on Android, and version 4.1.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all teams unlocked, perfect timing and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>",
+    "description": "<p><strong>Cricket League Pro MOD APK</strong> is the fully unlocked build of Stump Media's sports hit, rebuilt for players who want the complete experience without the grind. Fast two-over cricket matches with real-time online multiplayer.</p>\n<h2>About Cricket League Pro</h2>\n<p>Fast two-over cricket matches with real-time online multiplayer. Since launch it has grown into one of the most-played cricket titles on Android, and version 4.1.2 refines progression pacing, netcode and rendering performance on mid-range hardware.</p>\n<p>This modded release keeps the original gameplay loop intact and simply removes the paywalls: unlimited coins, all teams unlocked, perfect timing and more are enabled from the first launch.</p>\n<h2>Gameplay</h2>\n<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>\n<h2>Why choose the MOD version?</h2>\n<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>",
     "modFeatures": [
       "Unlimited Coins",
       "All Teams Unlocked",
@@ -5514,7 +5514,7 @@ export const demoGames = [
     ],
     "whatsNew": "• Updated to v4.1.2\n• Reworked progression curve\n• Performance and memory optimisations\n• Mod menu re-verified against the latest build\n• Crash fixes reported by the community",
     "installationGuide": [
-      "Tap the Download button above and wait for Cricket League Pro-v4.1.2-MODVerse.apk to finish downloading.",
+      "Tap the Download button above and wait for Cricket League Pro-v4.1.2-MODSzora.apk to finish downloading.",
       "Open Settings → Security and enable \"Install unknown apps\" for your browser or file manager.",
       "Uninstall any existing copy of the game to avoid a signature conflict.",
       "Open the downloaded APK and confirm the install prompt.",
@@ -5595,7 +5595,7 @@ export const demoGames = [
       },
       {
         "label": "Mirror Server",
-        "url": "https://mirror.modverse.app/cricket-league-pro-mod-apk.apk",
+        "url": "https://mirror.modszora.app/cricket-league-pro-mod-apk.apk",
         "kind": "mirror",
         "sizeBytes": 325058560,
         "isPrimary": false
@@ -5618,7 +5618,7 @@ export const demoGames = [
     "faqs": [
       {
         "question": "Is Cricket League Pro MOD APK safe to install?",
-        "answer": "Yes. Every Cricket League Pro APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
+        "answer": "Yes. Every Cricket League Pro APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file."
       },
       {
         "question": "Do I need root to run Cricket League Pro MOD APK?",
@@ -5630,7 +5630,7 @@ export const demoGames = [
       },
       {
         "question": "How do I update Cricket League Pro MOD APK?",
-        "answer": "Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects 4.1.2 as of July 2026."
+        "answer": "Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects 4.1.2 as of July 2026."
       },
       {
         "question": "Why did the installation fail?",
@@ -5706,7 +5706,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Neon Samurai Standoff Gaming Wallpaper (4K Download)",
-      "description": "Download the Neon Samurai Standoff gaming wallpaper in 4K for phone and desktop. Free action wallpaper from the MODVerse gallery.",
+      "description": "Download the Neon Samurai Standoff gaming wallpaper in 4K for phone and desktop. Free action wallpaper from the MODSzora gallery.",
       "keywords": [
         "neon-samurai-standoff wallpaper",
         "action wallpaper",
@@ -5758,7 +5758,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Cyber Ronin Skyline Gaming Wallpaper (4K Download)",
-      "description": "Download the Cyber Ronin Skyline gaming wallpaper in 4K for phone and desktop. Free sci-fi wallpaper from the MODVerse gallery.",
+      "description": "Download the Cyber Ronin Skyline gaming wallpaper in 4K for phone and desktop. Free sci-fi wallpaper from the MODSzora gallery.",
       "keywords": [
         "cyber-ronin-skyline wallpaper",
         "sci-fi wallpaper",
@@ -5810,7 +5810,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Drift King Midnight Gaming Wallpaper (4K Download)",
-      "description": "Download the Drift King Midnight gaming wallpaper in 4K for phone and desktop. Free racing wallpaper from the MODVerse gallery.",
+      "description": "Download the Drift King Midnight gaming wallpaper in 4K for phone and desktop. Free racing wallpaper from the MODSzora gallery.",
       "keywords": [
         "drift-king-midnight wallpaper",
         "racing wallpaper",
@@ -5862,7 +5862,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Dragon Realm Dawn Gaming Wallpaper (4K Download)",
-      "description": "Download the Dragon Realm Dawn gaming wallpaper in 4K for phone and desktop. Free fantasy wallpaper from the MODVerse gallery.",
+      "description": "Download the Dragon Realm Dawn gaming wallpaper in 4K for phone and desktop. Free fantasy wallpaper from the MODSzora gallery.",
       "keywords": [
         "dragon-realm-dawn wallpaper",
         "fantasy wallpaper",
@@ -5914,7 +5914,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Esports Arena Lights Gaming Wallpaper (4K Download)",
-      "description": "Download the Esports Arena Lights gaming wallpaper in 4K for phone and desktop. Free esports wallpaper from the MODVerse gallery.",
+      "description": "Download the Esports Arena Lights gaming wallpaper in 4K for phone and desktop. Free esports wallpaper from the MODSzora gallery.",
       "keywords": [
         "esports-arena-lights wallpaper",
         "esports wallpaper",
@@ -5966,7 +5966,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Minimal Controller Gaming Wallpaper (4K Download)",
-      "description": "Download the Minimal Controller gaming wallpaper in 4K for phone and desktop. Free minimal wallpaper from the MODVerse gallery.",
+      "description": "Download the Minimal Controller gaming wallpaper in 4K for phone and desktop. Free minimal wallpaper from the MODSzora gallery.",
       "keywords": [
         "minimal-controller wallpaper",
         "minimal wallpaper",
@@ -6018,7 +6018,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Anime Blade Dancer Gaming Wallpaper (4K Download)",
-      "description": "Download the Anime Blade Dancer gaming wallpaper in 4K for phone and desktop. Free anime wallpaper from the MODVerse gallery.",
+      "description": "Download the Anime Blade Dancer gaming wallpaper in 4K for phone and desktop. Free anime wallpaper from the MODSzora gallery.",
       "keywords": [
         "anime-blade-dancer wallpaper",
         "anime wallpaper",
@@ -6070,7 +6070,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Mech Pilot Cockpit Gaming Wallpaper (4K Download)",
-      "description": "Download the Mech Pilot Cockpit gaming wallpaper in 4K for phone and desktop. Free sci-fi wallpaper from the MODVerse gallery.",
+      "description": "Download the Mech Pilot Cockpit gaming wallpaper in 4K for phone and desktop. Free sci-fi wallpaper from the MODSzora gallery.",
       "keywords": [
         "mech-pilot-cockpit wallpaper",
         "sci-fi wallpaper",
@@ -6122,7 +6122,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Battle Royale Drop Gaming Wallpaper (4K Download)",
-      "description": "Download the Battle Royale Drop gaming wallpaper in 4K for phone and desktop. Free action wallpaper from the MODVerse gallery.",
+      "description": "Download the Battle Royale Drop gaming wallpaper in 4K for phone and desktop. Free action wallpaper from the MODSzora gallery.",
       "keywords": [
         "battle-royale-drop wallpaper",
         "action wallpaper",
@@ -6174,7 +6174,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Retro Arcade Grid Gaming Wallpaper (4K Download)",
-      "description": "Download the Retro Arcade Grid gaming wallpaper in 4K for phone and desktop. Free minimal wallpaper from the MODVerse gallery.",
+      "description": "Download the Retro Arcade Grid gaming wallpaper in 4K for phone and desktop. Free minimal wallpaper from the MODSzora gallery.",
       "keywords": [
         "retro-arcade-grid wallpaper",
         "minimal wallpaper",
@@ -6226,7 +6226,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Shadow Assassin Gaming Wallpaper (4K Download)",
-      "description": "Download the Shadow Assassin gaming wallpaper in 4K for phone and desktop. Free characters wallpaper from the MODVerse gallery.",
+      "description": "Download the Shadow Assassin gaming wallpaper in 4K for phone and desktop. Free characters wallpaper from the MODSzora gallery.",
       "keywords": [
         "shadow-assassin wallpaper",
         "characters wallpaper",
@@ -6278,7 +6278,7 @@ export const demoWallpapers = [
     "status": "published",
     "seo": {
       "title": "Galaxy Racer Gaming Wallpaper (4K Download)",
-      "description": "Download the Galaxy Racer gaming wallpaper in 4K for phone and desktop. Free racing wallpaper from the MODVerse gallery.",
+      "description": "Download the Galaxy Racer gaming wallpaper in 4K for phone and desktop. Free racing wallpaper from the MODSzora gallery.",
       "keywords": [
         "galaxy-racer wallpaper",
         "racing wallpaper",
@@ -6337,7 +6337,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 198514
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-06-28T02:18:44.999Z",
     "seo": {
@@ -6397,7 +6397,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 231825
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-06-30T02:18:44.999Z",
     "seo": {
@@ -6457,7 +6457,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 261626
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-05-15T02:18:44.999Z",
     "seo": {
@@ -6517,7 +6517,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 123720
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-05-23T02:18:44.999Z",
     "seo": {
@@ -6577,7 +6577,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 147002
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-07-15T02:18:44.999Z",
     "seo": {
@@ -6637,7 +6637,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 95622
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-07-11T02:18:44.999Z",
     "seo": {
@@ -6697,7 +6697,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 71990
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-07-02T02:18:44.999Z",
     "seo": {
@@ -6757,7 +6757,7 @@ export const demoReviews = [
       "format": "webp",
       "bytes": 306387
     },
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "status": "published",
     "publishedAt": "2026-07-15T02:18:44.999Z",
     "seo": {
@@ -6790,7 +6790,7 @@ export const demoPosts = [
     "title": "How to Install MOD APK Files Safely on Android",
     "category": "guides",
     "excerpt": "Every step to sideload a modded APK without breaking your device or your data.",
-    "content": "<p>Every step to sideload a modded APK without breaking your device or your data.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>Every step to sideload a modded APK without breaking your device or your data.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-how-to-install-mod-apk-files-safely-on-android/1280/720.webp",
       "width": 1280,
@@ -6805,7 +6805,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-05-15T02:18:44.999Z",
@@ -6837,7 +6837,7 @@ export const demoPosts = [
     "title": "Best Offline Android Games You Can Play Without Wi-Fi",
     "category": "news",
     "excerpt": "Long flights and dead zones are no excuse to stop playing. These titles need zero connection.",
-    "content": "<p>Long flights and dead zones are no excuse to stop playing. These titles need zero connection.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>Long flights and dead zones are no excuse to stop playing. These titles need zero connection.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-best-offline-android-games-you-can-play-without-wi-fi/1280/720.webp",
       "width": 1280,
@@ -6852,7 +6852,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-06-15T02:18:44.999Z",
@@ -6884,7 +6884,7 @@ export const demoPosts = [
     "title": "Why Signature Verification Matters for Modded APKs",
     "category": "guides",
     "excerpt": "A modified APK is re-signed. Here is what that means for security and how we verify every upload.",
-    "content": "<p>A modified APK is re-signed. Here is what that means for security and how we verify every upload.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>A modified APK is re-signed. Here is what that means for security and how we verify every upload.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-why-signature-verification-matters-for-modded-apks/1280/720.webp",
       "width": 1280,
@@ -6899,7 +6899,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-06-24T02:18:44.999Z",
@@ -6931,7 +6931,7 @@ export const demoPosts = [
     "title": "Top 10 Mod Menu Games Dominating This Month",
     "category": "news",
     "excerpt": "The mod menus the community is actually installing right now, ranked by download velocity.",
-    "content": "<p>The mod menus the community is actually installing right now, ranked by download velocity.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>The mod menus the community is actually installing right now, ranked by download velocity.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-top-10-mod-menu-games-dominating-this-month/1280/720.webp",
       "width": 1280,
@@ -6946,7 +6946,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-04-09T02:18:44.999Z",
@@ -6978,7 +6978,7 @@ export const demoPosts = [
     "title": "Android 15 and the Future of Sideloading",
     "category": "updates",
     "excerpt": "New install restrictions are landing. Here is what changes for MOD APK users.",
-    "content": "<p>New install restrictions are landing. Here is what changes for MOD APK users.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>New install restrictions are landing. Here is what changes for MOD APK users.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-android-15-and-the-future-of-sideloading/1280/720.webp",
       "width": 1280,
@@ -6993,7 +6993,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-07-12T02:18:44.999Z",
@@ -7025,7 +7025,7 @@ export const demoPosts = [
     "title": "Mobile Esports Is Quietly Outgrowing PC in Asia",
     "category": "esports",
     "excerpt": "Prize pools, viewership and infrastructure are shifting toward handheld competition.",
-    "content": "<p>Prize pools, viewership and infrastructure are shifting toward handheld competition.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>Prize pools, viewership and infrastructure are shifting toward handheld competition.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-mobile-esports-is-quietly-outgrowing-pc-in-asia/1280/720.webp",
       "width": 1280,
@@ -7040,7 +7040,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-05-30T02:18:44.999Z",
@@ -7072,7 +7072,7 @@ export const demoPosts = [
     "title": "OBB Files Explained: Why Some Games Need Extra Steps",
     "category": "tips",
     "excerpt": "Large games ship data separately. This is how to place OBB folders correctly.",
-    "content": "<p>Large games ship data separately. This is how to place OBB folders correctly.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>Large games ship data separately. This is how to place OBB folders correctly.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
       "url": "https://picsum.photos/seed/post-obb-files-explained-why-some-games-need-extra-steps/1280/720.webp",
       "width": 1280,
@@ -7087,7 +7087,7 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-05-25T02:18:44.999Z",
@@ -7115,16 +7115,16 @@ export const demoPosts = [
     "id": "00000000-0000-4000-8003-000000000006"
   },
   {
-    "slug": "how-modverse-detects-game-updates-automatically",
-    "title": "How MODVerse Detects Game Updates Automatically",
+    "slug": "how-modszora-detects-game-updates-automatically",
+    "title": "How MODSzora Detects Game Updates Automatically",
     "category": "updates",
     "excerpt": "A look inside the ingestion agent that keeps thousands of listings current.",
-    "content": "<p>A look inside the ingestion agent that keeps thousands of listings current.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
+    "content": "<p>A look inside the ingestion agent that keeps thousands of listings current.</p>\n<h2>Why this matters</h2>\n<p>Android's openness is its greatest strength and its sharpest edge. Sideloading gives you access to software the Play Store will never carry, but it also removes the safety net Google provides. Understanding the mechanics — not just the button presses — is what separates a safe install from a compromised device.</p>\n<h2>The practical steps</h2>\n<ol><li>Confirm the source is reputable and the file is scanned.</li><li>Check the package name matches the official app.</li><li>Uninstall conflicting builds before installing.</li><li>Grant only the permissions the game genuinely needs.</li><li>Keep Play Protect enabled for baseline scanning.</li></ol>\n<h2>Common mistakes</h2>\n<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>\n<h2>Closing thoughts</h2>\n<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>",
     "cover": {
-      "url": "https://picsum.photos/seed/post-how-modverse-detects-game-updates-automatically/1280/720.webp",
+      "url": "https://picsum.photos/seed/post-how-modszora-detects-game-updates-automatically/1280/720.webp",
       "width": 1280,
       "height": 720,
-      "alt": "How MODVerse Detects Game Updates Automatically",
+      "alt": "How MODSzora Detects Game Updates Automatically",
       "format": "webp",
       "bytes": 283474
     },
@@ -7134,27 +7134,27 @@ export const demoPosts = [
       "mod apk",
       "guide"
     ],
-    "author": "MODVerse Editorial",
+    "author": "MODSzora Editorial",
     "readingMinutes": 3,
     "status": "published",
     "publishedAt": "2026-04-13T02:18:44.999Z",
     "scheduledFor": null,
     "seo": {
-      "title": "How MODVerse Detects Game Updates Automatically",
+      "title": "How MODSzora Detects Game Updates Automatically",
       "description": "A look inside the ingestion agent that keeps thousands of listings current.",
       "keywords": [
-        "how modverse detects",
+        "how modszora detects",
         "updates",
         "android guide",
         "mod apk tips",
         "gaming news"
       ],
       "canonical": null,
-      "ogTitle": "How MODVerse Detects Game Updates Automatically",
+      "ogTitle": "How MODSzora Detects Game Updates Automatically",
       "ogDescription": "A look inside the ingestion agent that keeps thousands of listings current.",
-      "ogImage": "https://picsum.photos/seed/post-how-modverse-detects-game-updates-automatically/1200/630.webp",
+      "ogImage": "https://picsum.photos/seed/post-how-modszora-detects-game-updates-automatically/1200/630.webp",
       "twitterCard": "summary_large_image",
-      "twitterTitle": "How MODVerse Detects Game Updates Automatically",
+      "twitterTitle": "How MODSzora Detects Game Updates Automatically",
       "twitterDescription": "A look inside the ingestion agent that keeps thousands of listings current.",
       "jsonLd": null,
       "noindex": false

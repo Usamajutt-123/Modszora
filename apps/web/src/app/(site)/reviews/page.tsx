@@ -38,7 +38,7 @@ export default async function ReviewsPage({
   const page = Number(firstOf(sp.page) ?? 1) || 1;
   const result = await listReviews({ page, pageSize: 12 });
 
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [{ name: 'Reviews', path: '/reviews' }];
 
   const schemas = [

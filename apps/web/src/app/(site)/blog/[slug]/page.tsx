@@ -45,7 +45,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const related = await listPosts({ category: post.category, pageSize: 4 });
   const base = siteUrl();
-  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
 
   const crumbs: Crumb[] = [
     { name: 'Blog', path: '/blog' },

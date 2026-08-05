@@ -67,7 +67,7 @@ export function LoginForm() {
           autoComplete="username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="admin@modverse.app"
+          placeholder="admin@modszora.app"
           className="input"
         />
       </div>

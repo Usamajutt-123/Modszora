@@ -55,7 +55,7 @@ export default async function DownloadPage({
 
   const related = await getRelatedGames(slug, 6);
   const base = siteUrl();
-  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: base, siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
 
   const crumbs: Crumb[] = [
     { name: 'Games', path: '/browse' },
@@ -135,7 +135,7 @@ export default async function DownloadPage({
                 </li>
                 <li className="flex gap-2.5">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-warning" />
-                  Only download from this page. Files mirrored elsewhere are not verified by MODVerse.
+                  Only download from this page. Files mirrored elsewhere are not verified by MODSzora.
                 </li>
               </ul>
             </div>

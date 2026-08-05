@@ -16,6 +16,7 @@ await sharp({ create: { width: 512, height: 512, channels: 4, background: '#0e11
 console.log('✓ public/icon-maskable.png (maskable, safe-area padded)');
 
 // Default OG image 1200x630
+const logoB64 = svg.toString().match(/base64,([^"]+)/)?.[1] ?? '';
 const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -34,9 +35,8 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 ${Array.from({length:13},(_,i)=>`<line x1="${i*100}" y1="0" x2="${i*100}" y2="630"/>`).join('')}
 ${Array.from({length:7},(_,i)=>`<line x1="0" y1="${i*100}" x2="1200" y2="${i*100}"/>`).join('')}
 </g>
-<rect x="88" y="86" width="104" height="104" rx="26" fill="url(#txt)"/>
-<path d="M118 132h44a18 18 0 0 1 17.8 15.1l1.6 9.7a6.4 6.4 0 0 1-11.9 4.1l-3.6-5.9h-37l-3.6 5.9a6.4 6.4 0 0 1-11.9-4.1l1.6-9.7A18 18 0 0 1 118 132Z" fill="#ffffff" fill-opacity=".96" transform="translate(-6,-8) scale(1.02)"/>
-<text x="88" y="290" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="96" font-weight="800" fill="#f0f3fc">MOD<tspan fill="url(#txt)">Verse</tspan></text>
+<image href="data:image/jpeg;base64,${logoB64}" x="88" y="86" width="104" height="104"/>
+<text x="88" y="290" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="96" font-weight="800" fill="#f0f3fc">MOD<tspan fill="url(#txt)">Szora</tspan></text>
 <text x="88" y="360" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="38" font-weight="600" fill="#9ea8c4">Premium MOD APK Games for Android</text>
 <g font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="26" font-weight="700">
   <rect x="88" y="418" width="290" height="62" rx="31" fill="#8a6cff" fill-opacity=".16" stroke="#8a6cff" stroke-opacity=".5"/>
@@ -46,7 +46,7 @@ ${Array.from({length:7},(_,i)=>`<line x1="0" y1="${i*100}" x2="1200" y2="${i*100
   <rect x="668" y="418" width="272" height="62" rx="31" fill="#22d3ee" fill-opacity=".13" stroke="#22d3ee" stroke-opacity=".4"/>
   <text x="698" y="457" fill="#7fe6f6">Virus Scanned</text>
 </g>
-<text x="88" y="556" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="24" fill="#6e7998">modverse.app</text>
+<text x="88" y="556" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="24" fill="#6e7998">modszora.app</text>
 </svg>`;
 writeFileSync('/tmp/og.svg', og);
 await sharp(Buffer.from(og)).png({ quality: 92 }).toFile('public/og-default.png');

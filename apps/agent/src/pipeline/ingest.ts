@@ -347,7 +347,7 @@ export async function ingestUrl(opts: IngestOptions): Promise<IngestResult> {
     slug,
     version: scraped.version ?? '1.0',
     modVersion: scraped.modVersion ?? null,
-    packageName: scraped.packageName ?? `com.modverse.${slug.replace(/-/g, '')}`.slice(0, 150),
+    packageName: scraped.packageName ?? `com.modszora.${slug.replace(/-/g, '')}`.slice(0, 150),
     developer: scraped.developer ?? 'Unknown Developer',
     publisher: scraped.publisher ?? scraped.developer ?? null,
     category: overrideCategory ?? seo.category,
@@ -434,7 +434,7 @@ export async function ingestUrl(opts: IngestOptions): Promise<IngestResult> {
         graphics: null,
         performance: null,
         cover: media.banner,
-        author: 'MODVerse Editorial',
+        author: 'MODSzora Editorial',
         featured: false,
         status: autoPublish ? 'published' : 'draft',
         publishedAt: autoPublish ? nowIso : null,
@@ -476,7 +476,7 @@ export async function ingestUrl(opts: IngestOptions): Promise<IngestResult> {
     };
   }
 
-  onProgress(94, 'Publishing to MODVerse');
+  onProgress(94, 'Publishing to MODSzora');
   const tPublish = Date.now();
   const response = await publishToSite({ mode: mode === 'update' ? 'update' : 'create', game, review, changes, jobId });
   mark('publish', tPublish);

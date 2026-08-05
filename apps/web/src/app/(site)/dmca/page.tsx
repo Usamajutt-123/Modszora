@@ -4,8 +4,8 @@ import { Prose } from '@/components/ui';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'DMCA & Takedown Policy — MODVerse',
-  description: 'How rights holders can request removal of content from MODVerse, and what a valid notice must contain.',
+  title: 'DMCA & Takedown Policy — MODSzora',
+  description: 'How rights holders can request removal of content from MODSzora, and what a valid notice must contain.',
   path: '/dmca',
 });
 
@@ -13,15 +13,15 @@ export default function DmcaPage() {
   return (
     <PageShell
       title="DMCA & Takedown Policy"
-      intro="MODVerse respects intellectual property rights and responds promptly to valid removal requests."
+      intro="MODSzora respects intellectual property rights and responds promptly to valid removal requests."
       crumbs={[{ name: 'DMCA', path: '/dmca' }]}
     >
       <Prose html={`
 <h2>Our position</h2>
-<p>MODVerse operates as an index. We do not host application binaries on our own infrastructure; listings point to files stored with third-party providers. Where we control a listing, we can remove it. Where a file resides with another host, we will remove our listing and direct you to that host for deletion of the underlying file.</p>
+<p>MODSzora operates as an index. We do not host application binaries on our own infrastructure; listings point to files stored with third-party providers. Where we control a listing, we can remove it. Where a file resides with another host, we will remove our listing and direct you to that host for deletion of the underlying file.</p>
 
 <h2>Submitting a notice</h2>
-<p>Send your notice to <strong>legal@modverse.app</strong> with the subject line "DMCA Takedown Request". To be actionable under 17 U.S.C. § 512(c)(3), it must include all of the following:</p>
+<p>Send your notice to <strong>legal@modszora.app</strong> with the subject line "DMCA Takedown Request". To be actionable under 17 U.S.C. § 512(c)(3), it must include all of the following:</p>
 <ol>
   <li>A physical or electronic signature of the copyright owner, or a person authorised to act on their behalf.</li>
   <li>Identification of the copyrighted work claimed to have been infringed.</li>

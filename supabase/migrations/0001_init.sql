@@ -1,5 +1,5 @@
 -- ═══════════════════════════════════════════════════════════════════
--- MODVerse — core schema
+-- MODSzora — core schema
 -- Postgres 15+ / Supabase. Idempotent where practical.
 -- ═══════════════════════════════════════════════════════════════════
 
@@ -218,7 +218,7 @@ create table if not exists reviews (
   cons            text[] not null default '{}',
   verdict         text not null default '',
   cover           jsonb,
-  author          text not null default 'MODVerse Editorial',
+  author          text not null default 'MODSzora Editorial',
   status          publish_status not null default 'published',
   published_at    timestamptz default now(),
   seo             jsonb not null default '{}'::jsonb,
@@ -244,7 +244,7 @@ create table if not exists posts (
   content         text not null default '',
   cover           jsonb,
   tags            text[] not null default '{}',
-  author          text not null default 'MODVerse Editorial',
+  author          text not null default 'MODSzora Editorial',
   reading_minutes integer not null default 4,
   status          publish_status not null default 'draft',
   published_at    timestamptz,
@@ -526,5 +526,5 @@ insert into agent_sources (id,label,origin,kind) values
 on conflict (id) do nothing;
 
 insert into settings (key, value) values
-  ('site', '{"siteName":"MODVerse","tagline":"Premium MOD APK games, verified and updated daily.","defaultTheme":"system","downloadCountdownSeconds":10}'::jsonb)
+  ('site', '{"siteName":"MODSzora","tagline":"Premium MOD APK games, verified and updated daily.","defaultTheme":"system","downloadCountdownSeconds":10}'::jsonb)
 on conflict (key) do nothing;

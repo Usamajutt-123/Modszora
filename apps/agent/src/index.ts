@@ -133,7 +133,7 @@ export function start(): ReturnType<typeof app.listen> {
   const server = app.listen(config.AGENT_PORT, () => {
     const f = describeFeatures();
     log.info('─'.repeat(58));
-    log.info(`MODVerse Agent listening on http://localhost:${config.AGENT_PORT}`);
+    log.info(`MODSzora Agent listening on http://localhost:${config.AGENT_PORT}`);
     log.info(`  supabase   : ${f.supabase}`);
     log.info(`  openai     : ${f.openai}`);
     log.info(`  multcloud  : ${f.multcloud}`);

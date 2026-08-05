@@ -44,7 +44,7 @@ function emptyDraft(isNews = false): Draft {
     cover: null,
     gallery: [],
     tags: [],
-    author: 'MODVerse Editorial',
+    author: 'MODSzora Editorial',
     readingMinutes: 4,
     featured: false,
     views: 0,

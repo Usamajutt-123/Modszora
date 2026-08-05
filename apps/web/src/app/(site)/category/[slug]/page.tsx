@@ -100,7 +100,7 @@ export default async function CategoryPage({
   ]);
 
   const label = CATEGORY_LABELS[slug];
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [
     { name: 'Games', path: '/browse' },
     { name: label, path: `/category/${slug}` },

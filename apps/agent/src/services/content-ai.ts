@@ -38,7 +38,7 @@ const log = createLogger('content-ai');
 
 /* ═══════════════════════ blog / news ═══════════════════════ */
 
-const BLOG_SYSTEM = `You are the senior editor of MODVerse, an Android MOD APK publication.
+const BLOG_SYSTEM = `You are the senior editor of MODSzora, an Android MOD APK publication.
 
 Write genuinely useful articles for mobile gamers. Rules:
 - Never invent statistics, release dates, prices or quotes.
@@ -89,7 +89,7 @@ export async function generateBlogArticle(
     temperature: 0.75,
     maxTokens: 4000,
     user: JSON.stringify({
-      task: `Write a ${BLOG_TEMPLATE_LABELS[template]} article for MODVerse.`,
+      task: `Write a ${BLOG_TEMPLATE_LABELS[template]} article for MODSzora.`,
       brief: TEMPLATE_BRIEFS[template],
       topic,
       gamesToFeature: gameNames.slice(0, 12),
@@ -168,9 +168,9 @@ function coerceBlog(value: unknown, input: BlogGenerateInput): unknown {
   o.readingMinutes = Math.max(1, Math.min(90, Number(o.readingMinutes) || readingMinutes(content.replace(/<[^>]+>/g, ' '))));
 
   // Excerpt/meta minimum lengths are enforced by the schema.
-  if (o.excerpt.length < 40) o.excerpt = truncate(`${o.title} — a practical MODVerse guide for Android players.`, 398);
+  if (o.excerpt.length < 40) o.excerpt = truncate(`${o.title} — a practical MODSzora guide for Android players.`, 398);
   if (o.metaDescription.length < 50) {
-    o.metaDescription = truncate(`${o.title}. Step-by-step advice from the MODVerse editorial team.`, 178);
+    o.metaDescription = truncate(`${o.title}. Step-by-step advice from the MODSzora editorial team.`, 178);
   }
   if (o.seoTitle.length < 10) o.seoTitle = truncate(o.title, 70);
 
@@ -252,7 +252,7 @@ function fallbackBlog(input: BlogGenerateInput): AiBlogBundle {
 
   const content = BODIES[input.template];
   const excerpt = truncate(
-    `${title}. A practical MODVerse guide covering the steps that matter and the mistakes that cost you time.`,
+    `${title}. A practical MODSzora guide covering the steps that matter and the mistakes that cost you time.`,
     398,
   );
 
@@ -266,7 +266,7 @@ function fallbackBlog(input: BlogGenerateInput): AiBlogBundle {
     readingMinutes: readingMinutes(content.replace(/<[^>]+>/g, ' ')),
     seoTitle: truncate(title, 70),
     metaDescription: truncate(
-      `${title} — practical, tested advice from the MODVerse editorial team. Updated ${year}.`,
+      `${title} — practical, tested advice from the MODSzora editorial team. Updated ${year}.`,
       178,
     ),
     keywords: unique([
@@ -387,7 +387,7 @@ function fallbackWallpaperMeta(input: {
 
 /* ═══════════════════════ review actions ═══════════════════════ */
 
-const REVIEW_ACTION_SYSTEM = `You are a veteran mobile games critic editing an existing review for MODVerse.
+const REVIEW_ACTION_SYSTEM = `You are a veteran mobile games critic editing an existing review for MODSzora.
 
 Rules:
 - Preserve every factual claim from the original unless explicitly asked to change it.

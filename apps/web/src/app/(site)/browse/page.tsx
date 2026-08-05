@@ -16,7 +16,7 @@ export const revalidate = 600;
 export const metadata: Metadata = buildMetadata({
   title: 'Browse All MOD APK Games',
   description:
-    'Browse the full MODVerse library of modded Android games. Filter by category, developer, Android version, rating and more. Every APK virus-scanned and version-tracked.',
+    'Browse the full MODSzora library of modded Android games. Filter by category, developer, Android version, rating and more. Every APK virus-scanned and version-tracked.',
   path: '/browse',
   keywords: ['browse mod apk', 'all mod games', 'android mod apk list', 'mod apk library'],
 });
@@ -53,7 +53,7 @@ export default async function BrowsePage({ searchParams }: { searchParams: Promi
     getCategoryCounts(),
   ]);
 
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [{ name: 'Browse Games', path: '/browse' }];
 
   const schemas = [

@@ -105,19 +105,19 @@ function buildGame(seed, i) {
     `<h2>Gameplay</h2>`,
     `<p>Sessions are designed for mobile: short, readable and immediately satisfying. Controls are tuned for touch with adjustable sensitivity, and the interface scales cleanly from compact phones to tablets. Because the MOD unlocks the full content library, every mode, map and character is reachable without waiting on timers.</p>`,
     `<h2>Why choose the MOD version?</h2>`,
-    `<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODVerse is signature-checked and scanned before publication.</p>`,
+    `<p>The stock build gates its best content behind in-app purchases and energy timers. The MOD removes both, so you keep the design and drop the friction. Every APK on MODSzora is signature-checked and scanned before publication.</p>`,
   ].join('\n');
 
   const faqs = [
-    { question: `Is ${name} MOD APK safe to install?`, answer: `Yes. Every ${name} APK published on MODVerse is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file.` },
+    { question: `Is ${name} MOD APK safe to install?`, answer: `Yes. Every ${name} APK published on MODSzora is scanned with multiple antivirus engines and signature-verified before release. Install only from this page to be sure you have the untampered file.` },
     { question: `Do I need root to run ${name} MOD APK?`, answer: `No root is required. The mod runs on any stock Android ${androidVersion.replace('+','')} or newer device. Just enable "Install unknown apps" for your browser or file manager and tap the APK.` },
     { question: `Will ${name} MOD work online?`, answer: `Offline and single-player content works fully. Online modes may detect modified clients, so use a secondary account if you plan to play competitively.` },
-    { question: `How do I update ${name} MOD APK?`, answer: `Return to this page and download the newest version. MODVerse tracks upstream releases automatically, so this listing reflects ${version} as of ${updatedDate.toLocaleDateString('en-US',{month:'long',year:'numeric'})}.` },
+    { question: `How do I update ${name} MOD APK?`, answer: `Return to this page and download the newest version. MODSzora tracks upstream releases automatically, so this listing reflects ${version} as of ${updatedDate.toLocaleDateString('en-US',{month:'long',year:'numeric'})}.` },
     { question: `Why did the installation fail?`, answer: `The most common cause is an existing copy signed with a different key. Uninstall the Play Store build first, then reinstall the MOD APK and grant storage permission when prompted.` },
   ];
 
   const installationGuide = [
-    `Tap the Download button above and wait for ${name}-v${version}-MODVerse.apk to finish downloading.`,
+    `Tap the Download button above and wait for ${name}-v${version}-MODSzora.apk to finish downloading.`,
     'Open Settings → Security and enable "Install unknown apps" for your browser or file manager.',
     'Uninstall any existing copy of the game to avoid a signature conflict.',
     'Open the downloaded APK and confirm the install prompt.',
@@ -158,7 +158,7 @@ function buildGame(seed, i) {
     screenshots,
     downloadLinks: [
       { label: 'Mega (Fast)', url: `https://mega.nz/file/${slugify(name).slice(0,8)}#demo-key`, kind: 'mega', sizeBytes, isPrimary: true },
-      { label: 'Mirror Server', url: `https://mirror.modverse.app/${slug}.apk`, kind: 'mirror', sizeBytes, isPrimary: false },
+      { label: 'Mirror Server', url: `https://mirror.modszora.app/${slug}.apk`, kind: 'mirror', sizeBytes, isPrimary: false },
       { label: 'Google Play', url: `https://play.google.com/store/apps/details?id=${pkg}`, kind: 'playstore', isPrimary: false },
     ],
     virusScan: {
@@ -215,7 +215,7 @@ const wallpapers = WP.map(([title, category], i) => {
     status: 'published',
     seo: {
       title: `${title} Gaming Wallpaper (4K Download)`.slice(0,70),
-      description: `Download the ${title} gaming wallpaper in 4K for phone and desktop. Free ${category} wallpaper from the MODVerse gallery.`.slice(0,180),
+      description: `Download the ${title} gaming wallpaper in 4K for phone and desktop. Free ${category} wallpaper from the MODSzora gallery.`.slice(0,180),
       keywords: [`${slug} wallpaper`, `${category} wallpaper`, 'gaming wallpaper 4k', 'phone wallpaper', 'hd game background'],
       canonical: null, ogTitle: title, ogDescription: `${title} — free 4K gaming wallpaper.`,
       ogImage: `https://picsum.photos/seed/wp-${slug}/1200/630.webp`,
@@ -259,7 +259,7 @@ const reviews = games.slice(0, 8).map((g, i) => {
     cons: ['Progression loses tension once everything is unlocked','Online competitive modes carry ban risk','Large download on metered connections'],
     verdict: `${g.name} MOD APK delivers exactly what it promises: the complete ${g.category} experience with the paywalls stripped out and no measurable performance cost. Scored ${score}/10.`,
     cover: mediaAsset(`${g.slug}-review`, 1280, 720, `${g.name} review cover`),
-    author: 'MODVerse Editorial',
+    author: 'MODSzora Editorial',
     status: 'published',
     publishedAt: new Date(now - intBetween(s, 2, 90) * DAY).toISOString(),
     seo: {
@@ -285,7 +285,7 @@ const POSTS = [
   ['Android 15 and the Future of Sideloading','updates','New install restrictions are landing. Here is what changes for MOD APK users.'],
   ['Mobile Esports Is Quietly Outgrowing PC in Asia','esports','Prize pools, viewership and infrastructure are shifting toward handheld competition.'],
   ['OBB Files Explained: Why Some Games Need Extra Steps','tips','Large games ship data separately. This is how to place OBB folders correctly.'],
-  ['How MODVerse Detects Game Updates Automatically','updates','A look inside the ingestion agent that keeps thousands of listings current.'],
+  ['How MODSzora Detects Game Updates Automatically','updates','A look inside the ingestion agent that keeps thousands of listings current.'],
 ];
 const posts = POSTS.map(([title, category, excerpt], i) => {
   const slug = slugify(title);
@@ -298,13 +298,13 @@ const posts = POSTS.map(([title, category, excerpt], i) => {
     `<h2>Common mistakes</h2>`,
     `<p>The single most frequent failure is a signature conflict: Android refuses to install a modded APK over a Play Store build because the signing keys differ. Uninstalling first resolves it in nearly every case. The second most common issue is a missing OBB directory for large titles.</p>`,
     `<h2>Closing thoughts</h2>`,
-    `<p>Treat every APK as untrusted until verified. MODVerse scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>`,
+    `<p>Treat every APK as untrusted until verified. MODSzora scans, hashes and signature-checks every file it publishes, but a informed user is still the best line of defence.</p>`,
   ].join('\n');
   return {
     slug, title, category, excerpt, content,
     cover: mediaAsset(`post-${slug}`, 1280, 720, title),
     tags: [category, 'android', 'mod apk', 'guide'],
-    author: 'MODVerse Editorial',
+    author: 'MODSzora Editorial',
     readingMinutes: Math.max(3, Math.round(content.split(/\s+/).length / 220)),
     status: 'published',
     publishedAt: new Date(now - intBetween(slug, 1, 150) * DAY).toISOString(),

@@ -121,7 +121,7 @@ async function runBlogGeneration(ctx: JobContext<BlogJobPayload>) {
     cover: null,
     gallery: [],
     tags: bundle.tags,
-    author: 'MODVerse Editorial',
+    author: 'MODSzora Editorial',
     readingMinutes: bundle.readingMinutes || readingMinutes(bundle.content.replace(/<[^>]+>/g, ' ')),
     featured: false,
     views: 0,

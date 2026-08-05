@@ -212,7 +212,7 @@ async function runRecommendations(ctx: JobContext<RecommendationPayload>) {
           reason:
             rank < 5
               ? `Featured near the top of ${source}'s listing, which usually tracks current demand.`
-              : `New on ${source} and not yet in the MODVerse library.`,
+              : `New on ${source} and not yet in the MODSzora library.`,
           packageName: null,
           existingGameSlug: null,
           meta: { rank, discoveredAt: new Date().toISOString() },

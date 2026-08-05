@@ -54,7 +54,7 @@ function emptyDraft(): Draft {
     graphics: null,
     performance: null,
     cover: null,
-    author: 'MODVerse Editorial',
+    author: 'MODSzora Editorial',
     featured: false,
     status: 'draft',
     publishedAt: null,

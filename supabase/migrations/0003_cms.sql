@@ -1,5 +1,5 @@
 -- ═══════════════════════════════════════════════════════════════════
--- MODVerse 0003 — Gaming CMS expansion
+-- MODSzora 0003 — Gaming CMS expansion
 --
 -- Adds the columns the admin CMS needs (featured/trending flags, media
 -- dimensions, blog galleries, review prose sections), plus tables for

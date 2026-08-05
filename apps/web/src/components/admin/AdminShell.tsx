@@ -80,11 +80,11 @@ export function AdminShell({ children, email }: { children: ReactNode; email: st
   const sidebar = (
     <div className="flex h-full flex-col">
       <Link href="/admin" className="flex items-center gap-2 px-2 py-1">
-        <span className="grid h-8 w-8 place-items-center rounded-lg bg-grad-brand shadow-glow">
-          <Gamepad2 className="h-4 w-4 text-white" strokeWidth={2.4} />
+        <span className="grid h-8 w-8 place-items-center overflow-hidden rounded-lg bg-grad-brand shadow-glow">
+          <img src="/favicon.svg" alt="" className="h-full w-full object-cover" />
         </span>
         <span className="font-display text-base font-extrabold">
-          MOD<span className="text-gradient">Verse</span>
+          MOD<span className="text-gradient">Szora</span>
         </span>
         <span className="ml-auto rounded-md bg-surface-2 px-1.5 py-0.5 text-2xs font-bold uppercase text-faint">Admin</span>
       </Link>
@@ -146,7 +146,7 @@ export function AdminShell({ children, email }: { children: ReactNode; email: st
           <Menu className="h-4 w-4" />
         </button>
         <span className="font-display text-base font-bold">
-          MOD<span className="text-gradient">Verse</span> Admin
+          MOD<span className="text-gradient">Szora</span> Admin
         </span>
       </div>
 

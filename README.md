@@ -1,8 +1,8 @@
-# MODVerse
+# MODSzora
 
 An enterprise MOD APK platform with an autonomous AI ingestion agent.
 
-MODVerse is two applications in one monorepo:
+MODSzora is two applications in one monorepo:
 
 | App | Stack | Role |
 |-----|-------|------|
@@ -307,7 +307,7 @@ Then point the web app at it via `NEXT_PUBLIC_AGENT_URL` and share the same
 
 ## Legal
 
-MODVerse indexes and verifies; it does not host copyrighted binaries. A DMCA
+MODSzora indexes and verifies; it does not host copyrighted binaries. A DMCA
 policy, privacy policy and terms are included, and removed listings are
 recorded so the agent does not automatically republish them.
 

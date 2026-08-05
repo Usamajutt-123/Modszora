@@ -66,7 +66,7 @@ export async function complete(opts: CompletionOptions): Promise<string | null> 
 
 /* ═══════════════════════ SEO generation ═══════════════════════ */
 
-const SEO_SYSTEM = `You are the senior SEO editor for MODVerse, a MOD APK download site.
+const SEO_SYSTEM = `You are the senior SEO editor for MODSzora, a MOD APK download site.
 
 Write factual, useful copy for a specific Android game. Rules:
 - NEVER invent facts. Use only the supplied data. If a field is unknown, write around it.
@@ -293,7 +293,7 @@ function defaultFaqs(game: ScrapedGame): Array<{ question: string; answer: strin
   return [
     {
       question: `Is ${name} MOD APK safe to install?`,
-      answer: `Yes. Every ${name} APK published on MODVerse is signature-checked and scanned by multiple antivirus engines before release. Download only from this page so you receive the file we verified.`,
+      answer: `Yes. Every ${name} APK published on MODSzora is signature-checked and scanned by multiple antivirus engines before release. Download only from this page so you receive the file we verified.`,
     },
     {
       question: `Do I need root access to run ${name} MOD APK?`,
@@ -309,7 +309,7 @@ function defaultFaqs(game: ScrapedGame): Array<{ question: string; answer: strin
     },
     {
       question: `How do I update to a newer version?`,
-      answer: `Return to this page — MODVerse tracks upstream releases automatically and this listing reflects ${version}. Install the new APK over the old one, or uninstall first if the update fails.`,
+      answer: `Return to this page — MODSzora tracks upstream releases automatically and this listing reflects ${version}. Install the new APK over the old one, or uninstall first if the update fails.`,
     },
   ];
 }
@@ -337,7 +337,7 @@ function heuristicSeo(game: ScrapedGame): AiSeoBundle {
     `<h2>Performance and compatibility</h2>`,
     `<p>This build targets Android ${game.androidVersion ?? '7.0+'} and runs on both mid-range and flagship hardware. The modification does not alter the rendering pipeline, so frame rates and battery consumption match the original release.</p>`,
     `<h2>Is it safe?</h2>`,
-    `<p>Every APK on MODVerse is hashed and scanned before publication, and the scan result is printed on this page. Install only from here so the file matches what we verified. Version ${version} was checked in ${year}.</p>`,
+    `<p>Every APK on MODSzora is hashed and scanned before publication, and the scan result is printed on this page. Install only from here so the file matches what we verified. Version ${version} was checked in ${year}.</p>`,
   ].join('\n');
 
   return {
@@ -369,7 +369,7 @@ function heuristicSeo(game: ScrapedGame): AiSeoBundle {
 
 /* ═══════════════════════ review generation ═══════════════════════ */
 
-const REVIEW_SYSTEM = `You are a veteran mobile games critic writing for MODVerse.
+const REVIEW_SYSTEM = `You are a veteran mobile games critic writing for MODSzora.
 
 Write an honest, specific review of an Android game and its MOD build.
 - Ground every claim in the supplied data. Do not invent features or benchmarks.

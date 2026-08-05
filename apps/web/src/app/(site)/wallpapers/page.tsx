@@ -32,7 +32,7 @@ export default async function WallpapersPage({
 
   const [result, categories] = await Promise.all([listWallpapers({ page, pageSize: 24 }), getWallpaperCategories()]);
 
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [{ name: 'Wallpapers', path: '/wallpapers' }];
   const schemas = [
     breadcrumbJsonLd(ctx, crumbs),

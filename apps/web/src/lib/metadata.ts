@@ -21,7 +21,7 @@ export interface BuildMetaInput {
 /** Single source of truth for page metadata — keeps OG/Twitter consistent. */
 export function buildMetadata(input: BuildMetaInput): Metadata {
   const base = siteUrl();
-  const siteName = env.NEXT_PUBLIC_SITE_NAME || 'MODVerse';
+  const siteName = env.NEXT_PUBLIC_SITE_NAME || 'MODSzora';
   const url = input.canonical ?? `${base}${input.path.startsWith('/') ? input.path : `/${input.path}`}`;
   const image = input.image || `${base}${DEFAULT_OG}`;
   const title = input.title.length > 65 ? `${input.title.slice(0, 62)}…` : input.title;
@@ -60,7 +60,7 @@ export function buildMetadata(input: BuildMetaInput): Metadata {
       title,
       description: input.description,
       images: [image],
-      creator: '@modverse',
+      creator: '@modszora',
     },
   };
 }

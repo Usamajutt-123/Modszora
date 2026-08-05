@@ -59,7 +59,7 @@ const META: Record<GameCollection, { description: string; icon: typeof Flame; so
     sort: 'popular',
   },
   'editors-choice': {
-    description: 'Hand-picked by the MODVerse team for mod quality, stability and how well the game holds up on mobile.',
+    description: 'Hand-picked by the MODSzora team for mod quality, stability and how well the game holds up on mobile.',
     icon: Trophy,
     sort: 'rating',
   },
@@ -125,7 +125,7 @@ export default async function CollectionPage({
 
   const label = COLLECTION_LABELS[slug];
   const Icon = meta.icon;
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [
     { name: 'Games', path: '/browse' },
     { name: label, path: `/collection/${slug}` },

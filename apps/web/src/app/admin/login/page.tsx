@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
-import { Gamepad2, ShieldAlert } from 'lucide-react';
+import { ShieldAlert } from 'lucide-react';
 import { LoginForm } from '@/components/admin/LoginForm';
 import { hasSupabase } from '@/lib/env';
 
 export const metadata: Metadata = {
-  title: 'Admin Sign In — MODVerse',
+  title: 'Admin Sign In — MODSzora',
   robots: { index: false, follow: false },
 };
 
@@ -18,11 +18,11 @@ export default function AdminLoginPage() {
     <div className="grid min-h-[85dvh] place-items-center px-4 py-12">
       <div className="w-full max-w-md">
         <div className="mb-7 text-center">
-          <span className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-grad-brand shadow-glow">
-            <Gamepad2 className="h-7 w-7 text-white" strokeWidth={2.4} />
+          <span className="mx-auto mb-4 grid h-14 w-14 place-items-center overflow-hidden rounded-2xl bg-grad-brand shadow-glow">
+            <img src="/favicon.svg" alt="MODSzora" className="h-full w-full object-cover" />
           </span>
           <h1 className="font-display text-2xl font-extrabold">
-            MOD<span className="text-gradient">Verse</span> Admin
+            MOD<span className="text-gradient">Szora</span> Admin
           </h1>
           <p className="mt-1.5 text-sm text-muted">Authorised operators only. There is no public registration.</p>
         </div>

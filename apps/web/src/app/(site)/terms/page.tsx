@@ -4,8 +4,8 @@ import { Prose } from '@/components/ui';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Terms of Service — MODVerse',
-  description: 'The terms governing your use of MODVerse, including acceptable use, disclaimers and intellectual property.',
+  title: 'Terms of Service — MODSzora',
+  description: 'The terms governing your use of MODSzora, including acceptable use, disclaimers and intellectual property.',
   path: '/terms',
 });
 
@@ -15,13 +15,13 @@ export default function TermsPage() {
     <PageShell title="Terms of Service" intro={`Last updated ${updated}.`} crumbs={[{ name: 'Terms of Service', path: '/terms' }]}>
       <Prose html={`
 <h2>1. Acceptance</h2>
-<p>By accessing MODVerse you agree to these terms. If you do not agree, do not use the site.</p>
+<p>By accessing MODSzora you agree to these terms. If you do not agree, do not use the site.</p>
 
 <h2>2. Nature of the service</h2>
-<p>MODVerse is an index and information service. We catalogue modified Android application packages, verify what we can, and link to files hosted by third parties. We are not the author of the games listed and we do not operate the file hosting.</p>
+<p>MODSzora is an index and information service. We catalogue modified Android application packages, verify what we can, and link to files hosted by third parties. We are not the author of the games listed and we do not operate the file hosting.</p>
 
 <h2>3. Intellectual property</h2>
-<p>All game titles, logos, artwork and trademarks are the property of their respective owners. Their appearance here is nominative use for identification and commentary. MODVerse claims no ownership over any third-party work.</p>
+<p>All game titles, logos, artwork and trademarks are the property of their respective owners. Their appearance here is nominative use for identification and commentary. MODSzora claims no ownership over any third-party work.</p>
 
 <h2>4. Acceptable use</h2>
 <ul>
@@ -38,7 +38,7 @@ export default function TermsPage() {
 <p>The service is provided "as is" without warranties of any kind. While every file we list is scanned before publication, we cannot guarantee that any third-party binary is free of defects or malicious code. Verify hashes and keep device protections enabled.</p>
 
 <h2>7. Limitation of liability</h2>
-<p>To the maximum extent permitted by law, MODVerse and its operators are not liable for any indirect, incidental or consequential damages arising from use of the site or of any file obtained through it, including device damage, data loss or account suspension.</p>
+<p>To the maximum extent permitted by law, MODSzora and its operators are not liable for any indirect, incidental or consequential damages arising from use of the site or of any file obtained through it, including device damage, data loss or account suspension.</p>
 
 <h2>8. Third-party links</h2>
 <p>Outbound links are provided for convenience. We do not control and are not responsible for third-party content, policies or practices.</p>

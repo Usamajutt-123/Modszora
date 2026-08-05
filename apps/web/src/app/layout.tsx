@@ -33,13 +33,13 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: 'MODVerse — Premium MOD APK Games for Android',
+    title: 'MODSzora — Premium MOD APK Games for Android',
     description:
       'Download premium MOD APK games with unlimited money, unlocked features and mod menus. Virus-scanned, version-tracked and updated daily.',
     path: '/',
     keywords: ['mod apk', 'android games', 'mod menu', 'unlimited money apk', 'premium apk', 'modded games'],
   }),
-  applicationName: 'MODVerse',
+  applicationName: 'MODSzora',
   referrer: 'origin-when-cross-origin',
   formatDetection: { telephone: false, address: false, email: false },
   manifest: '/manifest.webmanifest',
@@ -70,7 +70,7 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const gaId = env.NEXT_PUBLIC_GA_ID;
 
   return (

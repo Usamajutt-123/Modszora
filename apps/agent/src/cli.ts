@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * MODVerse Agent CLI — run pipeline actions without the HTTP server.
+ * MODSzora Agent CLI — run pipeline actions without the HTTP server.
  *
  *   npm run cli -- ingest <url> [--publish] [--no-mega] [--live]
  *   npm run cli -- discover [source...] [--limit N]
@@ -28,7 +28,7 @@ const flagValue = (name: string): string | undefined => {
 
 function usage(): void {
   console.log(`
-MODVerse Agent CLI
+MODSzora Agent CLI
 
   ingest <url>            Scrape, enrich and publish a single game URL
       --publish             Set status=published (default: draft)
@@ -55,7 +55,7 @@ async function main(): Promise<number> {
   switch (command) {
     case 'status': {
       const f = describeFeatures();
-      console.log('\nMODVerse Agent configuration');
+      console.log('\nMODSzora Agent configuration');
       console.log('─'.repeat(52));
       for (const [k, v] of Object.entries(f)) console.log(`  ${k.padEnd(12)}: ${v}`);
       console.log(`  ${'sources'.padEnd(12)}: ${config.enabledSources.join(', ')}`);

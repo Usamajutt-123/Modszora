@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Gamepad2, Github, MessageCircle, Send, Twitter, Youtube } from 'lucide-react';
+import { Github, MessageCircle, Send, Twitter, Youtube } from 'lucide-react';
 import { CATEGORY_LABELS, COLLECTION_LABELS, GAME_CATEGORIES, GAME_COLLECTIONS } from '@modverse/shared';
 import { NewsletterForm } from '@/components/marketing/NewsletterForm';
 
@@ -45,12 +45,12 @@ export function Footer() {
       {/* link columns */}
       <div className="container grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
-          <Link href="/" className="flex items-center gap-2" aria-label="MODVerse home">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-grad-brand shadow-glow">
-              <Gamepad2 className="h-5 w-5 text-white" strokeWidth={2.4} />
+          <Link href="/" className="flex items-center gap-2" aria-label="MODSzora home">
+            <span className="grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-grad-brand shadow-glow">
+              <img src="/favicon.svg" alt="" className="h-full w-full object-cover" />
             </span>
             <span className="font-display text-lg font-extrabold tracking-tight">
-              MOD<span className="text-gradient">Verse</span>
+              MOD<span className="text-gradient">Szora</span>
             </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
@@ -144,10 +144,10 @@ export function Footer() {
       <div className="border-t border-line/70">
         <div className="container flex flex-col items-center justify-between gap-3 py-5 text-center sm:flex-row sm:text-left">
           <p className="text-xs text-faint">
-            © {year} MODVerse. All game names and trademarks belong to their respective owners.
+            © {year} MODSzora. All game names and trademarks belong to their respective owners.
           </p>
           <p className="text-xs text-faint">
-            MODVerse hosts no copyrighted content. Files are provided for testing and educational purposes.
+            MODSzora hosts no copyrighted content. Files are provided for testing and educational purposes.
           </p>
         </div>
       </div>

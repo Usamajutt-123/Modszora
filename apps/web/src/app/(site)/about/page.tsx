@@ -5,11 +5,11 @@ import { Prose } from '@/components/ui';
 import { buildMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'About MODVerse — How the Platform Works',
+  title: 'About MODSzora — How the Platform Works',
   description:
-    'MODVerse is an automated MOD APK library. Learn how our ingestion agent discovers games, verifies files, and keeps thousands of listings current.',
+    'MODSzora is an automated MOD APK library. Learn how our ingestion agent discovers games, verifies files, and keeps thousands of listings current.',
   path: '/about',
-  keywords: ['about modverse', 'mod apk platform', 'how modverse works'],
+  keywords: ['about modszora', 'mod apk platform', 'how modszora works'],
 });
 
 const PILLARS = [
@@ -22,8 +22,8 @@ const PILLARS = [
 export default function AboutPage() {
   return (
     <PageShell
-      title="About MODVerse"
-      intro="MODVerse is a modded Android game library that runs itself. Instead of a team manually copying listings, an autonomous agent researches, verifies, writes and publishes."
+      title="About MODSzora"
+      intro="MODSzora is a modded Android game library that runs itself. Instead of a team manually copying listings, an autonomous agent researches, verifies, writes and publishes."
       crumbs={[{ name: 'About', path: '/about' }]}
     >
       <div className="grid gap-4 sm:grid-cols-2">
@@ -41,7 +41,7 @@ export default function AboutPage() {
         html={`
 <h2>Why we built it</h2>
 <p>MOD APK sites are notorious for stale listings, misleading version numbers and download buttons that lead anywhere but the file. Most of the problem is manual labour: keeping thousands of games current is more work than a small team can do by hand, so listings rot.</p>
-<p>MODVerse solves that structurally. The ingestion agent treats every game as a record with a content fingerprint. When an upstream source changes, the agent compares fingerprints and updates the existing listing in place rather than publishing a near-duplicate. That single decision keeps the catalogue clean and the SEO healthy.</p>
+<p>MODSzora solves that structurally. The ingestion agent treats every game as a record with a content fingerprint. When an upstream source changes, the agent compares fingerprints and updates the existing listing in place rather than publishing a near-duplicate. That single decision keeps the catalogue clean and the SEO healthy.</p>
 
 <h2>How a game gets published</h2>
 <ol>
@@ -54,7 +54,7 @@ export default function AboutPage() {
 </ol>
 
 <h2>What we do not do</h2>
-<p>MODVerse does not host copyrighted binaries on its own infrastructure, does not require an account to download, and does not gate files behind surveys or link shorteners. If a rights holder wants a listing removed, our <a href="/dmca">DMCA page</a> explains the process and we act on valid notices quickly.</p>
+<p>MODSzora does not host copyrighted binaries on its own infrastructure, does not require an account to download, and does not gate files behind surveys or link shorteners. If a rights holder wants a listing removed, our <a href="/dmca">DMCA page</a> explains the process and we act on valid notices quickly.</p>
 
 <h2>Contact</h2>
 <p>Questions, corrections or takedown requests belong on the <a href="/contact">contact page</a>. For install problems, the <a href="/faq">FAQ</a> covers the common failures first.</p>

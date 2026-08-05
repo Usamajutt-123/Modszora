@@ -2,7 +2,7 @@
   "name": "modverse",
   "private": true,
   "version": "1.0.0",
-  "description": "MODVerse - Enterprise MOD APK platform with an autonomous AI ingestion agent.",
+  "description": "MODSzora - Enterprise MOD APK platform with an autonomous AI ingestion agent.",
   "type": "module",
   "engines": { "node": ">=20.0.0" },
   "workspaces": ["packages/*", "apps/*"],

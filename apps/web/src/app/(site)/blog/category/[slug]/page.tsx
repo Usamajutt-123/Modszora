@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
   const label = slug.charAt(0).toUpperCase() + slug.slice(1);
   return buildMetadata({
-    title: `${label} — MODVerse Blog`,
+    title: `${label} — MODSzora Blog`,
     description: DESCRIPTIONS[slug],
     path: `/blog/category/${slug}`,
     keywords: [`android ${slug}`, `mod apk ${slug}`, `gaming ${slug}`],
@@ -63,7 +63,7 @@ export default async function BlogCategoryPage({
   ]);
 
   const label = slug.charAt(0).toUpperCase() + slug.slice(1);
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [
     { name: 'Blog', path: '/blog' },
     { name: label, path: `/blog/category/${slug}` },

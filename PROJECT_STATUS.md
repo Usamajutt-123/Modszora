@@ -1,4 +1,4 @@
-# MODVerse — build status
+# MODSzora — build status
 
 Verified on this machine. Every claim below was executed, not assumed.
 

@@ -4,7 +4,7 @@ import { AdminShell } from '@/components/admin/AdminShell';
 import { getAdminSession } from '@/lib/auth';
 
 export const metadata: Metadata = {
-  title: { default: 'Admin — MODVerse', template: '%s — MODVerse Admin' },
+  title: { default: 'Admin — MODSzora', template: '%s — MODSzora Admin' },
   robots: { index: false, follow: false, nocache: true },
 };
 

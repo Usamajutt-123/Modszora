@@ -227,7 +227,7 @@ export const reviewSchema = z.object({
   graphics: z.string().max(8000).optional().nullable(),
   performance: z.string().max(8000).optional().nullable(),
   cover: mediaAssetSchema.optional().nullable(),
-  author: z.string().max(80).default('MODVerse Editorial'),
+  author: z.string().max(80).default('MODSzora Editorial'),
   featured: z.boolean().default(false),
   status: z.enum(PUBLISH_STATUSES).default('published'),
   publishedAt: z.string().optional().nullable(),
@@ -249,7 +249,7 @@ export const blogPostSchema = z.object({
   /** Extra images shown in an in-article gallery. */
   gallery: z.array(mediaAssetSchema).max(24).default([]),
   tags: z.array(z.string().min(2).max(40)).max(16).default([]),
-  author: z.string().max(80).default('MODVerse Editorial'),
+  author: z.string().max(80).default('MODSzora Editorial'),
   readingMinutes: z.number().int().min(1).max(90).default(4),
   featured: z.boolean().default(false),
   views: z.number().int().nonnegative().default(0),
@@ -431,7 +431,7 @@ export type AiReviewBundle = z.infer<typeof aiReviewBundleSchema>;
 /* ─────────────────────────── settings ─────────────────────────── */
 
 export const siteSettingsSchema = z.object({
-  siteName: z.string().min(2).max(80).default('MODVerse'),
+  siteName: z.string().min(2).max(80).default('MODSzora'),
   tagline: z.string().max(180).default('Premium MOD APK games, verified and updated daily.'),
   defaultTheme: z.enum(['dark', 'light', 'system']).default('system'),
   logoUrl: urlSchema.optional().nullable(),

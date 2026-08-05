@@ -58,13 +58,13 @@ export function Header() {
       >
         <div className="container flex h-16 items-center gap-3 lg:h-[68px]">
           {/* logo */}
-          <Link href="/" className="group flex shrink-0 items-center gap-2" aria-label="MODVerse home">
+          <Link href="/" className="group flex shrink-0 items-center gap-2" aria-label="MODSzora home">
             <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-grad-brand shadow-glow">
-              <Gamepad2 className="h-5 w-5 text-white" strokeWidth={2.4} />
+              <img src="/favicon.svg" alt="" className="h-full w-full object-cover" />
               <span className="absolute inset-0 animate-pulse-glow bg-grad-neon opacity-0 transition-opacity duration-500 group-hover:opacity-40" />
             </span>
             <span className="font-display text-lg font-extrabold tracking-tight">
-              MOD<span className="text-gradient">Verse</span>
+              MOD<span className="text-gradient">Szora</span>
             </span>
           </Link>
 
@@ -162,7 +162,7 @@ export function Header() {
             >
               <div className="mb-6 flex items-center justify-between">
                 <span className="font-display text-lg font-extrabold">
-                  MOD<span className="text-gradient">Verse</span>
+                  MOD<span className="text-gradient">Szora</span>
                 </span>
                 <button
                   type="button"

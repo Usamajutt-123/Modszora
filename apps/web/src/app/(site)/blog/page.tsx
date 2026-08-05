@@ -15,7 +15,7 @@ export const revalidate = 1800;
 export const metadata: Metadata = buildMetadata({
   title: 'Gaming News, Guides & MOD APK Tips',
   description:
-    'Android gaming news, sideloading guides, MOD APK safety explainers and release roundups from the MODVerse editorial team.',
+    'Android gaming news, sideloading guides, MOD APK safety explainers and release roundups from the MODSzora editorial team.',
   path: '/blog',
   keywords: ['gaming news', 'mod apk guides', 'android gaming blog', 'apk install tips'],
 });
@@ -32,14 +32,14 @@ export default async function BlogPage({
 
   const [result, categories] = await Promise.all([listPosts({ page, pageSize: 12 }), getPostCategories()]);
 
-  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODVerse' };
+  const ctx = { siteUrl: siteUrl(), siteName: env.NEXT_PUBLIC_SITE_NAME || 'MODSzora' };
   const crumbs: Crumb[] = [{ name: 'Blog', path: '/blog' }];
   const schemas = [
     breadcrumbJsonLd(ctx, crumbs),
     itemListJsonLd(
       ctx,
       result.items.map((p) => ({ name: p.title, path: `/blog/${p.slug}`, image: p.cover?.url })),
-      'MODVerse Blog',
+      'MODSzora Blog',
     ),
   ];
 
