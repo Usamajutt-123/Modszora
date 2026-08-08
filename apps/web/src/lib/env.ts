@@ -87,8 +87,15 @@ export function adminEmails(): string[] {
 }
 
 export function siteUrl(): string {
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+
+  if (configured) {
+    return configured.replace(/\/+$/, '');
+  }
+
   const fromVercel = process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
     : null;
-  return (read().NEXT_PUBLIC_SITE_URL || fromVercel || 'http://localhost:3000').replace(/\/+$/, '');
+
+  return (fromVercel || 'http://localhost:3000').replace(/\/+$/, '');
 }
