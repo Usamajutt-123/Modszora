@@ -3,7 +3,12 @@
 import { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
-type AdFormat = 'leaderboard' | 'rectangle' | 'sidebar' | 'in-article';
+type AdFormat =
+  | 'leaderboard'
+  | 'rectangle'
+  | 'sidebar'
+  | 'in-article'
+  | 'mobile';
 
 const SIZES: Record<AdFormat, { className: string; label: string }> = {
   leaderboard: {
@@ -22,52 +27,78 @@ const SIZES: Record<AdFormat, { className: string; label: string }> = {
     className: 'min-h-[180px]',
     label: 'Responsive',
   },
+  mobile: {
+    className: 'min-h-[50px]',
+    label: '320 × 50',
+  },
 };
 
-function AdsterraRectangle() {
-  const adRef = useRef<HTMLDivElement>(null);
+const AD_CONFIG = {
+  rectangle: {
+    key: 'f08044fc17571bc2bed6a2dd84ddbf11',
+    width: 300,
+    height: 250,
+  },
+  mobile: {
+    key: '8cff3f0cffd3c0071b4d093e6a55e462',
+    width: 320,
+    height: 50,
+  },
+} as const;
+
+function AdsterraAd({
+  format,
+}: {
+  format: 'rectangle' | 'mobile';
+}) {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!adRef.current) return;
+    const container = containerRef.current;
 
-    const container = adRef.current;
+    if (!container || container.dataset.loaded === 'true') {
+      return;
+    }
 
-    // Prevent loading the same ad twice in the same container
-    if (container.dataset.loaded === 'true') return;
+    const config = AD_CONFIG[format];
 
     container.dataset.loaded = 'true';
 
-    const script = document.createElement('script');
-
     const optionsScript = document.createElement('script');
+
     optionsScript.text = `
       atOptions = {
-        'key': 'f08044fc17571bc2bed6a2dd84ddbf11',
+        'key': '${config.key}',
         'format': 'iframe',
-        'height': 250,
-        'width': 300,
+        'height': ${config.height},
+        'width': ${config.width},
         'params': {}
       };
     `;
 
-    script.src =
-      'https://www.highperformanceformat.com/f08044fc17571bc2bed6a2dd84ddbf11/invoke.js';
+    const adScript = document.createElement('script');
 
-    script.async = true;
+    adScript.src = `https://www.highperformanceformat.com/${config.key}/invoke.js`;
+    adScript.async = true;
 
     container.appendChild(optionsScript);
-    container.appendChild(script);
+    container.appendChild(adScript);
 
     return () => {
       container.innerHTML = '';
       delete container.dataset.loaded;
     };
-  }, []);
+  }, [format]);
+
+  const config = AD_CONFIG[format];
 
   return (
     <div
-      ref={adRef}
-      className="flex min-h-[250px] w-full items-center justify-center overflow-hidden"
+      ref={containerRef}
+      className="flex w-full items-center justify-center overflow-hidden"
+      style={{
+        minHeight: `${config.height}px`,
+      }}
       aria-label="Advertisement"
     />
   );
@@ -75,7 +106,6 @@ function AdsterraRectangle() {
 
 export function AdSlot({
   format = 'leaderboard',
-  slot,
   className,
   label = 'Advertisement',
 }: {
@@ -86,19 +116,48 @@ export function AdSlot({
 }) {
   const size = SIZES[format];
 
-  // Adsterra 300x250
+  /*
+   * 300 × 250 Adsterra rectangle
+   */
   if (format === 'rectangle') {
     return (
       <div
-        className={cn('w-full overflow-hidden', size.className, className)}
+        className={cn(
+          'flex w-full items-center justify-center overflow-hidden',
+          size.className,
+          className,
+        )}
         aria-label={label}
       >
-        <AdsterraRectangle />
+        <AdsterraAd format="rectangle" />
       </div>
     );
   }
 
-  // Other formats remain placeholders for now
+  /*
+   * 320 × 50 Adsterra mobile banner
+   */
+  if (format === 'mobile') {
+    return (
+      <div
+        className={cn(
+          'flex w-full items-center justify-center overflow-hidden',
+          size.className,
+          className,
+        )}
+        aria-label={label}
+      >
+        <div className="block md:hidden">
+          <AdsterraAd format="mobile" />
+        </div>
+      </div>
+    );
+  }
+
+  /*
+   * Other formats stay as placeholders
+   * until their Adsterra codes are added.
+   */
   return (
     <div
       role="complementary"
@@ -113,6 +172,7 @@ export function AdSlot({
         <p className="text-2xs font-semibold uppercase tracking-widest text-faint">
           {label}
         </p>
+
         <p className="mt-0.5 text-2xs text-faint/70">
           {size.label}
         </p>
