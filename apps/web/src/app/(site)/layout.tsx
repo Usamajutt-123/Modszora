@@ -1,5 +1,7 @@
+import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { env } from '@/lib/env';
 
 /**
  * Public site chrome.
@@ -9,6 +11,8 @@ import { Footer } from '@/components/layout/Footer';
  * background bleeding into it.
  */
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
+  const socialBarSrc = env.NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC;
+
   return (
     <>
       <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
@@ -21,6 +25,15 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         {children}
       </main>
       <Footer />
+
+      {/*
+        Adsterra Social Bar — sticky bottom bar rendered by Adsterra itself.
+        Mounted here (public route group only) so it loads once site-wide and
+        never inside /admin. afterInteractive keeps it off the critical path;
+        the stable id stops Strict Mode from injecting it twice. The script
+        positions and styles itself — no wrapper or CSS for it.
+      */}
+      {socialBarSrc ? <Script id="adsterra-socialbar" src={socialBarSrc} strategy="afterInteractive" /> : null}
     </>
   );
 }

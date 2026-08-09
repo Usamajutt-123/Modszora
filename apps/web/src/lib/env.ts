@@ -32,6 +32,8 @@ const serverSchema = z.object({
   NEXT_PUBLIC_ADSTERRA_KEY_MOBILE: z.string().optional(),
   NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN: z.string().optional(),
   NEXT_PUBLIC_ADSTERRA_NATIVE_KEY: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC: z.string().optional(),
 });
 
 type ServerEnv = z.infer<typeof serverSchema>;
@@ -62,6 +64,8 @@ function read(): ServerEnv {
     NEXT_PUBLIC_ADSTERRA_KEY_MOBILE: process.env.NEXT_PUBLIC_ADSTERRA_KEY_MOBILE || undefined,
     NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN: process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN || undefined,
     NEXT_PUBLIC_ADSTERRA_NATIVE_KEY: process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY || undefined,
+    NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC: process.env.NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC || undefined,
+    NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC: process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC || undefined,
   });
 
   if (!parsed.success) {
