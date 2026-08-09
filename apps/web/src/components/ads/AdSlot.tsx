@@ -1,125 +1,111 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
+import {
+  AD_SIZES,
+  ADSTERRA_DOMAIN,
+  ADSTERRA_KEY_MOBILE,
+  ADSENSE_CLIENT,
+  MOBILE_BANNER,
+  adsterraKey,
+  bannerDocument,
+  hasAdsterraBanner,
+  type AdFormat,
+  type AdSize,
+} from '@/lib/ads';
 
-type AdFormat =
-  | 'leaderboard'
-  | 'rectangle'
-  | 'sidebar'
-  | 'in-article'
-  | 'mobile';
+interface AdSlotProps {
+  format?: AdFormat;
+  slot?: string;
+  className?: string;
+  label?: string;
+}
 
-const SIZES: Record<AdFormat, { className: string; label: string }> = {
-  leaderboard: {
-    className: 'min-h-[90px]',
-    label: '728 × 90',
-  },
-  rectangle: {
-    className: 'min-h-[250px]',
-    label: '300 × 250',
-  },
-  sidebar: {
-    className: 'min-h-[600px]',
-    label: '300 × 600',
-  },
-  'in-article': {
-    className: 'min-h-[180px]',
-    label: 'Responsive',
-  },
-  mobile: {
-    className: 'min-h-[50px]',
-    label: '320 × 50',
-  },
-};
-
-const AD_CONFIG = {
-  rectangle: {
-    key: 'f08044fc17571bc2bed6a2dd84ddbf11',
-    width: 300,
-    height: 250,
-  },
-  mobile: {
-    key: '8cff3f0cffd3c0071b4d093e6a55e462',
-    width: 320,
-    height: 50,
-  },
-} as const;
-
-function AdsterraAd({
+/**
+ * One Adsterra banner rendered inside its own `<iframe srcDoc=…>`.
+ *
+ * Every Adsterra banner snippet assigns to the same global `atOptions`
+ * variable, so two banners in the same document would overwrite each other
+ * and only the last one would render. Each iframe has its own window, so
+ * every placement gets an isolated `atOptions` and all of them load at once.
+ */
+function AdsterraBanner({
   format,
+  size,
+  label,
 }: {
-  format: 'rectangle' | 'mobile';
+  format: AdFormat | 'mobile';
+  size: AdSize;
+  label: string;
 }) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
 
+  // Lazy mount: only load the ad once it is near the viewport. Adsterra pays
+  // per impression, so ads far below the fold must not load on page open.
+  // `disconnect()` after the first intersection so the ad is never unmounted
+  // and re-counted while scrolling.
   useEffect(() => {
-    const container = containerRef.current;
+    const root = rootRef.current;
+    if (!root || visible) return;
 
-    if (!container || container.dataset.loaded === 'true') {
+    if (typeof IntersectionObserver === 'undefined') {
+      setVisible(true);
       return;
     }
 
-    const config = AD_CONFIG[format];
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisible(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: '300px' },
+    );
 
-    container.dataset.loaded = 'true';
+    io.observe(root);
+    return () => io.disconnect();
+  }, [visible]);
 
-    const optionsScript = document.createElement('script');
-
-    optionsScript.text = `
-      atOptions = {
-        'key': '${config.key}',
-        'format': 'iframe',
-        'height': ${config.height},
-        'width': ${config.width},
-        'params': {}
-      };
-    `;
-
-    const adScript = document.createElement('script');
-
-    adScript.src = `https://www.highperformanceformat.com/${config.key}/invoke.js`;
-    adScript.async = true;
-
-    container.appendChild(optionsScript);
-    container.appendChild(adScript);
-
-    return () => {
-      container.innerHTML = '';
-      delete container.dataset.loaded;
-    };
-  }, [format]);
-
-  const config = AD_CONFIG[format];
+  const key = adsterraKey(format);
+  const domain = ADSTERRA_DOMAIN;
 
   return (
     <div
-      ref={containerRef}
-      className="flex w-full items-center justify-center overflow-hidden"
-      style={{
-        minHeight: `${config.height}px`,
-      }}
-      aria-label="Advertisement"
-    />
+      ref={rootRef}
+      className={cn('flex w-full items-center justify-center', !visible && size.className)}
+    >
+      {visible && key && domain ? (
+        <iframe
+          title={label}
+          srcDoc={bannerDocument(key, domain, size)}
+          width={size.width}
+          height={size.height}
+          scrolling="no"
+          loading="lazy"
+          sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
+          referrerPolicy="no-referrer-when-downgrade"
+          style={{ border: 0, display: 'block', maxWidth: '100%' }}
+        />
+      ) : null}
+    </div>
   );
 }
 
 export function AdSlot({
   format = 'leaderboard',
+  slot,
   className,
   label = 'Advertisement',
-}: {
-  format?: AdFormat;
-  slot?: string;
-  className?: string;
-  label?: string;
-}) {
-  const size = SIZES[format];
+}: AdSlotProps) {
+  const size = AD_SIZES[format];
 
   /*
-   * 300 × 250 Adsterra rectangle
+   * 1. Adsterra — primary network.
    */
-  if (format === 'rectangle') {
+  if (hasAdsterraBanner(format)) {
     return (
       <div
         className={cn(
@@ -129,34 +115,47 @@ export function AdSlot({
         )}
         aria-label={label}
       >
-        <AdsterraAd format="rectangle" />
+        {format === 'leaderboard' && ADSTERRA_KEY_MOBILE ? (
+          <>
+            <div className="hidden md:flex">
+              <AdsterraBanner format="leaderboard" size={size} label={label} />
+            </div>
+            <div className="md:hidden">
+              <AdsterraBanner format="mobile" size={MOBILE_BANNER} label={label} />
+            </div>
+          </>
+        ) : (
+          <AdsterraBanner format={format} size={size} label={label} />
+        )}
       </div>
     );
   }
 
   /*
-   * 320 × 50 Adsterra mobile banner
+   * 2. AdSense — legacy fallback, only when the client id AND a slot are
+   *    both present.
    */
-  if (format === 'mobile') {
+  if (ADSENSE_CLIENT && slot) {
     return (
       <div
-        className={cn(
-          'flex w-full items-center justify-center overflow-hidden',
-          size.className,
-          className,
-        )}
+        className={cn('flex w-full items-center justify-center overflow-hidden', className)}
         aria-label={label}
       >
-        <div className="block md:hidden">
-          <AdsterraAd format="mobile" />
-        </div>
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client={ADSENSE_CLIENT}
+          data-ad-slot={slot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       </div>
     );
   }
 
   /*
-   * Other formats stay as placeholders
-   * until their Adsterra codes are added.
+   * 3. Placeholder — the dashed box shown whenever no ad network is
+   *    configured (the default state).
    */
   return (
     <div
@@ -169,13 +168,9 @@ export function AdSlot({
       )}
     >
       <div className="text-center">
-        <p className="text-2xs font-semibold uppercase tracking-widest text-faint">
-          {label}
-        </p>
+        <p className="text-2xs font-semibold uppercase tracking-widest text-faint">{label}</p>
 
-        <p className="mt-0.5 text-2xs text-faint/70">
-          {size.label}
-        </p>
+        <p className="mt-0.5 text-2xs text-faint/70">{size.label}</p>
       </div>
     </div>
   );

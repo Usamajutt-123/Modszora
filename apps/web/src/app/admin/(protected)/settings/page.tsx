@@ -73,6 +73,14 @@ export default function AdminSettingsPage() {
         <Group title="Analytics & ads" icon={Search} rows={[
           { key: 'NEXT_PUBLIC_GA_ID', label: 'Google Analytics', set: has(env.NEXT_PUBLIC_GA_ID), hint: 'Loaded lazily, IP anonymised' },
           { key: 'NEXT_PUBLIC_ADSENSE_CLIENT', label: 'AdSense', set: has(env.NEXT_PUBLIC_ADSENSE_CLIENT), hint: 'Ad slots reserve space to avoid layout shift' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_DOMAIN', label: 'Adsterra domain', set: has(env.NEXT_PUBLIC_ADSTERRA_DOMAIN), hint: 'Banner host, shared by all five banner units' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_KEY_LEADERBOARD', label: 'Adsterra leaderboard', set: has(env.NEXT_PUBLIC_ADSTERRA_KEY_LEADERBOARD), hint: '728 × 90 — download page, above content' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_KEY_RECTANGLE', label: 'Adsterra rectangle', set: has(env.NEXT_PUBLIC_ADSTERRA_KEY_RECTANGLE), hint: '300 × 250 — sidebars on download, blog, reviews' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_KEY_SIDEBAR', label: 'Adsterra sidebar', set: has(env.NEXT_PUBLIC_ADSTERRA_KEY_SIDEBAR), hint: '160 × 600 skyscraper — game and blog sidebars' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_KEY_IN_ARTICLE', label: 'Adsterra in-article', set: has(env.NEXT_PUBLIC_ADSTERRA_KEY_IN_ARTICLE), hint: '468 × 60 — inside game, download, review content' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_KEY_MOBILE', label: 'Adsterra mobile', set: has(env.NEXT_PUBLIC_ADSTERRA_KEY_MOBILE), hint: '320 × 50 — replaces the leaderboard below md' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN', label: 'Adsterra native domain', set: has(env.NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN), hint: 'Native Banner host — different from the banner host' },
+          { key: 'NEXT_PUBLIC_ADSTERRA_NATIVE_KEY', label: 'Adsterra native', set: has(env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY), hint: 'Native Banner — game and download pages' },
         ]} />
 
         <Group title="Site" icon={Palette} rows={[

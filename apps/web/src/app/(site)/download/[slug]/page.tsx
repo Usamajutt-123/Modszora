@@ -16,6 +16,7 @@ import { DownloadCountdown } from '@/components/download/DownloadCountdown';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { GameCard } from '@/components/game/GameCard';
 import { AdSlot } from '@/components/ads/AdSlot';
+import { NativeAd } from '@/components/ads/NativeAd';
 import { SpecRow, Section, SectionHeader } from '@/components/ui';
 import { buildMetadata, jsonLdScript } from '@/lib/metadata';
 import { env, siteUrl } from '@/lib/env';
@@ -158,6 +159,8 @@ export default async function DownloadPage({
             ) : null}
 
             <AdSlot format="in-article" className="mt-6" />
+
+            <NativeAd className="mt-6" />
           </div>
 
           {/* sidebar */}

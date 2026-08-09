@@ -41,6 +41,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FaqAccordion } from '@/components/marketing/FaqAccordion';
 import { CommentSection } from '@/components/game/CommentSection';
 import { AdSlot } from '@/components/ads/AdSlot';
+import { NativeAd } from '@/components/ads/NativeAd';
 import { buildMetadata, jsonLdScript } from '@/lib/metadata';
 import { env, siteUrl } from '@/lib/env';
 
@@ -238,6 +239,8 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
           ) : null}
 
           <AdSlot format="in-article" className="mt-9" />
+
+          <NativeAd className="mt-9" />
 
           {/* description */}
           <section aria-labelledby="description" className="mt-9">
