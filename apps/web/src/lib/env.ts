@@ -24,6 +24,14 @@ const serverSchema = z.object({
   OPENAI_API_KEY: z.string().optional(),
   NEXT_PUBLIC_GA_ID: z.string().optional(),
   NEXT_PUBLIC_ADSENSE_CLIENT: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_DOMAIN: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_KEY_LEADERBOARD: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_KEY_RECTANGLE: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_KEY_SIDEBAR: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_KEY_IN_ARTICLE: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_KEY_MOBILE: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN: z.string().optional(),
+  NEXT_PUBLIC_ADSTERRA_NATIVE_KEY: z.string().optional(),
 });
 
 type ServerEnv = z.infer<typeof serverSchema>;
@@ -46,6 +54,14 @@ function read(): ServerEnv {
     OPENAI_API_KEY: process.env.OPENAI_API_KEY || undefined,
     NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID || undefined,
     NEXT_PUBLIC_ADSENSE_CLIENT: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || undefined,
+    NEXT_PUBLIC_ADSTERRA_DOMAIN: process.env.NEXT_PUBLIC_ADSTERRA_DOMAIN || undefined,
+    NEXT_PUBLIC_ADSTERRA_KEY_LEADERBOARD: process.env.NEXT_PUBLIC_ADSTERRA_KEY_LEADERBOARD || undefined,
+    NEXT_PUBLIC_ADSTERRA_KEY_RECTANGLE: process.env.NEXT_PUBLIC_ADSTERRA_KEY_RECTANGLE || undefined,
+    NEXT_PUBLIC_ADSTERRA_KEY_SIDEBAR: process.env.NEXT_PUBLIC_ADSTERRA_KEY_SIDEBAR || undefined,
+    NEXT_PUBLIC_ADSTERRA_KEY_IN_ARTICLE: process.env.NEXT_PUBLIC_ADSTERRA_KEY_IN_ARTICLE || undefined,
+    NEXT_PUBLIC_ADSTERRA_KEY_MOBILE: process.env.NEXT_PUBLIC_ADSTERRA_KEY_MOBILE || undefined,
+    NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN: process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN || undefined,
+    NEXT_PUBLIC_ADSTERRA_NATIVE_KEY: process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY || undefined,
   });
 
   if (!parsed.success) {
