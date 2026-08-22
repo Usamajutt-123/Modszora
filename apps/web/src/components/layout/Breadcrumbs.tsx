@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils';
 export function Breadcrumbs({ crumbs, className }: { crumbs: Crumb[]; className?: string }) {
   return (
     <nav aria-label="Breadcrumb" className={cn('min-w-0', className)}>
-      <ol className="scrollbar-none flex items-center gap-1 overflow-x-auto whitespace-nowrap text-xs text-faint">
+      <ol className="scrollbar-none flex min-w-0 items-center gap-1 overflow-x-auto overscroll-x-contain whitespace-nowrap text-xs text-faint">
         <li className="flex shrink-0 items-center">
           <Link href="/" className="flex items-center gap-1 transition-colors hover:text-brand" aria-label="Home">
             <Home className="h-3 w-3" />

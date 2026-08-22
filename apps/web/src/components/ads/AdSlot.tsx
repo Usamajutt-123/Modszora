@@ -87,6 +87,7 @@ function AdsterraBanner({
           loading="lazy"
           sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"
           referrerPolicy="no-referrer-when-downgrade"
+          className="max-w-full"
           style={{ border: 0, display: 'block', maxWidth: '100%' }}
         />
       ) : null}
@@ -109,7 +110,7 @@ export function AdSlot({
     return (
       <div
         className={cn(
-          'flex w-full items-center justify-center overflow-hidden',
+          'flex w-full max-w-full items-center justify-center overflow-hidden',
           size.className,
           className,
         )}

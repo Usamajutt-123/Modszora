@@ -22,7 +22,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         <div className="absolute -right-40 top-1/3 h-[460px] w-[460px] rounded-full bg-accent/12 blur-[130px]" />
       </div>
       <Header />
-      <main id="main" className="relative">
+      <main id="main" className="relative min-w-0 max-w-full">
         {children}
       </main>
       <Footer />
