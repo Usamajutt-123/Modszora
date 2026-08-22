@@ -17,6 +17,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { GameCard } from '@/components/game/GameCard';
 import { AdSlot } from '@/components/ads/AdSlot';
 import { NativeAd } from '@/components/ads/NativeAd';
+import { PopunderScript } from '@/components/ads/PopunderScript';
 import { SpecRow, Section, SectionHeader } from '@/components/ui';
 import { buildMetadata, jsonLdScript } from '@/lib/metadata';
 import { env, siteUrl } from '@/lib/env';
@@ -78,6 +79,9 @@ export default async function DownloadPage({
 
   return (
     <>
+      {/* Adsterra Popunder — loads once on the download page; opens on the first click. */}
+      <PopunderScript />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdScript(breadcrumbJsonLd(ctx, crumbs)) }} />
 
       <div className="container py-6">
