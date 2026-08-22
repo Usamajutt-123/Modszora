@@ -62,12 +62,15 @@
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
+    max-width: 100%;
+    overflow-x: clip;
   }
 
   body {
     @apply bg-bg text-ink font-sans antialiased;
     text-rendering: optimizeLegibility;
     min-height: 100dvh;
+    max-width: 100%;
     overflow-x: clip;
   }
 
@@ -199,7 +202,7 @@
   .badge-premium{ @apply badge bg-warning/15 text-warning border border-warning/30; }
 
   .input {
-    @apply w-full rounded-xl bg-surface-2 border border-line px-4 py-2.5 text-sm text-ink
+    @apply w-full min-w-0 rounded-xl bg-surface-2 border border-line px-4 py-2.5 text-sm text-ink
            placeholder:text-faint transition-all duration-200
            focus:border-brand/60 focus:bg-surface focus:outline-none
            focus:ring-2 focus:ring-brand/25;
@@ -276,6 +279,8 @@
 
 .prose-modverse {
   @apply text-[0.975rem] leading-[1.75] text-muted;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .prose-modverse > * + * { @apply mt-5; }
 .prose-modverse h2 { @apply text-2xl font-display font-bold text-ink mt-10 mb-3 scroll-mt-24; }
@@ -299,7 +304,7 @@
 .prose-modverse pre code { @apply bg-transparent border-0 p-0 text-ink; }
 .prose-modverse img { @apply rounded-xl border border-line w-full h-auto; }
 .prose-modverse hr { @apply border-line my-8; }
-.prose-modverse table { @apply w-full text-sm border-collapse; }
+.prose-modverse table { @apply w-full max-w-full text-sm border-collapse; }
 .prose-modverse th {
   @apply text-left font-semibold text-ink bg-surface-2 px-3 py-2 border border-line;
 }

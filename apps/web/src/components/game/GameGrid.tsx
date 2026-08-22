@@ -37,8 +37,8 @@ export function GameGrid({
 export function GameRail({ games, className }: { games: GameRecord[]; className?: string }) {
   if (!games.length) return null;
   return (
-    <div className={cn('-mx-4 px-4 sm:mx-0 sm:px-0', className)}>
-      <div className="scrollbar-none mask-fade-r flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 sm:gap-4">
+    <div className={cn('-mx-4 min-w-0 w-[calc(100%+2rem)] overflow-x-clip px-4 sm:mx-0 sm:w-auto sm:overflow-visible sm:px-0', className)}>
+      <div className="scrollbar-none mask-fade-r flex w-full min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain pb-2 sm:gap-4">
         {games.map((game, i) => (
           <div key={game.id ?? game.slug} className="w-[150px] shrink-0 snap-start sm:w-[168px]">
             <GameCard game={game} priority={i < 4} index={i} />

@@ -35,7 +35,7 @@ export function Screenshots({ items, gameName }: { items: MediaAsset[]; gameName
 
   return (
     <>
-      <div className="scrollbar-none mask-fade-r -mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:px-0">
+      <div className="scrollbar-none mask-fade-r -mx-4 flex w-[calc(100%+2rem)] min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain px-4 pb-2 sm:mx-0 sm:w-auto sm:px-0">
         {items.map((shot, i) => (
           <button
             key={shot.url}
@@ -110,7 +110,7 @@ export function Screenshots({ items, gameName }: { items: MediaAsset[]; gameName
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.22 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative max-h-[85vh] w-auto"
+              className="relative max-h-[85vh] w-auto max-w-full"
               style={{ aspectRatio: `${active.width ?? 9} / ${active.height ?? 16}` }}
             >
               <Image
@@ -118,7 +118,7 @@ export function Screenshots({ items, gameName }: { items: MediaAsset[]; gameName
                 alt={active.alt ?? `${gameName} screenshot`}
                 width={active.width ?? 1080}
                 height={active.height ?? 1920}
-                className="max-h-[85vh] w-auto rounded-xl object-contain"
+                className="max-h-[85vh] w-auto max-w-full rounded-xl object-contain"
                 priority
               />
             </motion.div>

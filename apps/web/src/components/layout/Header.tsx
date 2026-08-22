@@ -52,11 +52,11 @@ export function Header() {
 
       <header
         className={cn(
-          'sticky top-0 z-50 w-full transition-all duration-300',
+          'sticky top-0 z-50 w-full min-w-0 transition-all duration-300',
           scrolled ? 'glass-strong border-b border-line/70' : 'border-b border-transparent bg-bg/60 backdrop-blur-sm',
         )}
       >
-        <div className="container flex h-16 items-center gap-3 lg:h-[68px]">
+        <div className="container flex h-16 min-w-0 items-center gap-3 lg:h-[68px]">
           {/* logo */}
           <Link href="/" className="group flex shrink-0 items-center gap-2" aria-label="MODSzora home">
             <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-grad-brand shadow-glow">
@@ -116,7 +116,7 @@ export function Header() {
           </nav>
 
           {/* search */}
-          <div className="ml-auto hidden max-w-sm flex-1 md:block">
+          <div className="ml-auto hidden min-w-0 max-w-sm flex-1 md:block">
             <SearchBar />
           </div>
 

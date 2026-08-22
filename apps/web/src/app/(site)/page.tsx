@@ -144,7 +144,7 @@ export default async function HomePage() {
 
       {/* ── category quick nav ── */}
       <div className="container">
-        <div className="scrollbar-none mask-fade-r -mx-4 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
+        <div className="scrollbar-none mask-fade-r -mx-4 flex w-[calc(100%+2rem)] min-w-0 gap-2 overflow-x-auto overscroll-x-contain px-4 pb-2 sm:mx-0 sm:w-auto sm:flex-wrap sm:px-0">
           {GAME_CATEGORIES.map((c) => (
             <Link
               key={c}

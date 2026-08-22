@@ -95,8 +95,8 @@ export function NativeAd({ className, label = 'Sponsored' }: NativeAdProps) {
   }
 
   return (
-    <div className={cn('w-full', !visible && 'min-h-[200px]', className)}>
-      <div ref={containerRef} id={`container-${ADSTERRA_NATIVE_KEY}`} className="min-h-[200px] w-full" />
+    <div className={cn('w-full max-w-full overflow-x-hidden', !visible && 'min-h-[200px]', className)}>
+      <div ref={containerRef} id={`container-${ADSTERRA_NATIVE_KEY}`} className="min-h-[200px] w-full max-w-full overflow-x-hidden" />
     </div>
   );
 }
