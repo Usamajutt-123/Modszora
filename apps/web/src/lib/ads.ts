@@ -62,6 +62,33 @@ export const ADSTERRA_NATIVE_KEY = process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY |
 /** Legacy AdSense fallback (existing variable). */
 export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || undefined;
 
+// ─── Monetag (push notifications) ───────────────────────────────────────────
+
+/**
+ * Monetag delivery host. Must match the `domain` hardcoded in
+ * `public/sw.js` — the service worker and the loader are issued as a pair
+ * and Monetag rejects a mismatch.
+ */
+export const MONETAG_DOMAIN = '5gvci.com';
+
+/**
+ * Monetag zone id for this site's push unit. Gates the whole integration:
+ * unset means the loader never renders and `/sw.js` is never registered.
+ * Static lookup — never build the name dynamically.
+ */
+export const MONETAG_ZONE_ID = process.env.NEXT_PUBLIC_MONETAG_ZONE_ID || undefined;
+
+/**
+ * Monetag's loader URL. It registers `/sw.js`, shows the permission prompt
+ * and handles the push subscription.
+ */
+export const MONETAG_TAG_SRC = `https://${MONETAG_DOMAIN}/act/files/tag.min.js?z=${MONETAG_ZONE_ID ?? ''}`;
+
+/** True when the Monetag push unit is configured. */
+export function hasMonetag(): boolean {
+  return Boolean(MONETAG_ZONE_ID);
+}
+
 const BANNER_KEYS: Record<AdFormat | 'mobile', string | undefined> = {
   leaderboard: ADSTERRA_KEY_LEADERBOARD,
   rectangle: ADSTERRA_KEY_RECTANGLE,
