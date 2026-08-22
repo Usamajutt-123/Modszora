@@ -2,6 +2,7 @@ import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppJoinPrompt } from '@/components/marketing/WhatsAppJoinPrompt';
+import { MonetagScript } from '@/components/ads/MonetagScript';
 import { env } from '@/lib/env';
 
 /**
@@ -38,6 +39,13 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         positions and styles itself — no wrapper or CSS for it.
       */}
       {socialBarSrc ? <Script id="adsterra-socialbar" src={socialBarSrc} strategy="afterInteractive" /> : null}
+
+      {/*
+        Monetag push — registers /sw.js and handles the permission prompt.
+        Mounted here (public route group only) so it never loads inside
+        /admin. No-ops entirely unless NEXT_PUBLIC_MONETAG_ZONE_ID is set.
+      */}
+      <MonetagScript />
     </>
   );
 }
