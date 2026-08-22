@@ -1,6 +1,7 @@
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { WhatsAppJoinPrompt } from '@/components/marketing/WhatsAppJoinPrompt';
 import { env } from '@/lib/env';
 
 /**
@@ -25,6 +26,9 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         {children}
       </main>
       <Footer />
+
+      {/* WhatsApp channel invite — floating bottom-corner prompt, client-side only */}
+      <WhatsAppJoinPrompt />
 
       {/*
         Adsterra Social Bar — sticky bottom bar rendered by Adsterra itself.
