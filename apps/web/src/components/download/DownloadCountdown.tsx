@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, Cloud, Download, ExternalLink, HardDriveDownload, Loader2 } from 'lucide-react';
 import { formatBytes, type DownloadLink } from '@modverse/shared';
 import { cn } from '@/lib/utils';
-import { firePopunder } from '@/lib/popunder';
 
 interface Props {
   slug: string;
@@ -128,7 +127,6 @@ export function DownloadCountdown({ slug, gameName, links, seconds = 10, preferM
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     onClick={() => {
-                      firePopunder();
                       trackDownload(link.kind);
                     }}
                     className={cn(
