@@ -82,7 +82,7 @@ export default function AdminSettingsPage() {
           { key: 'NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN', label: 'Adsterra native domain', set: has(env.NEXT_PUBLIC_ADSTERRA_NATIVE_DOMAIN), hint: 'Native Banner host — different from the banner host' },
           { key: 'NEXT_PUBLIC_ADSTERRA_NATIVE_KEY', label: 'Adsterra native', set: has(env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY), hint: 'Native Banner — game and download pages' },
           { key: 'NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC', label: 'Adsterra social bar', set: has(env.NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC), hint: 'Sticky bottom bar — every public page, not admin' },
-          { key: 'NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC', label: 'Adsterra popunder', set: has(env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC), hint: 'First download click only, per visitor' },
+          { key: 'monetag-popunder', label: 'Monetag popunder', set: true, hint: 'Fires on every download click (built-in, zone 272339)' },
         ]} />
 
         <Group title="Site" icon={Palette} rows={[

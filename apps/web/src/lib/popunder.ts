@@ -1,50 +1,36 @@
 /**
- * Adsterra Popunder — fires only from a download-button click, and only the
- * first time for a given visitor.
+ * Monetag Popunder — fires from a download-button click, EVERY time.
  *
- * The URL is a full absolute `https://` script URL (no key/domain split),
- * read statically so Next.js inlines it into the client bundle at build
- * time. With the env var unset this module is a complete no-op: no script,
- * no request, no error.
+ * The Monetag loader (https://quge5.com/88/tag.min.js, zone 272339) is
+ * injected synchronously inside the click handler. A popunder opened outside
+ * a genuine user gesture is silently discarded by browsers, so this MUST run
+ * directly off the click. The download link always keeps working, so every
+ * failure path (missing DOM, ad blocker) is swallowed.
  *
- * The injection must happen synchronously inside the click handler — a
- * popunder opened outside a genuine user gesture is silently discarded by
- * browsers. The download link must always keep working, so every failure
- * path (blocked storage, missing DOM, ad blocker) is swallowed.
+ * There is deliberately NO frequency cap on this side: the loader is
+ * re-injected on every download click, so a visitor who downloads several
+ * games triggers the popunder each time. Any capping is left to Monetag's
+ * own zone settings — nothing here throttles it.
  */
 
-/** Full Adsterra popunder script URL. Static lookup — never build the key dynamically. */
-const POPUNDER_SRC = process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC || undefined;
+/** Monetag popunder loader URL and zone (account-specific, hardcoded). */
+const POPUNDER_SRC = 'https://quge5.com/88/tag.min.js';
+const POPUNDER_ZONE = '272339';
 
-/** Stable element id — guards against injecting twice within one page view. */
-const POPUNDER_SCRIPT_ID = 'adsterra-popunder';
-
-/** localStorage flag that marks this visitor as already having fired it. */
-const POPUNDER_FIRED_KEY = 'mv_pu_fired';
+/** Stable element id — lets us replace (not pile up) scripts across clicks. */
+const POPUNDER_SCRIPT_ID = 'monetag-popunder';
 
 /**
- * Injects the popunder script. First click per visitor only; the flag is
- * persisted in localStorage so it survives page views, games and tabs.
+ * Injects the Monetag popunder loader. Called from the download-button click
+ * handler; re-injects on every call so each download attempt fires it.
  */
 export function firePopunder(): void {
-  if (!POPUNDER_SRC) return;
-
   try {
-    if (localStorage.getItem(POPUNDER_FIRED_KEY)) return; // already fired — first click only
-  } catch {
-    /* Storage blocked (e.g. Safari private mode) — fail open. */
-  }
-
-  try {
-    if (document.getElementById(POPUNDER_SCRIPT_ID)) return; // already injected this page view
+    // Tidy up any loader injected on a previous download click before adding a
+    // fresh one, so repeated clicks don't accumulate stale nodes in <head>.
+    document.getElementById(POPUNDER_SCRIPT_ID)?.remove();
   } catch {
     /* DOM unavailable — fail open. */
-  }
-
-  try {
-    localStorage.setItem(POPUNDER_FIRED_KEY, '1');
-  } catch {
-    /* Fail open — the click must still proceed. */
   }
 
   try {
@@ -52,6 +38,8 @@ export function firePopunder(): void {
     s.id = POPUNDER_SCRIPT_ID;
     s.src = POPUNDER_SRC;
     s.async = true;
+    s.dataset.zone = POPUNDER_ZONE;
+    s.dataset.cfasync = 'false';
     document.head.appendChild(s);
   } catch {
     /* Popunder is best-effort — the download link must still work. */
