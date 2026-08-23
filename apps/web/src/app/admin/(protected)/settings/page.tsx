@@ -83,7 +83,7 @@ export default function AdminSettingsPage() {
           { key: 'NEXT_PUBLIC_ADSTERRA_NATIVE_KEY', label: 'Adsterra native', set: has(env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY), hint: 'Native Banner — game and download pages' },
           { key: 'NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC', label: 'Adsterra social bar', set: has(env.NEXT_PUBLIC_ADSTERRA_SOCIALBAR_SRC), hint: 'Sticky bottom bar — every public page, not admin' },
           { key: 'monetag-popunder', label: 'Monetag popunder', set: true, hint: 'Download pages only — fires on the download click (built-in, zone 11634583)' },
-          { key: 'monetag-push', label: 'Monetag push notifications', set: true, hint: 'Download pages only — loads during the countdown (zone 11634922)' },
+          { key: 'monetag-push', label: 'Monetag push notifications', set: true, hint: 'Download pages only — registers /sw.js and requests notification permission; no ad script injected (zone 11634922)' },
         ]} />
 
         <Group title="Site" icon={Palette} rows={[

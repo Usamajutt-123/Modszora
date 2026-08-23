@@ -6,7 +6,7 @@ import { CheckCircle2, Cloud, Download, ExternalLink, HardDriveDownload, Loader2
 import { formatBytes, type DownloadLink } from '@modverse/shared';
 import { cn } from '@/lib/utils';
 import { MonetagPopunder } from '@/components/ads/MonetagPopunder';
-import { MonetagPush } from '@/components/ads/MonetagPush';
+import { MonetagPushSW } from '@/components/ads/MonetagPushSW';
 
 interface Props {
   slug: string;
@@ -76,7 +76,12 @@ export function DownloadCountdown({ slug, gameName, links, seconds = 10, preferM
 
   return (
     <div className="card-gradient">
-      <MonetagPush />
+      {/*
+        Push notifications via the Monetag service worker only — no tag.min.js
+        is injected here, so the download buttons below are never
+        click-hijacked (the previous push tag forced 2-3 clicks per download).
+      */}
+      <MonetagPushSW />
       {/*
         Monetag popunder loads only once the download links are revealed, so
         the tag is live exactly when the user clicks a download button —
