@@ -6,6 +6,7 @@ import { CheckCircle2, Cloud, Download, ExternalLink, HardDriveDownload, Loader2
 import { formatBytes, type DownloadLink } from '@modverse/shared';
 import { cn } from '@/lib/utils';
 import { MonetagPopunder } from '@/components/ads/MonetagPopunder';
+import { MonetagPush } from '@/components/ads/MonetagPush';
 
 interface Props {
   slug: string;
@@ -75,6 +76,7 @@ export function DownloadCountdown({ slug, gameName, links, seconds = 10, preferM
 
   return (
     <div className="card-gradient">
+      <MonetagPush />
       {/*
         Monetag popunder loads only once the download links are revealed, so
         the tag is live exactly when the user clicks a download button —

@@ -2,21 +2,20 @@
 
 import { useEffect } from 'react';
 
-/** Monetag Popunder — zone 11634583. Mounted only in the download flow. */
-const ZONE = '11634583';
-const SRC = 'https://al5sm.com/tag.min.js';
-const SCRIPT_ID = 'monetag-popunder';
+/** Monetag Push Notifications — zone 11634922. Download flow only. */
+const SRC = 'https://5gvci.com/act/files/tag.min.js?z=11634922';
+const SCRIPT_ID = 'monetag-push';
 
-export function MonetagPopunder() {
+export function MonetagPush() {
   useEffect(() => {
     if (document.getElementById(SCRIPT_ID)) return;
 
     try {
       const s = document.createElement('script');
       s.id = SCRIPT_ID;
-      s.dataset.zone = ZONE;
       s.src = SRC;
       s.async = true;
+      s.dataset.cfasync = 'false';
       document.body.appendChild(s);
     } catch {
       /* Ads are best-effort and must never break the page. */
