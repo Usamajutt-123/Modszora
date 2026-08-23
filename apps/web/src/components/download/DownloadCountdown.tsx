@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, Cloud, Download, ExternalLink, HardDriveDownload, Loader2 } from 'lucide-react';
 import { formatBytes, type DownloadLink } from '@modverse/shared';
 import { cn } from '@/lib/utils';
-import { firePopunder } from '@/lib/popunder';
+import { MonetagPopunder } from '@/components/ads/MonetagPopunder';
 
 interface Props {
   slug: string;
@@ -75,6 +75,12 @@ export function DownloadCountdown({ slug, gameName, links, seconds = 10, preferM
 
   return (
     <div className="card-gradient">
+      {/*
+        Monetag popunder loads only once the download links are revealed, so
+        the tag is live exactly when the user clicks a download button —
+        nowhere else on the site.
+      */}
+      {ready ? <MonetagPopunder /> : null}
       <div className="p-6 md:p-8">
         {!ready ? (
           <div className="flex flex-col items-center text-center">
@@ -128,7 +134,6 @@ export function DownloadCountdown({ slug, gameName, links, seconds = 10, preferM
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     onClick={() => {
-                      firePopunder();
                       trackDownload(link.kind);
                     }}
                     className={cn(

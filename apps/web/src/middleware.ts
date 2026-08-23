@@ -73,13 +73,7 @@ export const config = {
     /*
      * Run on everything except static assets and image optimisation,
      * which keeps middleware off the hot path for cached content.
-     *
-     * `sw.js` is listed explicitly: it is the Monetag service worker served
-     * from public/. Without the exclusion every fetch of it (including the
-     * browser's periodic update check) would pay for a Supabase
-     * `auth.getUser()` round trip and could attach auth cookies to a script
-     * response that has no business carrying them.
      */
-    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|manifest.webmanifest|sw.js|.*\\.(?:svg|png|jpg|jpeg|gif|webp|avif|ico|woff2?)$).*)',
+    '/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|manifest.webmanifest|.*\\.(?:svg|png|jpg|jpeg|gif|webp|avif|ico|woff2?)$).*)',
   ],
 };
