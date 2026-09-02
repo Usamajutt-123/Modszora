@@ -5,6 +5,20 @@
   "installCommand": "cd ../.. && npm install",
   "outputDirectory": ".next",
   "regions": ["iad1"],
+  "crons": [
+    {
+      "path": "/api/cron/publish-scheduled",
+      "schedule": "*/10 * * * *"
+    },
+    {
+      "path": "/api/cron/auto-generate?type=blog",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/auto-generate?type=review",
+      "schedule": "0 18 * * *"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
