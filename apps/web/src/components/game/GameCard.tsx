@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Download, Shield, Sparkles } from 'lucide-react';
 import type { GameRecord } from '@modverse/shared';
-import { formatBytes, formatCompactNumber } from '@modverse/shared';
+import { formatBytes, formatCompactNumber, formatVersion } from '@modverse/shared';
 import { Badge, RatingStars } from '@/components/ui';
 import { cn } from '@/lib/utils';
 
@@ -49,7 +49,7 @@ export function GameCard({ game, priority = false, variant = 'grid', index = 0, 
         <div className="min-w-0 flex-1">
           <p className="truncate text-sm font-semibold text-ink transition-colors group-hover:text-brand">{game.name}</p>
           <p className="truncate text-2xs text-faint">
-            v{game.version} · {formatBytes(game.sizeBytes)}
+            {formatVersion(game.version)} · {formatBytes(game.sizeBytes)}
           </p>
         </div>
         <RatingStars rating={game.rating} size="sm" showValue={false} className="shrink-0" />
@@ -92,7 +92,7 @@ export function GameCard({ game, priority = false, variant = 'grid', index = 0, 
               {formatCompactNumber(game.downloads)}
             </span>
             <span>{formatBytes(game.sizeBytes)}</span>
-            <span className="hidden xs:inline">v{game.version}</span>
+            <span className="hidden xs:inline">{formatVersion(game.version)}</span>
           </div>
         </div>
         <span className="hidden shrink-0 self-center rounded-xl bg-grad-brand px-4 py-2 text-xs font-bold text-white shadow-glow transition-transform duration-200 group-hover:scale-105 sm:inline-block">
@@ -177,7 +177,7 @@ export function GameCard({ game, priority = false, variant = 'grid', index = 0, 
         </div>
 
         <div className="mt-2 flex items-center justify-between gap-2 border-t border-line/60 pt-2">
-          <span className="truncate text-2xs text-faint">v{game.version}</span>
+          <span className="truncate text-2xs text-faint">{formatVersion(game.version)}</span>
           <span className="inline-flex shrink-0 items-center gap-1 text-2xs font-semibold text-brand">
             <Download className="h-2.5 w-2.5" />
             {formatCompactNumber(game.downloads)}

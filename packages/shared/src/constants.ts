@@ -129,6 +129,9 @@ export const JOB_TYPES = [
   'wallpaper-generate',
   'review-generate',
   'content-analysis',
+  'blog-auto',
+  'news-auto',
+  'review-auto',
 ] as const;
 export type JobType = (typeof JOB_TYPES)[number];
 

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Loader2, Search, SlidersHorizontal, X } from 'lucide-react';
-import { formatBytes } from '@modverse/shared';
+import { formatBytes, formatVersion } from '@modverse/shared';
 import { cn } from '@/lib/utils';
 
 interface Suggestion {
@@ -199,7 +199,7 @@ export function SearchBar({ className, autoFocus = false }: { className?: string
                 <div className="min-w-0 flex-1">
                   <p className="truncate text-sm font-semibold text-ink">{item.name}</p>
                   <p className="truncate text-2xs text-faint">
-                    {item.developer} · v{item.version} · {formatBytes(item.sizeBytes)}
+                    {item.developer} · {formatVersion(item.version)} · {formatBytes(item.sizeBytes)}
                   </p>
                 </div>
                 <span className="shrink-0 text-2xs font-bold text-warning">★ {item.rating.toFixed(1)}</span>

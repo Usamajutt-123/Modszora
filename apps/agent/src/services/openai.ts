@@ -17,7 +17,7 @@ import { GAME_CATEGORIES, GAME_COLLECTIONS } from '@modverse/shared';
 import { config, features } from '../config/index.js';
 import { createLogger } from '../core/logger.js';
 
-const log = createLogger('openai');
+const log = createLogger('ai');
 
 let client: OpenAI | null = null;
 function getClient(): OpenAI | null {
@@ -36,32 +36,101 @@ export interface CompletionOptions {
   temperature?: number;
 }
 
-export async function complete(opts: CompletionOptions): Promise<string | null> {
-  const ai = getClient();
-  if (!ai) return null;
-
-  try {
-    usage.calls += 1;
-    const res = await ai.chat.completions.create({
-      model: config.OPENAI_MODEL,
-      messages: [
-        { role: 'system', content: opts.system },
-        { role: 'user', content: opts.user },
-      ],
+/**
+ * Direct call to Google Gemini API (v1beta generateContent) with JSON mode.
+ * Supports Gemini 1.5 Flash, 1.5 Pro, 2.0 Flash, etc.
+ */
+async function callGemini(opts: CompletionOptions, apiKey: string, model: string): Promise<string | null> {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const payload = {
+    system_instruction: {
+      parts: [{ text: opts.system }],
+    },
+    contents: [
+      {
+        role: 'user',
+        parts: [{ text: opts.user }],
+      },
+    ],
+    generationConfig: {
       temperature: opts.temperature ?? 0.7,
-      max_tokens: opts.maxTokens ?? config.OPENAI_MAX_OUTPUT_TOKENS,
-      response_format: { type: 'json_object' },
-    });
+      maxOutputTokens: opts.maxTokens ?? 4000,
+      responseMimeType: 'application/json',
+    },
+  };
 
-    usage.promptTokens += res.usage?.prompt_tokens ?? 0;
-    usage.completionTokens += res.usage?.completion_tokens ?? 0;
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(90_000),
+  });
 
-    return res.choices[0]?.message?.content ?? null;
-  } catch (err) {
-    usage.failures += 1;
-    log.error(`OpenAI request failed: ${err instanceof Error ? err.message : String(err)}`);
-    return null;
+  if (!res.ok) {
+    const errText = await res.text().catch(() => '');
+    throw new Error(`Gemini HTTP ${res.status}: ${errText.slice(0, 300)}`);
   }
+
+  const json = (await res.json()) as any;
+  const text = json?.candidates?.[0]?.content?.parts?.[0]?.text ?? null;
+  if (json?.usageMetadata) {
+    usage.promptTokens += json.usageMetadata.promptTokenCount ?? 0;
+    usage.completionTokens += json.usageMetadata.candidatesTokenCount ?? 0;
+  }
+  return text;
+}
+
+/**
+ * Unified completion helper.
+ * Supports Google Gemini (free tier) and OpenAI, with automatic fallback
+ * to whichever key is supplied or heuristic generation if neither is set.
+ */
+export async function complete(opts: CompletionOptions): Promise<string | null> {
+  const geminiKey = config.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY || process.env.GOOGLE_API_KEY;
+  const wantGemini = Boolean(geminiKey && (config.AI_PROVIDER === 'gemini' || config.AI_PROVIDER === 'auto'));
+  const wantOpenAi = Boolean(features.openai && (config.AI_PROVIDER === 'openai' || config.AI_PROVIDER === 'auto'));
+
+  // 1. Try Google Gemini if configured
+  if (wantGemini && geminiKey) {
+    try {
+      usage.calls += 1;
+      const res = await callGemini(opts, geminiKey, config.GEMINI_MODEL);
+      if (res) return res;
+    } catch (err) {
+      usage.failures += 1;
+      log.warn(`Gemini generation attempt failed: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
+  // 2. Try OpenAI if configured
+  if (wantOpenAi) {
+    const ai = getClient();
+    if (ai) {
+      try {
+        usage.calls += 1;
+        const res = await ai.chat.completions.create({
+          model: config.OPENAI_MODEL,
+          messages: [
+            { role: 'system', content: opts.system },
+            { role: 'user', content: opts.user },
+          ],
+          temperature: opts.temperature ?? 0.7,
+          max_tokens: opts.maxTokens ?? config.OPENAI_MAX_OUTPUT_TOKENS,
+          response_format: { type: 'json_object' },
+        });
+
+        usage.promptTokens += res.usage?.prompt_tokens ?? 0;
+        usage.completionTokens += res.usage?.completion_tokens ?? 0;
+
+        return res.choices[0]?.message?.content ?? null;
+      } catch (err) {
+        usage.failures += 1;
+        log.error(`OpenAI generation attempt failed: ${err instanceof Error ? err.message : String(err)}`);
+      }
+    }
+  }
+
+  return null;
 }
 
 /* ═══════════════════════ SEO generation ═══════════════════════ */
@@ -473,6 +542,19 @@ function heuristicReview(game: ScrapedGame, seo: AiSeoBundle): AiReviewBundle {
   };
 }
 
+export function aiStatus(): {
+  available: boolean;
+  provider: 'gemini' | 'openai' | 'heuristic';
+  model: string;
+  usage: typeof usage;
+} {
+  const geminiKey = config.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY || process.env.GOOGLE_API_KEY;
+  const provider = geminiKey ? 'gemini' : features.openai ? 'openai' : 'heuristic';
+  const model = geminiKey ? config.GEMINI_MODEL : features.openai ? config.OPENAI_MODEL : 'heuristic-fallback';
+  return { available: Boolean(geminiKey || features.openai), provider, model, usage: { ...usage } };
+}
+
 export function openAiStatus(): { available: boolean; model: string; usage: typeof usage } {
-  return { available: features.openai, model: config.OPENAI_MODEL, usage: { ...usage } };
+  const s = aiStatus();
+  return { available: s.available, model: `${s.provider}: ${s.model}`, usage: s.usage };
 }

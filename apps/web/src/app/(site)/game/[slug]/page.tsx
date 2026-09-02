@@ -27,6 +27,7 @@ import {
   formatBytes,
   formatCompactNumber,
   formatDate,
+  formatVersion,
   gameJsonLd,
   timeAgo,
   type Crumb,
@@ -160,7 +161,7 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
                   {CATEGORY_LABELS[game.category] ?? game.category}
                 </Link>
                 <span aria-hidden="true">·</span>
-                <span>v{game.version}</span>
+                <span>{formatVersion(game.version)}</span>
               </p>
 
               <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -200,7 +201,7 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
                 ) : null}
               </div>
 
-              <ShareButtons url={pageUrl} title={`${game.name} MOD APK v${game.version}`} className="mt-5" />
+              <ShareButtons url={pageUrl} title={`${game.name} MOD APK ${formatVersion(game.version)}`} className="mt-5" />
             </div>
           </div>
         </div>
@@ -255,7 +256,7 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
             <section aria-labelledby="whats-new" className="mt-9">
               <h2 id="whats-new" className="mb-3 flex items-center gap-2 font-display text-xl font-bold">
                 <ListChecks className="h-5 w-5 text-brand" />
-                What&apos;s New in v{game.version}
+                What&apos;s New in {formatVersion(game.version)}
               </h2>
               <div className="card p-5">
                 <ul className="space-y-2">
@@ -343,7 +344,7 @@ export default async function GamePage({ params }: { params: Promise<{ slug: str
               <p className="text-2xs font-bold uppercase tracking-widest text-faint">Download</p>
               <p className="mt-1 font-display text-2xl font-extrabold text-ink">{formatBytes(game.sizeBytes)}</p>
               <p className="mt-0.5 text-xs text-muted">
-                v{game.version}
+                {formatVersion(game.version)}
                 {game.modVersion ? ` · ${game.modVersion}` : ''}
               </p>
               <Link href={`/download/${game.slug}`} className="btn-primary btn mt-4 w-full">

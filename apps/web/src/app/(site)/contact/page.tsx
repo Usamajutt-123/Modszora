@@ -11,10 +11,10 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const CHANNELS = [
-  { icon: Gamepad2, title: 'Game requests', body: 'Send the Play Store link and we will queue it for the ingestion agent.', to: 'requests@modszora.app' },
-  { icon: Bug, title: 'Broken download or bug', body: 'Include the game name, your Android version and what happened.', to: 'support@modszora.app' },
-  { icon: Scale, title: 'DMCA / takedown', body: 'Rights holders should follow the formal process on our DMCA page.', to: 'legal@modszora.app' },
-  { icon: Mail, title: 'Everything else', body: 'Partnerships, press and general enquiries.', to: 'hello@modszora.app' },
+  { icon: Gamepad2, title: 'Game requests', body: 'Send the Play Store link and we will queue it for the ingestion agent.', to: 'requests@modszora.site' },
+  { icon: Bug, title: 'Broken download or bug', body: 'Include the game name, your Android version and what happened.', to: 'support@modszora.site' },
+  { icon: Scale, title: 'DMCA / takedown', body: 'Rights holders should follow the formal process on our DMCA page.', to: 'legal@modszora.site' },
+  { icon: Mail, title: 'Everything else', body: 'Partnerships, press and general enquiries.', to: 'hello@modszora.site' },
 ];
 
 export default function ContactPage() {

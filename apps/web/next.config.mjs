@@ -77,6 +77,10 @@ const nextConfig = {
     return [
       { source: '/games', destination: '/browse', permanent: true },
       { source: '/game', destination: '/browse', permanent: true },
+      { source: '/privacy-policy', destination: '/privacy', permanent: true },
+      { source: '/terms-of-service', destination: '/terms', permanent: true },
+      { source: '/terms-and-conditions', destination: '/terms', permanent: true },
+      { source: '/dmca-policy', destination: '/dmca', permanent: true },
     ];
   },
 };

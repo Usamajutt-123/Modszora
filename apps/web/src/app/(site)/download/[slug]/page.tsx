@@ -8,6 +8,7 @@ import {
   CATEGORY_LABELS,
   formatBytes,
   formatDate,
+  formatVersion,
   type Crumb,
   type DownloadLink,
 } from '@modverse/shared';
@@ -95,7 +96,7 @@ export default async function DownloadPage({
                   Download {game.name} MOD APK
                 </h1>
                 <p className="mt-0.5 truncate text-sm text-muted">
-                  v{game.version} · {formatBytes(game.sizeBytes)} · {game.developer}
+                  {formatVersion(game.version)} · {formatBytes(game.sizeBytes)} · {game.developer}
                 </p>
               </div>
               <Link href={`/game/${game.slug}`} className="btn-ghost btn-sm btn hidden shrink-0 sm:inline-flex">

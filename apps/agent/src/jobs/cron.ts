@@ -47,6 +47,33 @@ const definitions: CronDef[] = [
       queue.enqueue({ type: 'recommendation', payload: { limitPerSource: 12 }, priority: 3, dedupe: false });
     },
   },
+  {
+    name: 'blog-auto',
+    expression: config.CRON_BLOG,
+    enabled: config.CRON_BLOG_ENABLED,
+    lastRun: null,
+    run: () => {
+      queue.enqueue({ type: 'blog-auto', payload: {}, priority: 4, dedupe: false });
+    },
+  },
+  {
+    name: 'news-auto',
+    expression: config.CRON_NEWS,
+    enabled: config.CRON_NEWS_ENABLED,
+    lastRun: null,
+    run: () => {
+      queue.enqueue({ type: 'news-auto', payload: {}, priority: 4, dedupe: false });
+    },
+  },
+  {
+    name: 'review-auto',
+    expression: config.CRON_REVIEWS,
+    enabled: config.CRON_REVIEWS_ENABLED,
+    lastRun: null,
+    run: () => {
+      queue.enqueue({ type: 'review-auto', payload: {}, priority: 4, dedupe: false });
+    },
+  },
 ];
 
 /** Rough "next run" estimate — node-cron does not expose one. */
