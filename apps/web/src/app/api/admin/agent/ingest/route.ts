@@ -26,11 +26,23 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const body = { ...parsed.data, dryRun: (raw as Record<string, unknown>)?.dryRun };
-  const result = await callAgent('ingest', { method: 'POST', body, timeoutMs: 30_000 });
-
-  if (!result.ok) {
-    return NextResponse.json({ ok: false, error: { code: 'agent_error', message: result.error } }, { status: result.status });
+  if (process.env.NEXT_PUBLIC_AGENT_URL) {
+    const body = { ...parsed.data, dryRun: (raw as Record<string, unknown>)?.dryRun };
+    const result = await callAgent('ingest', { method: 'POST', body, timeoutMs: 30_000 });
+    if (!result.ok) {
+      return NextResponse.json({ ok: false, error: { code: 'agent_error', message: result.error } }, { status: result.status });
+    }
+    return NextResponse.json({ ok: true, data: result.data }, { status: 202 });
   }
-  return NextResponse.json({ ok: true, data: result.data }, { status: 202 });
+
+  return NextResponse.json(
+    {
+      ok: false,
+      error: {
+        code: 'agent_optional',
+        message: 'External scraping agent is not configured. You can add games directly in the Games editor or configure NEXT_PUBLIC_AGENT_URL.',
+      },
+    },
+    { status: 503 },
+  );
 }

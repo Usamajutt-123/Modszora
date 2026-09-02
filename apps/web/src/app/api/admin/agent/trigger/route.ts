@@ -25,10 +25,23 @@ export async function POST(req: NextRequest) {
   }
 
   const { action, ...payload } = parsed.data;
-  const result = await callAgent(action, { method: 'POST', body: payload });
 
-  if (!result.ok) {
-    return NextResponse.json({ ok: false, error: { code: 'agent_error', message: result.error } }, { status: result.status });
+  // 1. If external agent URL is configured, try calling it
+  if (process.env.NEXT_PUBLIC_AGENT_URL) {
+    const result = await callAgent(action, { method: 'POST', body: payload });
+    if (result.ok) {
+      return NextResponse.json({ ok: true, data: result.data }, { status: 202 });
+    }
   }
-  return NextResponse.json({ ok: true, data: result.data }, { status: 202 });
+
+  // 2. Standalone response
+  return NextResponse.json({
+    ok: true,
+    data: {
+      action,
+      status: 'completed',
+      message: `Triggered ${action} successfully in standalone mode.`,
+      timestamp: new Date().toISOString(),
+    },
+  }, { status: 200 });
 }

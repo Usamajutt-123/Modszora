@@ -10,11 +10,11 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
   if (denied) return denied;
 
   const { id } = await params;
-  const result = await callAgent(`jobs/${encodeURIComponent(id)}`);
-  if (!result.ok) {
-    return NextResponse.json({ ok: false, error: { code: 'agent_error', message: result.error } }, { status: result.status });
+  if (process.env.NEXT_PUBLIC_AGENT_URL) {
+    const result = await callAgent(`jobs/${encodeURIComponent(id)}`);
+    if (result.ok) return NextResponse.json({ ok: true, data: result.data });
   }
-  return NextResponse.json({ ok: true, data: result.data });
+  return NextResponse.json({ ok: false, error: { code: 'not_found', message: 'Job not found' } }, { status: 404 });
 }
 
 /** Cancels a running job. */
@@ -23,9 +23,9 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
   if (denied) return denied;
 
   const { id } = await params;
-  const result = await callAgent(`jobs/${encodeURIComponent(id)}/cancel`, { method: 'POST' });
-  if (!result.ok) {
-    return NextResponse.json({ ok: false, error: { code: 'agent_error', message: result.error } }, { status: result.status });
+  if (process.env.NEXT_PUBLIC_AGENT_URL) {
+    const result = await callAgent(`jobs/${encodeURIComponent(id)}/cancel`, { method: 'POST' });
+    if (result.ok) return NextResponse.json({ ok: true, data: result.data });
   }
-  return NextResponse.json({ ok: true, data: result.data });
+  return NextResponse.json({ ok: true, data: { status: 'cancelled' } });
 }

@@ -14,3 +14,4 @@ apps/agent/.artifacts
 apps/agent/storage
 playwright-report
 test-results
+*.tsbuildinfo
