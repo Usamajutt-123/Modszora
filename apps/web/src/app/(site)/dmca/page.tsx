@@ -21,7 +21,7 @@ export default function DmcaPage() {
 <p>MODSzora operates as an index. We do not host application binaries on our own infrastructure; listings point to files stored with third-party providers. Where we control a listing, we can remove it. Where a file resides with another host, we will remove our listing and direct you to that host for deletion of the underlying file.</p>
 
 <h2>Submitting a notice</h2>
-<p>Send your notice to <strong>legal@modszora.app</strong> with the subject line "DMCA Takedown Request". To be actionable under 17 U.S.C. § 512(c)(3), it must include all of the following:</p>
+<p>Send your notice to <strong>legal@modszora.site</strong> with the subject line "DMCA Takedown Request". To be actionable under 17 U.S.C. § 512(c)(3), it must include all of the following:</p>
 <ol>
   <li>A physical or electronic signature of the copyright owner, or a person authorised to act on their behalf.</li>
   <li>Identification of the copyrighted work claimed to have been infringed.</li>

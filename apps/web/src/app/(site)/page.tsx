@@ -14,7 +14,7 @@ import {
   WifiOff,
   Zap,
 } from 'lucide-react';
-import { CATEGORY_LABELS, GAME_CATEGORIES, itemListJsonLd, timeAgo } from '@modverse/shared';
+import { CATEGORY_LABELS, GAME_CATEGORIES, formatVersion, itemListJsonLd, timeAgo } from '@modverse/shared';
 import { Hero } from '@/components/home/Hero';
 import { GameGrid, GameRail } from '@/components/game/GameGrid';
 import { GameCard } from '@/components/game/GameCard';
@@ -330,7 +330,7 @@ export default async function HomePage() {
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-semibold text-ink group-hover:text-brand">{g.name}</p>
                     <p className="mt-0.5 truncate text-2xs text-faint">
-                      v{g.version} · {timeAgo(g.updatedDate)}
+                      {formatVersion(g.version)} · {timeAgo(g.updatedDate)}
                     </p>
                   </div>
                   <Badge tone="new">Updated</Badge>

@@ -46,6 +46,14 @@ export function uniqueSlug(base: string, taken: Iterable<string>): string {
 
 /* ─────────────────────────── formatting ─────────────────────────── */
 
+/** Normalises a version string so leading 'v' is never duplicated (e.g. 'v1.0' -> 'v1.0', '1.0' -> 'v1.0', 'vv0.101' -> 'v0.101'). */
+export function formatVersion(version: string | null | undefined): string {
+  if (!version) return '';
+  const trimmed = version.trim();
+  const clean = trimmed.replace(/^v+/i, '');
+  return `v${clean}`;
+}
+
 export function formatBytes(bytes: number | null | undefined, decimals = 1): string {
   if (!bytes || bytes <= 0) return 'Unknown';
   const units = ['B', 'KB', 'MB', 'GB', 'TB'];

@@ -62,7 +62,8 @@ export default function AdminSettingsPage() {
 
         <Group title="AI agent" icon={Bot} rows={[
           { key: 'NEXT_PUBLIC_AGENT_URL', label: 'Agent URL', set: has(env.NEXT_PUBLIC_AGENT_URL), hint: 'Base URL of the Express agent service' },
-          { key: 'OPENAI_API_KEY', label: 'OpenAI', set: has(env.OPENAI_API_KEY), hint: 'SEO and review generation (heuristic fallback if unset)' },
+          { key: 'GEMINI_API_KEY', label: 'Google Gemini AI', set: has(env.GEMINI_API_KEY || env.GOOGLE_AI_API_KEY), hint: 'Free Gemini API for auto blogs, reviews, news & SEO' },
+          { key: 'OPENAI_API_KEY', label: 'OpenAI', set: has(env.OPENAI_API_KEY), hint: 'OpenAI fallback (heuristic fallback if unset)' },
         ]} />
 
         <Group title="Remote upload" icon={Cloud} rows={[

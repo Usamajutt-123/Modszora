@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Download, Play, Shield, Sparkles, TrendingUp, Zap } from 'lucide-react';
 import type { GameRecord } from '@modverse/shared';
-import { formatBytes, formatCompactNumber } from '@modverse/shared';
+import { formatBytes, formatCompactNumber, formatVersion } from '@modverse/shared';
 import { RatingStars } from '@/components/ui';
 
 interface HeroProps {
@@ -184,7 +184,7 @@ export function Hero({ games, stats }: HeroProps) {
                   <div className="p-4">
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                       <RatingStars rating={active.rating} count={active.ratingCount} size="md" />
-                      <span className="text-xs text-faint">v{active.version}</span>
+                      <span className="text-xs text-faint">{formatVersion(active.version)}</span>
                       <span className="text-xs text-faint">{formatBytes(active.sizeBytes)}</span>
                       <span className="inline-flex items-center gap-1 text-xs font-semibold text-brand">
                         <Download className="h-3 w-3" />

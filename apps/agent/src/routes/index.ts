@@ -303,6 +303,39 @@ export function createRouter(): Router {
     return ok(res, { job, message: 'Article generation started. Poll /jobs/:id for progress.' }, 202);
   });
 
+  /** Automated blog generation trigger. */
+  router.post('/generate/blog/auto', (_req, res) => {
+    const job = queue.enqueue({
+      type: 'blog-auto',
+      payload: {},
+      priority: 8,
+      dedupe: false,
+    });
+    return ok(res, { job, message: 'Automated blog generation triggered.' }, 202);
+  });
+
+  /** Automated news generation trigger. */
+  router.post('/generate/news/auto', (_req, res) => {
+    const job = queue.enqueue({
+      type: 'news-auto',
+      payload: {},
+      priority: 8,
+      dedupe: false,
+    });
+    return ok(res, { job, message: 'Automated news generation triggered.' }, 202);
+  });
+
+  /** Automated review generation trigger. */
+  router.post('/generate/review/auto', (_req, res) => {
+    const job = queue.enqueue({
+      type: 'review-auto',
+      payload: {},
+      priority: 8,
+      dedupe: false,
+    });
+    return ok(res, { job, message: 'Automated review generation triggered.' }, 202);
+  });
+
   /** Queue wallpaper generation from a game's screenshots. */
   router.post('/generate/wallpapers', (req, res) => {
     const parsed = wallpaperGenerateRequestSchema.safeParse(req.body);
