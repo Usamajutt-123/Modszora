@@ -31,9 +31,8 @@ export async function GET() {
       retrying: 0,
     },
     crons: [
-      { name: 'auto-blog', expression: '0 8 * * *', nextRun: null, enabled: true },
-      { name: 'auto-review', expression: '0 18 * * *', nextRun: null, enabled: true },
-      { name: 'publish-scheduled', expression: '*/10 * * * *', nextRun: null, enabled: true },
+      { name: 'auto-generate-daily', expression: '0 8 * * *', nextRun: null, enabled: true },
+      { name: 'publish-scheduled', expression: '0 20 * * *', nextRun: null, enabled: true },
     ],
     sources: [],
     apiUsage: {

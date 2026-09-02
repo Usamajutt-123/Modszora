@@ -108,6 +108,18 @@ export async function GET(req: NextRequest) {
       revalidatePath(`/game/${candidateGame.slug}`);
     }
 
+    // 4. Promote any due scheduled content
+    if (db) {
+      try {
+        const { data: dueData } = await db.rpc('publish_due_content');
+        if (dueData && Array.isArray(dueData) && dueData.length > 0) {
+          results.scheduledPublished = dueData.length;
+        }
+      } catch {
+        // non-fatal if table/fn not present
+      }
+    }
+
     revalidatePath('/');
     revalidatePath('/sitemap.xml');
 
